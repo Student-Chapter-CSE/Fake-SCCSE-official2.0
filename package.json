@@ -1,5 +1,5 @@
 {
-  "name": "Fake-SCCSE-official2.0",
+  "name": "fake-sccse",
   "private": true,
   "scripts": {
     "build": "turbo build",
