@@ -1,1 +1,1 @@
-#SCCSE Official Website
+# SCCSE Official Website
