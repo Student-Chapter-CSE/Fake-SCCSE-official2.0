@@ -2,6 +2,7 @@ import React from 'react'
 import Headertitle from '../Headertitle/Headertitle'
 const recent = () => {
   return (
+    // make the height h-fit when you will add the content
     <div className='relative w-full h-[45dvh] items-center justify-center'>
     <Headertitle 
      title="RECENT" 
