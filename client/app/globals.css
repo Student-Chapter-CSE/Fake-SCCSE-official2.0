@@ -7,7 +7,13 @@
 *{
   padding:0;
   margin:0;
+  scrollbar-color: #FF8D4D #fff; 
 }
+*::selection{
+  background-color: #FF8D4D;
+  color: #fff;
+}
+
 
 @layer utilities {
 
