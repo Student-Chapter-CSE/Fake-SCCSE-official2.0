@@ -19,19 +19,19 @@ const Contactus = () => {
           <form className="w-full max-w-lg items-center justify-center">
             <div className="flex flex-wrap -mx-3 mb-6">
               <input
-                className="appearance-none block w-full bg-background border-b-[0.5px] border-black text-secondary_text  py-5 px-5 mb-3 leading-tight focus:outline-none text-montserrat "
+                className="appearance-none block w-full bg-background border-b-[0.5px] border-black text-secondary_text  py-5 px-5 mb-3 leading-tight focus:outline-none font-montserrat "
                 id="grid-first-name"
                 type="text"
                 placeholder="Your Name"
               />
               <input
-                className="appearance-none block w-full bg-background border-b-[0.5px] border-black py-5 px-5 leading-tight focus:outline-none text-montserrat text-secondary_text text-montserrat "
+                className="appearance-none block w-full bg-background border-b-[0.5px] border-black py-5 px-5 leading-tight focus:outline-none font-montserrat text-secondary_text font-montserrat "
                 id="grid-last-name"
                 type="email"
                 placeholder="Your Email"
               />
               <textarea
-                className="appearance-none block w-full bg-background border-b-[0.5px] border-black py-5 px-5 leading-tight focus:outline-none text-montserrat text-secondary_text text-montserrat "
+                className="appearance-none block w-full bg-background border-b-[0.5px] border-black py-5 px-5 leading-tight focus:outline-none font-montserrat text-secondary_text font-montserrat "
                 id="message"
                 placeholder="Enter your message"
               />
@@ -45,11 +45,11 @@ const Contactus = () => {
             community
           </h4>
           <div className="w-full flex flex-col max-w-lg items-end justify-center left-0">
-            <a href="#" className="text-secondary_text text-[1rem] text-montserrat">Facebook</a>
-            <a href="#" className="text-secondary_text text-[1rem] text-montserrat">LinkedIn</a>
-            <a href="#" className="text-secondary_text text-[1rem] text-montserrat">Instagram</a>
-            <a href="#" className="text-secondary_text text-[1rem] text-montserrat">X</a>
-            <a href="#" className="text-secondary_text text-[1rem] text-montserrat">sccseaot@gmail.com</a>
+            <a href="#" className="text-secondary_text text-[1rem] font-montserrat">Facebook</a>
+            <a href="#" className="text-secondary_text text-[1rem] font-montserrat">LinkedIn</a>
+            <a href="#" className="text-secondary_text text-[1rem] font-montserrat">Instagram</a>
+            <a href="#" className="text-secondary_text text-[1rem] font-montserrat">X</a>
+            <a href="#" className="text-secondary_text text-[1rem] font-montserrat">sccseaot@gmail.com</a>
           </div>
         </div>
       </div>
