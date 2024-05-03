@@ -15,9 +15,11 @@ const config: Config = {
       },
       colors:{
         'primary_text':"#595959",
+        'secondary_text': "#686868",
         'pop_orange':'#FF5C00',
         'background':'#e8e8e8',
         'secondary_orange':'#FF8D4D'
+        
       },
       fontSize:{
         'small':'0.75rem',
