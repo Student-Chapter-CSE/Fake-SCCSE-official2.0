@@ -3,7 +3,7 @@ import RoundMarquee from '@/public/roundmarquee.svg'
 import Maruqee from '@/app/components/marquee/Maruqee';
 const Hero = () => {
     return (
-        <section className='relative w-full h-screen flex flex-col items-end font-montserrat text-body pt-24 px-10 text-right'>
+        <section className='relative w-full h-screen flex flex-col items-end font-montserrat text-body pt-24 px-10 text-right overflow-hidden'>
             <div className='flex gap-8 h-full'>
                 <div className='flex flex-col items-end h-full justify-between w-full'>
                     <div className='flex gap-8 items-center'>
