@@ -4,9 +4,9 @@ import RoundMarquee from "@/public/roundmarquee.svg";
 const Footer = () => {
   return (
     <div className='w-full h-fit flex flex-col bg-primary_text items-center justify-center pt-12 gap-11'>
-        <hr className="border-b-[0.5px] border-white my-4 w-[951px]" />
-         <div className='flex flex-col md:flex-row gap-96 -mt-10'>{/*make this div flex column in responsive*/}
-            <div className='flex flex-col -mt-10'>
+        <hr className="border-b-[0.5px] border-secondary_text my-4 w-[70%]" />
+         <div className='flex flex-col md:flex-row gap-96 items-center justify-center '>{/*make this div flex column in responsive*/}
+            <div className='flex flex-col'>
             <Image 
             src='/sclogo.svg'
             alt='SC-LOGO'
