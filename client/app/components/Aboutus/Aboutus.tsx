@@ -78,7 +78,7 @@ const Aboutus: React.FC = () => {
                     </div>
             </div>
             <div className="font-montserrate text-primary_text mt-5 ">
-            Prof. Prasenjit Das,<br/> Faculty Advisor,<br/>  IEI Students' Chapter CSE(AOT)
+            Prof. Prasenjit Das,<br/> Faculty Advisor,<br/>  IEI Students&apos; Chapter CSE(AOT)
           </div>
           
           </div>
