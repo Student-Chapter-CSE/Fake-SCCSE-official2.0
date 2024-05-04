@@ -83,7 +83,7 @@ const Aboutus: React.FC = () => {
             <div className="font-montserrate text-primary_text mt-5 ">
               Prof. Prasenjit Das,
               <br /> Faculty Advisor,
-              <br /> IEI Students' Chapter CSE(AOT)
+              <br /> IEI Students&apos; Chapter CSE(AOT)
             </div>
           </div>
           <div className="w-full flex flex-row max-w-lg item-start gap-2 ">
