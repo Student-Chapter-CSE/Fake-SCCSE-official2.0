@@ -32,7 +32,7 @@ const Aboutus: React.FC = () => {
               Team promotes development and innovation. Consisting of talented
               and enthusiastic students, we actively engage in learning new
               technologies and applying them for the betterment of ourselves and
-              Students' Chapter! The Public Relations (PR) Team ensures
+              Students&apos; Chapter! The Public Relations (PR) Team ensures
               effective communication and outreach within the student community
               and beyond. We are proud to have a PR Team with a variety of
               skills and plethora of qualities! Our Design Team helps us in
@@ -88,7 +88,7 @@ const Aboutus: React.FC = () => {
             </h4>
 
             <div className="text-[1rem] font-montserrat text-secondary_text ">
-            As the head of IEI Students' Chapter CSE (AOT), I warmly welcome you! Our chapter is a dynamic hub for aspiring engineers to connect, collaborate, and grow. Through engaging events and projects, we aim to nurture your passion for computer science and engineering. Join us as we explore and innovate together!
+            As the head of IEI Students&apos; Chapter CSE (AOT), I warmly welcome you! Our chapter is a dynamic hub for aspiring engineers to connect, collaborate, and grow. Through engaging events and projects, we aim to nurture your passion for computer science and engineering. Join us as we explore and innovate together!
             </div>
           </div>
         </div>
