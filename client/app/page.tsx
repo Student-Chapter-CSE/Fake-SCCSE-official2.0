@@ -3,6 +3,7 @@ import Hero from "@/app/components/hero/Hero";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Recent from "./components/recentactivities/recent";
 import Contactus from "./components/contactus/contactus";
+import Footer from "./components/Footer/Footer";
 export default function Home() {
 
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Aboutus/>
       <Recent/>
       <Contactus/>
+      <Footer/>
     </main>
   );
 };

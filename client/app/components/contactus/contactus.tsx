@@ -12,7 +12,7 @@ const Contactus = () => {
       />
       <div className="flex flex-col justify-center items-center">
         <hr className="border-b-[0.5px] border-black my-4 w-[951px]" />
-        <div className="flex flex-row items-start justify-center w-[951px] gap-20 pt-5 pb-40 ">
+        <div className="flex flex-col md:flex-row items-start justify-center w-[951px] gap-20 pt-5 pb-40 ">
           <h4 className="text-[1rem] font-montserrat text-secondary_text ">
             Write to us for any queries or collaborations
           </h4>
@@ -25,13 +25,13 @@ const Contactus = () => {
                 placeholder="Your Name"
               />
               <input
-                className="appearance-none block w-full bg-background border-b-[0.5px] border-black py-5 px-5 leading-tight focus:outline-none font-montserrat text-secondary_text font-montserrat "
+                className="appearance-none block w-full bg-background border-b-[0.5px] border-black py-5 px-5 leading-tight focus:outline-none  text-secondary_text font-montserrat "
                 id="grid-last-name"
                 type="email"
                 placeholder="Your Email"
               />
               <textarea
-                className="appearance-none block w-full bg-background border-b-[0.5px] border-black py-5 px-5 leading-tight focus:outline-none font-montserrat text-secondary_text font-montserrat "
+                className="appearance-none block w-full bg-background border-b-[0.5px] border-black py-5 px-5 leading-tight focus:outline-none text-secondary_text font-montserrat "
                 id="message"
                 placeholder="Enter your message"
               />
@@ -39,7 +39,7 @@ const Contactus = () => {
           </form>
         </div>
         <hr className="border-b-[0.5px] border-black my-4 w-[951px]" />
-        <div className="flex flex-row items-start justify-center w-[951px] gap-20 pt-5 pb-40 px-0">
+        <div className="flex flex-col md:flex-row items-start justify-center w-[951px] gap-20 pt-5 pb-40 px-0">
           <h4 className="text-[1rem] font-montserrat text-secondary_text ">
             Follow us on our socials, get connected and involved in the
             community
