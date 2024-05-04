@@ -6,7 +6,7 @@ const Hero = () => {
         <section className='relative w-full h-screen flex flex-col items-end font-montserrat text-body pt-24 px-10 text-right overflow-hidden'>
             <div className='flex gap-8 h-full'>
                 <div className='flex flex-col items-end h-full justify-between w-full'>
-                    <div className='flex gap-8 items-center'>
+                    <div className='flex gap-8 items-center flex-col-reverse md:flex-row'>
                         <div className='w-1/2 flex flex-col justify-between h-[45dvh]'>
                             <div className='flex flex-col gap-2 items-end'>
                                 <h1>The oldest and most <span className='text-pop_orange'>active</span> students community in</h1>
@@ -24,7 +24,7 @@ const Hero = () => {
 
                 <div className="w-1/6 h-full flex flex-col">
                     <div className='h-[45dvh] flex items-end'>
-                        <RoundMarquee className='animate-spin-slow flex items-end' />
+                        <RoundMarquee className='animate-spin-slow flex items-end w-20' />
                     </div>
                     <div className='h-[40dvh] flex items-end'>
 

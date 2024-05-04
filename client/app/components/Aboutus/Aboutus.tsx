@@ -4,7 +4,7 @@ import Image from "next/image";
 import RoundMarquee from "@/public/roundmarquee.svg";
 const Aboutus: React.FC = () => {
   return (
-    
+
     <div className="relative w-full h-fit items-center justify-center">
       <Headertitle
         title="ABOUT"
@@ -72,15 +72,17 @@ const Aboutus: React.FC = () => {
         <div className="flex flex-row pt-5">
           <div className="flex flex-col ">
             <div className="flex flex-row gap-2">
-            <Image src="/hod_img.webp" alt="HOD" width={300} height={400} />
-            <div className='h-20vh flex items-end'>
-                        <RoundMarquee className='animate-spin-slow flex items-end' />
-                    </div>
+              <div className="w-48 h-60 relative [transform:rotateY(180deg)] overflow-hidden">
+                <Image src="/hod_img.webp" alt="HOD" fill objectFit="cover" className="translate-x object-left" />
+              </div>
+              <div className='flex items-end'>
+                <RoundMarquee className='animate-spin-slow flex items-end w-10'/>
+              </div>
             </div>
             <div className="font-montserrate text-primary_text mt-5 ">
-            Prof. Prasenjit Das,<br/> Faculty Advisor,<br/>  IEI Students&apos; Chapter CSE(AOT)
-          </div>
-          
+              Prof. Prasenjit Das,<br /> Faculty Advisor,<br />  IEI Students&apos; Chapter CSE(AOT)
+            </div>
+
           </div>
           <div className="w-full flex flex-row max-w-lg item-start gap-2 ">
             <h4 className="text-[1rem] font-montserrat text-secondary_text ">
@@ -88,7 +90,7 @@ const Aboutus: React.FC = () => {
             </h4>
 
             <div className="text-[1rem] font-montserrat text-secondary_text ">
-            As the head of IEI Students&apos; Chapter CSE (AOT), I warmly welcome you! Our chapter is a dynamic hub for aspiring engineers to connect, collaborate, and grow. Through engaging events and projects, we aim to nurture your passion for computer science and engineering. Join us as we explore and innovate together!
+              As the head of IEI Students&apos; Chapter CSE (AOT), I warmly welcome you! Our chapter is a dynamic hub for aspiring engineers to connect, collaborate, and grow. Through engaging events and projects, we aim to nurture your passion for computer science and engineering. Join us as we explore and innovate together!
             </div>
           </div>
         </div>
