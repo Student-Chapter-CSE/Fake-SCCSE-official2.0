@@ -1,6 +1,6 @@
 import React from "react";
 import Headertitle from "../Headertitle/Headertitle";
-import Arrow from '@/public/icons/arrowUpRight.svg'
+import Arrow from '/public/icons/arrowUpRight.svg'
 import Link from "next/link";
 
 const socialLinkStyle = "text-secondary_text text-[1rem]  flex gap-2 items-center hover:text-primary_text hover:font-medium";

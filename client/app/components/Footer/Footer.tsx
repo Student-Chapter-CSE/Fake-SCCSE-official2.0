@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import RoundMarquee from "@/public/roundmarquee.svg";
 import AOTsvg from "@/public/whitelogo.svg";
 import Link from 'next/link';
