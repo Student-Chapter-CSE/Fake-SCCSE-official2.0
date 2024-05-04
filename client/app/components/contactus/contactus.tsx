@@ -11,8 +11,8 @@ const Contactus = () => {
         subtitleFontSize="2.5rem"
       />
       <div className="flex flex-col justify-center items-center">
-        <hr className="border-b-[0.5px] border-black my-4 w-[951px]" />
-        <div className="flex flex-col md:flex-row items-start justify-center w-[951px] gap-20 pt-5 pb-40 ">
+        
+        <div className="flex flex-col md:flex-row items-start justify-center w-fit border-t-[0.5px] border-primary_text gap-20 pt-5 pb-40 ">
           <h4 className="text-[1rem] font-montserrat text-secondary_text ">
             Write to us for any queries or collaborations
           </h4>
@@ -38,13 +38,13 @@ const Contactus = () => {
             </div>
           </form>
         </div>
-        <hr className="border-b-[0.5px] border-black my-4 w-[951px]" />
-        <div className="flex flex-col md:flex-row items-start justify-center w-[951px] gap-20 pt-5 pb-40 px-0">
+        
+        <div className="flex flex-col md:flex-row items-center justify-center w-fit border-t-[0.5px] border-primary_text gap-14 pt-5 pb-40 px-0">
           <h4 className="text-[1rem] font-montserrat text-secondary_text ">
             Follow us on our socials, get connected and involved in the
             community
           </h4>
-          <div className="w-full flex flex-col max-w-lg items-end justify-center left-0">
+          <div className="w-full flex flex-col max-w-lg items-end justify-center">
             <a href="#" className="text-secondary_text text-[1rem] font-montserrat">Facebook</a>
             <a href="#" className="text-secondary_text text-[1rem] font-montserrat">LinkedIn</a>
             <a href="#" className="text-secondary_text text-[1rem] font-montserrat">Instagram</a>
