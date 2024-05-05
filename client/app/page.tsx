@@ -8,7 +8,7 @@ import Recent from "@/components/RecentActivities";
 export default function Home() {
   return (
     <main className="min-h-[100svh] bg-background text-primary_text ">
-      {/* <Navbar/> */}
+      <Navbar/>
       <Hero/>
       <AboutUs/>
       <Recent/>
