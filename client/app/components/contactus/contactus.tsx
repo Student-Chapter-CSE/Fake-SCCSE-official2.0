@@ -8,7 +8,7 @@ const contactInputStyle = "appearance-none block w-full bg-background border-b-[
 
 const Contactus = () => {
   return (
-    <div className="relative w-full max-h-fit items-center justify-center text-body font-montserrat">
+    <div className="relative w-full items-center justify-center text-body font-montserrat">
       <Headertitle
         title="CONTACT"
         subtitle="US"
