@@ -1,5 +1,5 @@
 import React from "react";
-import Headertitle from "../Headertitle/Headertitle";
+import Headertitle from "@/app/components/Headertitle/Headertitle";
 import Image from "next/image";
 const recent = () => {
   return (

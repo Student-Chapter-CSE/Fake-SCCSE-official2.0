@@ -42,8 +42,8 @@ const Aboutus: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-start justify-center w-full pt-5 pb-40 gap-72 ">
-          <h4 className="text-[1rem] font-montserrat text-secondary_text ">
+        <div className="flex flex-col md:flex-row items-start justify-center w-full pt-5 pb-40 gap-2 md:gap-72 pl-20 md:pl-0 ">
+          <h4 className="text-[1rem] font-montserrat text-secondary_text">
             Till now we have
           </h4>
           <div className="w-full flex flex-row max-w-lg item-start gap-2 left-0 -ml-6">
@@ -68,7 +68,7 @@ const Aboutus: React.FC = () => {
         </div>
 
        
-        <div className="flex flex-col md:flex-row pt-10 border-t-[0.5px] border-primary_text w-fit gap-24">
+        <div className="flex flex-col md:flex-row pt-10 border-t-[0.5px] border-primary_text w-fit gap-2 md:gap-24 items-center justify-center">
           <div className="flex flex-col ">
             <div className="flex flex-row gap-2 items-end">
               <div className=" w-48  h-fit ">
