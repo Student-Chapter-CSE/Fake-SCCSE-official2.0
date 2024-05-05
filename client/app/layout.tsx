@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} font-montserrat scroll-smooth`}>
+      <body className={`${inter.className} font-montserrat scroll-smooth overflow-x-hidden`}>
         {children}
       </body>
     </html>
