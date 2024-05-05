@@ -26,7 +26,7 @@ const HeaderTitle: React.FC<HeaderTitleProps> = ({
           {subtitle}
         </h1>
       </div>
-      <h4 className="text-small md:text-[1rem] font-montserrat text-primary_text pt-5 md:pt-10">
+      <h4 className="text-small md:text-[1rem] text-primary_text pt-5 md:pt-10">
         {content}
       </h4>
     </div>

@@ -30,7 +30,7 @@ const Card = () => {
   return (
     <div className="flex flex-col md:flex-row  items-center justify-center gap-5 ">
       <div className="flex flex-col gap-24">
-        <h1 className="text-primary_text font-montserrat ">
+        <h1 className="text-primary_text font-montserrat">
           Some content about the event
         </h1>
         <p className="text-primary_text font-anton text-[2rem] ">

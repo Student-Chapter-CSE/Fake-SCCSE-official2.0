@@ -11,7 +11,7 @@ const ContactUs: React.FC = () => {
   return (
     <div
       id="contact"
-      className="relative w-full items-center justify-center text-body font-montserrat"
+      className="relative w-full items-center justify-center text-body"
     >
       <HeaderTitle
         title="CONTACT"
