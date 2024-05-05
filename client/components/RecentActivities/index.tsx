@@ -1,8 +1,8 @@
 import React from "react";
-import Headertitle from "../Headertitle/Headertitle";
+import Headertitle from "@/components/HeaderTitle/index";
 import Image from "next/image";
-import Button from "@/app/components/Button/Button";
-const recent = () => {
+import Button from "@/components/Button/index";
+const recent: React.FC = () => {
   return (
     <div id="events" className=" w-full h-fit items-center justify-center ">
       <Headertitle

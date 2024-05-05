@@ -1,5 +1,4 @@
-"use client";
-import React from "react";
+import React from "react"
 import SClogosvg from "@/public/sclogo.svg";
 import Home from "@/public/icons/Home_light.svg";
 import Team from "@/public/icons/teams.svg";
@@ -7,11 +6,9 @@ import Event from "@/public/icons/event.svg";
 import Contact from "@/public/icons/mail.svg";
 import Join from "@/public/icons/joinus.svg";
 import Link from "next/link";
-
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
-    <>
-      <div className="h-[72px] w-full border-b-[0.5px] border-primary_text fixed bg-background z-10 py-2 ">
+    <div className="h-[72px] w-full border-b-[0.5px] border-primary_text fixed bg-background z-10 py-2 ">
         <div className="hidden md:flex justify-between items-center  pr-12">
           {/*need to add the hamburger here*/}
 
@@ -78,8 +75,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
