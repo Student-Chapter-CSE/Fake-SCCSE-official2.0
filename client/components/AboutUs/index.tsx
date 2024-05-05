@@ -5,7 +5,10 @@ import RoundMarquee from "/public/roundmarquee.svg";
 
 const AboutUs: React.FC = () => {
   return (
-    <div id="about" className="relative w-full h-fit items-center justify-center text-body">
+    <div
+      id="about"
+      className="relative w-full h-fit items-center justify-center text-body"
+    >
       <HeaderTitle
         title="ABOUT"
         subtitle="US"
@@ -25,15 +28,15 @@ const AboutUs: React.FC = () => {
                 participating in events and doing something productive! Our Tech
                 Team promotes development and innovation. Consisting of talented
                 and enthusiastic students, we actively engage in learning new
-                technologies and applying them for the betterment of ourselves and
-                Students&apos; Chapter! The Public Relations (PR) Team ensures
-                Students&apos; Chapter! The Public Relations (PR) Team ensures
-                effective communication and outreach within the student community
-                and beyond. We are proud to have a PR Team with a variety of
-                skills and plethora of qualities! Our Design Team helps us in
-                various types of design, be it UI/UX or swags, captions, posters.
-                The members of this team are really enthusiastic about working
-                together in a community!
+                technologies and applying them for the betterment of ourselves
+                and Students&apos; Chapter! The Public Relations (PR)
+                Team ensures Students&apos; Chapter! The Public Relations (PR)
+                Team ensures effective communication and outreach within the
+                student community and beyond. We are proud to have a PR Team
+                with a variety of skills and plethora of qualities! Our Design
+                Team helps us in various types of design, be it UI/UX or swags,
+                captions, posters. The members of this team are really
+                enthusiastic about working together in a community!
               </p>
             </div>
           </div>
@@ -63,7 +66,15 @@ const AboutUs: React.FC = () => {
           <div className="flex flex-col md:w-1/2 items-center md:items-start">
             <div className="flex gap-2 justify-center md:justify-start">
               <div className="w-48 h-60 relative [transform:rotateY(180deg)] overflow-hidden">
-                <Image src="/hod_img.webp" alt="HOD" fill objectFit="cover" className="translate-x object-left" unoptimized quality={100}/>
+                <Image
+                  src="/hod_img.webp"
+                  alt="HOD"
+                  fill
+                  objectFit="cover"
+                  className="translate-x object-left"
+                  unoptimized
+                  quality={100}
+                />
               </div>
               <div className="flex items-end">
                 <RoundMarquee className="animate-spin-slow flex items-end w-10" />

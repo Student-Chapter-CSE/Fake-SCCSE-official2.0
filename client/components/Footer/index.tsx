@@ -4,10 +4,10 @@ import AOTsvg from "/public/whitelogo.svg";
 import Link from "next/link";
 
 const LINKS = [
-  {name: "Teams", href: "#"},
-  {name: "Events", href: "#"},
-  {name: "Join Us", href: "#"},
-]
+  { name: "Teams", href: "#" },
+  { name: "Events", href: "#" },
+  { name: "Join Us", href: "#" },
+];
 
 const Footer: React.FC = () => {
   return (
@@ -20,7 +20,9 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-col gap-5">
           {LINKS.map((item, idx) => (
-            <Link key={idx} href={item.href}>{item.name}</Link>
+            <Link key={idx} href={item.href}>
+              {item.name}
+            </Link>
           ))}
         </div>
         <div className="flex flex-row gap-5">
@@ -37,7 +39,7 @@ const Footer: React.FC = () => {
         &copy; IEI Students&apos; Chapter CSE (AOT), {new Date().getFullYear()}
       </h4>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
