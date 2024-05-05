@@ -1,7 +1,8 @@
-import React from 'react'
-import RoundMarquee from '@/public/roundmarquee.svg'
-import Maruqee from '@/app/components/marquee/Maruqee';
-const Hero = () => {
+import React from 'react';
+import RoundMarquee from '/public/roundmarquee.svg'
+import Maruqee from '../Marquee';
+
+const Hero: React.FC = () => {
     return (
         <section className='relative w-full h-[100svh] flex flex-col items-center lg:items-end text-body pt-32 md:pt-48 lg:pt-24 px-10 text-right overflow-hidden'>
             <div className='flex gap-8 h-full'>
@@ -27,10 +28,9 @@ const Hero = () => {
 
                 <div className="w-1/6 h-full flex-col hidden lg:flex">
                     <div className='h-[45dvh] flex items-end'>
-                        <RoundMarquee className='animate-spin-slow items-end w-20 ' />
+                        <RoundMarquee className='animate-spin-slow items-end w-20' />
                     </div>
                     <div className='h-[40dvh] flex items-end'>
-
                         <h2 className='text-[16px] text-nowrap'>Maintaining the legacy.</h2>
                     </div>
                 </div>

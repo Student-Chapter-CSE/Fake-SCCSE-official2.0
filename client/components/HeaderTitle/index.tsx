@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-type HeadertitleProps = {
+type HeaderTitleProps = {
   title: string;
   subtitle: string;
   content: string;
   subtitleFontSize: string;
 };
 
-const Headertitle: React.FC<HeadertitleProps> = ({ title, subtitle, content, subtitleFontSize }) => {
+const HeaderTitle: React.FC<HeaderTitleProps> = ({ title, subtitle, content, subtitleFontSize }) => {
   return (
     <div className="w-full flex my-36 bg-white h-36 pl-20 items-center">
       <h1 className="text-[4rem] font-anton text-primary_text leading-[0.9] tracking-wider">
@@ -23,4 +23,4 @@ const Headertitle: React.FC<HeadertitleProps> = ({ title, subtitle, content, sub
   );
 };
 
-export default Headertitle;
+export default HeaderTitle;

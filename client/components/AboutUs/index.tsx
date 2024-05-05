@@ -1,21 +1,19 @@
 import React from "react";
-import Headertitle from "../Headertitle/Headertitle";
+import HeaderTitle from "../HeaderTitle";
 import Image from "next/image";
-import RoundMarquee from "@/public/roundmarquee.svg";
-const Aboutus: React.FC = () => {
-  return (
+import RoundMarquee from "/public/roundmarquee.svg";
 
+const AboutUs: React.FC = () => {
+  return (
     <div className="relative w-full h-fit items-center justify-center text-body">
-      <Headertitle
+      <HeaderTitle
         title="ABOUT"
         subtitle="US"
         content="We are a group of students from (SCCSE)"
         subtitleFontSize="2.5rem"
       />
       <div className="flex flex-col justify-center items-center gap-16 ">
-
         <div className="flex flex-col gap-10 pb-16 items-center">
-
           <div className="flex flex-col md:flex-row items-start justify-center w-[80%] md:w-[70%] gap-4 md:justify-between border-t-[0.5px] border-primary_text pt-12">
             <h4 className="  text-secondary_text ">
               Brief about us
@@ -24,7 +22,6 @@ const Aboutus: React.FC = () => {
               <h4 className="  text-secondary_text">
                 (01)
               </h4>
-
               <div className="  text-secondary_text ">
                 Hey Folks, we are a college community, committed to promoting
                 knowledge and values to people who look up to us! We work
@@ -44,7 +41,6 @@ const Aboutus: React.FC = () => {
               </div>
             </div>
           </div>
-
           <div className="flex flex-col md:flex-row justify-between w-[80%] md:w-[70%] gap-4 md:gap-0">
             <h4 className="  text-secondary_text w-1/2">
               Till now we have
@@ -91,7 +87,6 @@ const Aboutus: React.FC = () => {
             <h4 className="  text-secondary_text ">
               (03)
             </h4>
-
             <div className="  text-secondary_text ">
               As the head of IEI Students&apos; Chapter CSE (AOT), I warmly
               welcome you! Our chapter is a dynamic hub for aspiring engineers
@@ -106,4 +101,4 @@ const Aboutus: React.FC = () => {
   );
 };
 
-export default Aboutus;
+export default AboutUs;

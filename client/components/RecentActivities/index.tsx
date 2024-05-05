@@ -1,7 +1,8 @@
 import React from "react";
-import Headertitle from "../Headertitle/Headertitle";
+import Headertitle from "../HeaderTitle";
 import Image from "next/image";
-const recent = () => {
+
+const Recent: React.FC = () => {
   return (
     <div className="relative w-full h-fit items-center justify-center">
       <Headertitle
@@ -19,7 +20,7 @@ const recent = () => {
   );
 };
 
-const Card = () => {
+const Card: React.FC = () => {
   return (
     <div className="flex flex-row items-center justify-center gap-5 ">
       <div className="flex flex-col gap-24">
@@ -41,5 +42,4 @@ const Card = () => {
   );
 };
 
-export { Card };
-export default recent;
+export default Recent;

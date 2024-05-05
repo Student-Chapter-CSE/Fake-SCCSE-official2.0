@@ -1,15 +1,15 @@
 import React from "react";
-import Headertitle from "../Headertitle/Headertitle";
 import Arrow from '/public/icons/arrowUpRight.svg'
+import HeaderTitle from "../HeaderTitle";
 import Link from "next/link";
 
 const socialLinkStyle = "text-secondary_text text-[1rem]  flex gap-2 items-center hover:text-primary_text hover:font-medium";
 const contactInputStyle = "appearance-none block w-full bg-background border-b-[0.5px] border-black text-secondary_text  py-5 px-5 leading-tight focus:outline-none  caret-pop_orange focus:border-pop_orange focus:border-b";
 
-const Contactus = () => {
+const ContactUs: React.FC = () => {
   return (
     <div className="relative w-full items-center justify-center text-body font-montserrat">
-      <Headertitle
+      <HeaderTitle
         title="CONTACT"
         subtitle="US"
         content="We are a group of students from (SCCSE)"
@@ -62,4 +62,4 @@ const Contactus = () => {
   );
 };
 
-export default Contactus;
+export default ContactUs;
