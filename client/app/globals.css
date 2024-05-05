@@ -7,7 +7,8 @@
 *{
   padding:0;
   margin:0;
-  scrollbar-color: #FF8D4D #fff; 
+  scrollbar-color: #FF8D4D #ffffff00;
+  scrollbar-width: thin; 
 }
 *::selection{
   background-color: #FF8D4D;
