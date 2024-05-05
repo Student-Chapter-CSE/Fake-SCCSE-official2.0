@@ -5,7 +5,7 @@ import RoundMarquee from "@/public/roundmarquee.svg";
 const Aboutus: React.FC = () => {
   return (
 
-    <div className="relative w-full h-fit items-center justify-center text-body">
+    <div id="about"className="relative w-full h-fit items-center justify-center text-body">
       <Headertitle
         title="ABOUT"
         subtitle="US"

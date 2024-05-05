@@ -1,27 +1,33 @@
 import React from "react";
-import Headertitle from "@/app/components/Headertitle/Headertitle";
+import Headertitle from "../Headertitle/Headertitle";
 import Image from "next/image";
+import Button from "@/app/components/Button/Button";
 const recent = () => {
   return (
-    <div className="relative w-full h-fit items-center justify-center">
+    <div id="events" className=" w-full h-fit items-center justify-center ">
       <Headertitle
         title="RECENT"
         subtitle="ACTIVITIES"
         content="We are a group of students from (SCCSE)"
         subtitleFontSize="10px"
       />
-      <div className="flex flex-col gap-7 ">
-        <Card />
-        <Card />
+
+      <div className="relative">
+        <div className="flex flex-col gap-16">
+          <Card />
+          <Card />
+        </div>
+        <div className="flex justify-center md:justify-end w-full md:w-[60%] mt-24 md:ml-32 ml-5 ">
+          <Button title="VIEW ALL" />
+        </div>
       </div>
-      <hr />
     </div>
   );
 };
 
 const Card = () => {
   return (
-    <div className="flex flex-row items-center justify-center gap-5 ">
+    <div className="flex flex-col md:flex-row  items-center justify-center gap-5 ">
       <div className="flex flex-col gap-24">
         <h1 className="text-primary_text font-montserrat ">
           Some content about the event
