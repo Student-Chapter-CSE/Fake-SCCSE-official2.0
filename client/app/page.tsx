@@ -1,18 +1,18 @@
-import Navbar from "@/app/components/Navbar/Navbar";
-import Hero from "@/app/components/hero/Hero";
-import Aboutus from "./components/Aboutus/Aboutus";
-import Recent from "./components/recentactivities/recent";
-import Contactus from "./components/contactus/contactus";
-import Footer from "./components/Footer/Footer";
-export default function Home() {
+import AboutUs from "@/components/AboutUs";
+import ContactUs from "@/components/ContactUs";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Recent from "@/components/RecentActivities";
 
+export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-primary_text ">
-      <Navbar/>
+    <main className="min-h-[100svh] bg-background text-primary_text ">
+      {/* <Navbar/> */}
       <Hero/>
-      <Aboutus/>
+      <AboutUs/>
       <Recent/>
-      <Contactus/>
+      <ContactUs/>
       <Footer/>
     </main>
   );
