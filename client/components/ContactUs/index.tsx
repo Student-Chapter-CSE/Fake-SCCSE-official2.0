@@ -36,7 +36,7 @@ const ContactUs: React.FC = () => {
                 placeholder="Your Email"
               />
               <textarea
-                className={contactInputStyle + " resize-none"}
+                className={`${contactInputStyle} resize-none`}
                 id="message"
                 placeholder="Enter your message"
               />
