@@ -1,13 +1,13 @@
 import React from "react";
 
-type HeadertitleProps = {
+type HeaderTitleProps = {
   title: string;
   subtitle: string;
   content: string;
   subtitleFontSize: string;
 };
 
-const Headertitle: React.FC<HeadertitleProps> = ({
+const HeaderTitle: React.FC<HeaderTitleProps> = ({
   title,
   subtitle,
   content,
@@ -33,4 +33,4 @@ const Headertitle: React.FC<HeadertitleProps> = ({
   );
 };
 
-export default Headertitle;
+export default HeaderTitle;

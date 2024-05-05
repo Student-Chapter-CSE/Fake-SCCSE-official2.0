@@ -1,10 +1,11 @@
-"use client";
 import React from "react";
+import BlackArrowSvg from "/public/icons/blackarrowright.svg";
+import WhiteArrowSvg from "/public/icons/whitearrowright.svg";
+
 type ButtontitleProps = {
   title: string;
 };
-import BlackArrowSvg from "@/public/icons/blackarrowright.svg";
-import WhiteArrowSvg from "@/public/icons/whitearrowright.svg";
+
 const Button: React.FC<ButtontitleProps> = ({ title }) => {
   return (
     <div className="flex border-primary_text border-[0.5px] w-[50%] md:w-[20%] items-center justify-center relative overflow-hidden group">

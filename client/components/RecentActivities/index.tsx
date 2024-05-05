@@ -1,8 +1,9 @@
 import React from "react";
-import Headertitle from "@/components/HeaderTitle/index";
+import Button from "../Button";
+import Headertitle from "../HeaderTitle";
 import Image from "next/image";
-import Button from "@/components/Button/index";
-const recent: React.FC = () => {
+
+const Recent: React.FC = () => {
   return (
     <div id="events" className=" w-full h-fit items-center justify-center ">
       <Headertitle
@@ -47,5 +48,4 @@ const Card = () => {
   );
 };
 
-export { Card };
-export default recent;
+export default Recent;

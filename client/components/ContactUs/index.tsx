@@ -2,11 +2,10 @@ import React from "react";
 import Arrow from "/public/icons/arrowUpRight.svg";
 import HeaderTitle from "../HeaderTitle";
 import Link from "next/link";
-import Button from "@/components/Button/index";
-const socialLinkStyle =
-  "text-secondary_text text-[1rem]  flex gap-2 items-center hover:text-primary_text hover:font-medium";
-const contactInputStyle =
-  "appearance-none block w-full bg-background border-b-[0.5px] border-black text-secondary_text  py-5 px-5 leading-tight focus:outline-none  caret-pop_orange focus:border-pop_orange focus:border-b";
+import Button from "../Button";
+
+const socialLinkStyle = "text-secondary_text text-[1rem]  flex gap-2 items-center hover:text-primary_text hover:font-medium";
+const contactInputStyle = "appearance-none block w-full bg-background border-b-[0.5px] border-black text-secondary_text  py-5 px-5 leading-tight focus:outline-none  caret-pop_orange focus:border-pop_orange focus:border-b";
 
 const ContactUs: React.FC = () => {
   return (
