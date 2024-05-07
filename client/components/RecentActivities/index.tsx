@@ -5,21 +5,23 @@ import Image from "next/image";
 
 const Recent: React.FC = () => {
   return (
-    <div id="events" className=" w-full h-fit items-center justify-center ">
-      <Headertitle
-        title="RECENT"
-        subtitle="ACTIVITIES"
-        content="We are a group of students from (SCCSE)"
-        subtitleFontSize="10px"
-      />
+    <div id="events" className="flex flex-col w-full items-center">
+        <Headertitle
+          title="RECENT"
+          subtitle="ACTIVITIES"
+          content="We are a group of students from (SCCSE)"
+          subtitleFontSize="10px"
+        />
+      <div  className=" w-fit h-fit items-center justify-center ">
 
-      <div className="relative">
-        <div className="flex flex-col gap-16">
-          <Card />
-          <Card />
-        </div>
-        <div className="flex justify-center md:justify-end w-full md:w-[60%] mt-24 md:ml-32 ml-5 ">
-          <Button title="VIEW ALL" />
+        <div className="">
+          <div className="flex flex-col gap-16">
+            <Card />
+            <Card />
+          </div>
+          <div className="flex justify-end w-full mt-24">
+            <Button title="VIEW ALL" />
+          </div>
         </div>
       </div>
     </div>

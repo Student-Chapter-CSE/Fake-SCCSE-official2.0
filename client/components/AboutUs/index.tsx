@@ -5,21 +5,24 @@ import RoundMarquee from "/public/roundmarquee.svg";
 
 const AboutUs: React.FC = () => {
   return (
-    <div
+    <section
       id="about"
-      className="relative w-full h-fit items-center justify-center text-body"
+      className="w-full h-fit items-center justify-center text-body"
+      data-scroll-container
     >
-      <HeaderTitle
-        title="ABOUT"
-        subtitle="US"
-        content="We are a group of students from (SCCSE)"
-        subtitleFontSize="2.5rem"
-      />
+      <div data-scroll data-scroll-sticky data-scroll-target="#about" className="w-full sticky">
+        <HeaderTitle
+          title="ABOUT"
+          subtitle="US"
+          content="We are a group of students from (SCCSE)"
+          subtitleFontSize="2.5rem"
+        />
+      </div>
       <div className="flex flex-col justify-center items-center gap-16">
         <div className="flex flex-col gap-10 pb-16 items-center text-secondary_text">
           <div className="flex flex-col md:flex-row justify-between w-[80%] md:w-[70%] gap-4 border-t-[0.5px] border-primary_text pt-12">
-            <h4>Brief about us</h4>
-            <div className="flex gap-2 md:w-1/2 w-full">
+            <h4 data-scroll data-scroll-delay="0.4" data-scroll-speed="0.2">Brief about us</h4>
+            <div data-scroll data-scroll-delay="1" data-scroll-speed="0.2" className="flex gap-2 md:w-1/2 w-full">
               <h4>(01)</h4>
               <p>
                 Hey Folks, we are a college community, committed to promoting
@@ -41,8 +44,8 @@ const AboutUs: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between w-[80%] md:w-[70%] gap-4">
-            <h4>Till now we have</h4>
-            <div className="flex gap-2 md:w-1/2 w-full">
+            <h4 data-scroll data-scroll-delay="0.4" data-scroll-speed="0.2">Till now we have</h4>
+            <div data-scroll data-scroll-delay="1" data-scroll-speed="0.2" className="flex gap-2 md:w-1/2 w-full">
               <h4>(02)</h4>
               <div>
                 <div className="flex">
@@ -76,7 +79,8 @@ const AboutUs: React.FC = () => {
                   quality={100}
                 />
               </div>
-              <div className="flex items-end">
+              <div
+                className="flex items-end">
                 <RoundMarquee className="animate-spin-slow flex items-end w-10" />
               </div>
             </div>
@@ -98,7 +102,7 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -21,7 +21,7 @@ const HeaderTitle: React.FC<HeaderTitleProps> = ({
         </h1>
         <h1
           style={{ fontSize: subtitleFontSize }}
-          className="font-poppins font-semibold text-primary_text leading-[0.9] md:pl-12 transform -rotate-90"
+          className="font-poppins font-semibold text-primary_text md:pl-12 transform -rotate-90 leading-none"
         >
           {subtitle}
         </h1>
