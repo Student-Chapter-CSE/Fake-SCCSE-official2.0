@@ -2,6 +2,7 @@ import React from "react";
 import HeaderTitle from "../HeaderTitle";
 import Image from "next/image";
 import RoundMarquee from "/public/roundmarquee.svg";
+import { motion } from "framer-motion";
 
 const AboutUs: React.FC = () => {
   return (
