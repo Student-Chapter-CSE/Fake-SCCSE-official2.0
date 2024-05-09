@@ -9,24 +9,30 @@ import React, { use, useEffect, useLayoutEffect, useState } from "react";
 
 export default function Home() {
   useEffect(() => {
-   
+
     (
       async () => {
         const LocomotiveScroll = (await import('locomotive-scroll')).default;
-        const locomotiveScroll = new LocomotiveScroll();
+        const locomotiveScroll = new LocomotiveScroll({
+          smooth: true,
+          smartphone: {
+            smooth: true,
+          },
+        }
+        );
       }
     )()
-}, [])
+  }, [])
 
-return (
-  <main className="min-h-[100svh] bg-background text-primary_text">
-    <Navbar />
-    <Hero/>
-    <AboutUs />
-    <Recent />
-    <ContactUs />
-    <Footer />
-  </main>
-);
+  return (
+    <main className="min-h-[100svh] bg-background text-primary_text">
+      <Navbar />
+      <Hero />
+      <AboutUs />
+      <Recent />
+      <ContactUs />
+      <Footer />
+    </main>
+  );
 };
 
