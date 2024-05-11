@@ -17,12 +17,10 @@ export default function Home() {
           smooth: true,
           smartphone:{
             smooth: true,
-            direction: 'vertical',
           },
           tablet:{
             smooth: true,
-            breakpoint:800,
-            direction: 'vertical',
+            breakpoint:0,
           }
         });
       }
