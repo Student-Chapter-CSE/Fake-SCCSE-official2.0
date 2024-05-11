@@ -25,6 +25,7 @@ const config: Config = {
         'small':'0.75rem',
         'body':'0.875rem',
         'large':'6rem',
+        'mlarge':'7rem',
         'xlarge':'228px'
       },
       fontFamily:{

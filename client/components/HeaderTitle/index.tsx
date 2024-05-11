@@ -1,10 +1,12 @@
 import React from "react";
 
-type HeaderTitleProps = {
+export interface HeaderTitleProps {
   title: string;
   subtitle: string;
   content: string;
   subtitleFontSize: string;
+  size?:string|number;
+  color?:string;
 };
 
 const HeaderTitle: React.FC<HeaderTitleProps> = ({
@@ -12,9 +14,11 @@ const HeaderTitle: React.FC<HeaderTitleProps> = ({
   subtitle,
   content,
   subtitleFontSize,
+  size="full",
+  color="white"
 }) => {
   return (
-    <div className="w-full flex flex-col md:flex-row my-36 bg-white h-36 pl-20 pt-9 md:pt-10">
+    <div className={`w-full flex flex-col md:flex-row my-36 bg-${color} h-36 pl-20 pt-9 md:pt-10 `} >
       <div className="flex flex-row">
         <h1 className="text-[3.5rem] md:text-[4rem] font-anton text-primary_text leading-[0.9] tracking-wider">
           {title}

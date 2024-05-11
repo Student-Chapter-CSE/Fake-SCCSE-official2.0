@@ -2,25 +2,32 @@ import React from "react";
 import Button from "../Button";
 import Headertitle from "../HeaderTitle";
 import Image from "next/image";
+import Link from 'next/link'
+
+interface CardProps {
+  width?: number;
+  height?: number;
+}
 
 const Recent: React.FC = () => {
   return (
     <div id="events" className="flex flex-col w-full items-center">
-        <Headertitle
-          title="RECENT"
-          subtitle="ACTIVITIES"
-          content="We are a group of students from (SCCSE)"
-          subtitleFontSize="10px"
-        />
-      <div  className=" w-fit h-fit items-center justify-center ">
-
+      <Headertitle
+        title="RECENT"
+        subtitle="ACTIVITIES"
+        content="We are a group of students from (SCCSE)"
+        subtitleFontSize="10px"
+      />
+      <div className="w-fit h-fit items-center justify-center">
         <div className="">
           <div className="flex flex-col gap-16">
-            <Card />
-            <Card />
+            <Card width={300} height={400} />
+            <Card width={300} height={400} />
           </div>
           <div className="flex justify-end w-full mt-24">
-            <Button title="VIEW ALL" />
+            <Link href="/events" passHref>
+              <Button title="VIEW ALL" />
+            </Link>
           </div>
         </div>
       </div>
@@ -28,7 +35,7 @@ const Recent: React.FC = () => {
   );
 };
 
-const Card = () => {
+export const Card: React.FC<CardProps> = ({ width = 300, height = 400 }) => {
   return (
     <div className="flex flex-col md:flex-row  items-center justify-center gap-5 ">
       <div className="flex flex-col gap-24">
@@ -39,7 +46,7 @@ const Card = () => {
           TechQuisitive 3.0
         </p>
       </div>
-      <Image src="/Frame 100.png" alt="HOD" width={300} height={400} />
+      <Image src="/Frame 100.png" alt="HOD" width={width} height={height} />
       {/*Replace this Frame100.png with the recent activities picture */}
       <div className="flex flex-col">
         <h1 className="text-primary_text font-anton text-[2rem] ">May</h1>
