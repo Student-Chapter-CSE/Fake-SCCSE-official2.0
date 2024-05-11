@@ -15,11 +15,16 @@ export default function Home() {
         const LocomotiveScroll = (await import('locomotive-scroll')).default;
         const locomotiveScroll = new LocomotiveScroll({
           smooth: true,
-          smartphone: {
+          smartphone:{
             smooth: true,
+            direction: 'vertical',
           },
-        }
-        );
+          tablet:{
+            smooth: true,
+            breakpoint:800,
+            direction: 'vertical',
+          }
+        });
       }
     )()
   }, [])
