@@ -2,7 +2,6 @@ import React from "react";
 import HeaderTitle from "../HeaderTitle";
 import Image from "next/image";
 import RoundMarquee from "/public/roundmarquee.svg";
-import { motion } from "framer-motion";
 
 const AboutUs: React.FC = () => {
   return (
@@ -74,7 +73,7 @@ const AboutUs: React.FC = () => {
                   src="/hod_img.webp"
                   alt="HOD"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
                   className="translate-x object-left"
                   unoptimized
                   quality={100}
