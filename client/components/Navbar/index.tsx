@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import SClogosvg from "/public/sclogo.svg";
 import Contact from "/public/icons/mail.svg";
@@ -42,7 +43,7 @@ const Navbar: React.FC = () => {
         <SClogosvg />
 
         <div className="flex">
-          <Link href="#hero">
+          <Link href="/#hero">
             <div className="flex space-x-1 group">
               <div className={navItemBorderStyle}>
                 <HomeDark className={logoPositionStyle} />
@@ -62,7 +63,7 @@ const Navbar: React.FC = () => {
             </div>
           </Link>
 
-          <Link href="#events">
+          <Link href="/events">
             <div className="flex space-x-1 group">
               <div className={navItemBorderStyle}>
                 <Event className={`${logoPositionStyle} right-0.5`} />
