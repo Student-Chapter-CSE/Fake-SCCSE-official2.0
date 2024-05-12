@@ -4,9 +4,12 @@ import Headertitle from "../HeaderTitle";
 import Image from "next/image";
 import Link from 'next/link'
 
-interface CardProps {
+export interface CardProps {
   width?: number;
   height?: number;
+  subText?: string;
+  Text?: string;
+  align?: string;
 }
 
 const Recent: React.FC = () => {
@@ -35,20 +38,20 @@ const Recent: React.FC = () => {
   );
 };
 
-export const Card: React.FC<CardProps> = ({ width = 300, height = 400 }) => {
+export const Card: React.FC<CardProps> = ({ width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
   return (
-    <div className="flex flex-col md:flex-row  items-center justify-center gap-5 ">
+    <div className={`flex flex-col md:flex-row items-${align} justify-center gap-5`}>
       <div className="flex flex-col gap-24">
         <h1 className="text-primary_text font-montserrat">
-          Some content about the event
+          {subText}
         </h1>
         <p className="text-primary_text font-anton text-[2rem] ">
-          TechQuisitive 3.0
+          {Text}
         </p>
       </div>
       <Image src="/Frame 100.png" alt="HOD" width={width} height={height} />
       {/*Replace this Frame100.png with the recent activities picture */}
-      <div className="flex flex-col">
+      <div className=" flex flex-col">
         <h1 className="text-primary_text font-anton text-[2rem] ">May</h1>
         <hr className="border-b-[0.5px] border-black w-[44px]" />
         <h1 className=" text-secondary_orange font-anton text-[2rem] ">20</h1>
