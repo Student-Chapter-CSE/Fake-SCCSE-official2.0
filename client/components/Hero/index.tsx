@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-28 md:bottom-44 lg:bottom-[30dvh] left-0">
+            <div className="absolute bottom-28 md:bottom-44 lg:bottom-[32dvh] left-0">
                 <Maruqee />
             </div>
         </section>
