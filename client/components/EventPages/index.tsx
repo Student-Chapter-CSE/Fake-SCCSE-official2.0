@@ -46,7 +46,7 @@ const IndexPage = () => {
       <div className="w-[80rem] ml-16 h-fit mt-[4.75rem] pt-8">
         <div className="font-anton font-light text-mlarge text-primary_text text-end pr-20">
           EVENTS
-          <div className="font-normal font-montserrat text-[1.2rem] tracking-wider h-fit pb-20">
+          <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20">
             Indomitable and Captivating
           </div>
         </div>
@@ -59,6 +59,7 @@ const IndexPage = () => {
             <Image src="/Frame 100.png" alt="" width={1000} height={800} />
           </div>
           <div className="text-end">
+            <br />
             Alluring and Charming. Student Chapter Cse is a <br /> Brand
           </div>
         </div>
@@ -82,7 +83,7 @@ const IndexPage = () => {
         subtitle="EVENTS"
         subtitleFontSize="text-[1.5rem]"
         color="transparent"
-        content="We are a group of students from (SCCSE)"
+        content=""
         width={600}
         height={600}
       />
