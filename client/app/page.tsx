@@ -20,7 +20,6 @@ export default function Home() {
 
 return (
   <main className="min-h-[100svh] bg-background text-primary_text">
-    <Navbar />
     <Hero/>
     <AboutUs />
     <Recent />
