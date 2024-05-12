@@ -46,7 +46,7 @@ const IndexPage = () => {
     <div className="relative w-full h-fit bg-background">
       
       {/* Header Section */}
-      <div className="w-[80rem] ml-16 h-fit pt-8">
+      {/* <div className="w-[80rem] ml-16 h-fit pt-8">
         <div className="font-anton font-light text-mlarge text-primary_text text-end pr-20">
           <div>
             <div className='pt-24'>EVENTS</div>
@@ -55,11 +55,21 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      {/* <div className='w-[80rem] ml-16 h-fit bg-background flex justify-end'>
+          <div className='font-anton font-light text-mlarge text-primary_text text-end pr-20'>
+            <div>Events</div>
+          </div>
+      </div> */}
+      
 
       {/* Image Section */}
-      <div className="w-full flex justify-center">
+      <div className="w-full pt-24 flex justify-center">
         <div>
+            <div className=' text-mlarge font-anton font-light text-primary_text flex justify-end '>EVENTS</div>
+            <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex justify-end">
+              Indomitable and Captivating
+            </div>
           <div>
             <Image src="/Frame 100.png" alt="" width={1000} height={800} />
           </div>
