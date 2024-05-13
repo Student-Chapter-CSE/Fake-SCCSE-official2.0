@@ -1,3 +1,4 @@
+import { log } from "console";
 import React from "react";
 
 export interface HeaderTitleProps {
@@ -7,6 +8,8 @@ export interface HeaderTitleProps {
   subtitleFontSize: string;
   size?:string|number;
   color?:string;
+  margin?:string|number;
+  padding?:string|number;
 };
 
 const HeaderTitle: React.FC<HeaderTitleProps> = ({
@@ -15,12 +18,14 @@ const HeaderTitle: React.FC<HeaderTitleProps> = ({
   content,
   subtitleFontSize,
   size="full",
-  color="white"
+  color="white",
+  margin,
+  padding,
 }) => {
   return (
-    <div className={`w-full flex flex-col md:flex-row my-36 bg-${color} h-36 pl-20 pt-9 md:pt-10 `} >
+    <div className={`w-full flex flex-col md:flex-row  bg-${color} ${margin} ${padding}   h-36  pt-9 md:pt-10 `} >
       <div className="flex flex-row">
-        <h1 className="text-[3.5rem] md:text-[4rem] font-anton text-primary_text leading-[0.9] tracking-wider">
+        <h1 className="text-[3.5rem] md:text-[4rem] phone:text-medium lphone:text-[2.5rem] font-anton text-primary_text leading-[0.9] tracking-wider">
           {title}
         </h1>
         <h1

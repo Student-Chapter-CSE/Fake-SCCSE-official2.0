@@ -24,6 +24,7 @@ const config: Config = {
       fontSize:{
         'small':'0.75rem',
         'body':'0.875rem',
+        'medium':'2rem',
         'large':'6rem',
         'mlarge':'7rem',
         'xlarge':'228px'
@@ -34,6 +35,11 @@ const config: Config = {
       },
       animation:{
         'spin-slow':'spin 10s linear infinite',
+      },
+      screens:{
+        'desktop':'1360px',
+        'phone':'320px',
+        'lphone':'425px'
       },
     },
   },

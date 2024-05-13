@@ -20,6 +20,8 @@ const Recent: React.FC = () => {
         subtitle="ACTIVITIES"
         content="We are a group of students from (SCCSE)"
         subtitleFontSize="10px"
+        margin="my-36"
+        padding="pl-12"
       />
       <div className="w-fit h-fit items-center justify-center">
         <div className="">
@@ -40,7 +42,7 @@ const Recent: React.FC = () => {
 
 export const Card: React.FC<CardProps> = ({ width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
   return (
-    <div className={`flex flex-col md:flex-row items-${align} justify-center gap-5`}>
+    <div className={`flex flex-col md:flex-row items-center md:items-${align} justify-center  gap-5`}>
       <div className="flex flex-col gap-24">
         <h1 className="text-primary_text font-montserrat">
           {subText}
