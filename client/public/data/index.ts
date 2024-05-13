@@ -45,7 +45,7 @@ export const ManagementTeam: Team[] = [
         img: "0a2dad89-04e3-4c1a-a09d-dacd4c86fe1a-1wkhx.avif"
     },
     {
-        name: "Suvoneel Basu RoyChowdhury",
+        name: "Suvoneel Basu",
         img: "3f36f0bf-ce24-4fbf-8a2c-5cc84fd74871-ooj9s7.avif"
     },
 ]
