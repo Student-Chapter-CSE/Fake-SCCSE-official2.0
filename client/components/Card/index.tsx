@@ -6,7 +6,8 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Image from 'next/image';
 
-const Card = ({name,photo}) => {
+const Card: React.FC = ({name,photo}:{name:string,photo:string}) => {
+
   return (
     <>
         
