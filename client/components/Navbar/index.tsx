@@ -53,13 +53,13 @@ const Navbar: React.FC = () => {
             </div>
           </Link>
 
-          <Link href="#about">
+          <Link href="/teams">
             <div className="flex space-x-1 group">
               <div className={navItemBorderStyle}>
                 <Team className={logoPositionStyle} />
                 <div className={orangeSlideStyle}></div>
               </div>
-              <span className={navItemTextStyle}>About Us</span>
+              <span className={navItemTextStyle}>Teams</span>
             </div>
           </Link>
 

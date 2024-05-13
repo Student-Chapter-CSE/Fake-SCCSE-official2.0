@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import HeaderTitle from "../HeaderTitle";
@@ -8,7 +9,7 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 import Team_header from "@/public/Teamheader.svg";
 
 import {
@@ -22,16 +23,37 @@ import {
 const Index = () => {
   return (
     <div className="bg-background">
-      <div className="flex   flex-col md:flex-row  justify-between w-full  gap-4 pt-48 space-x-64">
-        <div className="flex">
-          <div className="transform rotate-90  ">
-            <Image src="/Frame 100.png" alt="header" width={350} height={300} />
-          </div>
+      <div className="flex   flex-col md:flex-row  justify-between w-full  gap-4 pt-32 space-x-64">
+        <div className="flex flex-row gap-0 position-relative h-48 overflow-hidden ml-48">
+          <motion.div
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", duration: 1.5, delay: 0.8 }}
+            className="absolute left-0 ml-[10%]"
+          >
+            <Image src="/Base.png" alt="header" width={250} height={200} />
+          </motion.div>
+          <motion.div
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", duration: 1.5, delay: 0.4 }}
+            className="absolute left-52 ml-[10%]" 
+          >
+            <Image src="/Base.png" alt="header" width={250} height={200} />
+          </motion.div>
+          <motion.div
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
+            className="absolute left-96 ml-[10%]" 
+          >
+            <Image src="/Base.png" alt="header" width={250} height={200} />
+          </motion.div>
         </div>
 
         <div className="pr-[8%]">
           <div className="font-anton font-light text-large text-primary_text text-end  ">
-            <div className="flex flex-col space-y-8">
+            <div className="flex flex-col space-y-8 pt-16">
               <Team_header />
 
               <div className="font-normal font-montserrat text-[.9rem]  tracking-wider h-fit ">
