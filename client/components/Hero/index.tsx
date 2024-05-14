@@ -1,7 +1,10 @@
 import React from "react";
 import RoundMarquee from "/public/roundmarquee.svg"
 import Maruqee from "../Marquee";
+import Image from "next/image";
 
+
+const bg = "0dd8e831-2dec-4a9f-90a8-74edc70af0d9-y6aw6c.jpg"
 const Hero: React.FC = () => {
     
     return (
@@ -22,7 +25,9 @@ const Hero: React.FC = () => {
                             </div>
                             <RoundMarquee className="animate-spin-slow flex items-end w-20 lg:hidden" />
                         </div>
-                        <div className="lg:w-[35vw] w-full lg:h-[45vh] h-[30vh] border border-red-400"></div>
+                        <div className="lg:w-[35vw] w-full lg:h-[45vh] h-[30vh]">
+                            <Image src={`https://utfs.io/f/${bg}`} width={600} height={300} alt="team"></Image>
+                        </div>
                     </div>
                     <h1 data-scroll data-scroll-speed="-0.2" className="text-[11vmax] md:text-[16vmax] font-anton text-primary_text leading-[0.9] tracking-wider text-right text-nowrap">IEI SC CSE</h1>
                 </div>

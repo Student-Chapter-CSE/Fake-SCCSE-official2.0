@@ -3,6 +3,13 @@ import Button from "../Button";
 import Headertitle from "../HeaderTitle";
 import Image from "next/image";
 
+interface CardProps {
+  name: string;
+  photo: string;
+  month: string;
+  date: string;
+}
+
 const Recent: React.FC = () => {
   return (
     <div id="events" className="flex flex-col w-full items-center">
@@ -12,12 +19,12 @@ const Recent: React.FC = () => {
           content="We are a group of students from (SCCSE)"
           subtitleFontSize="10px"
         />
-      <div  className=" w-fit h-fit items-center justify-center ">
+      <div  className=" w-[80%] md:w-[70%] h-fit items-center justify-center ">
 
         <div className="">
           <div className="flex flex-col gap-16">
-            <Card />
-            <Card />
+            <Card name="" photo="" month="" date=""/>
+            <Card name="" photo="" month="" date=""/>
           </div>
           <div className="flex justify-end w-full mt-24">
             <Button title="VIEW ALL" />
@@ -28,7 +35,7 @@ const Recent: React.FC = () => {
   );
 };
 
-const Card = () => {
+const Card :React.FC<CardProps> = ({name,photo,month,date}) => {
   return (
     <div className="flex flex-col md:flex-row  items-center justify-center gap-5 ">
       <div className="flex flex-col gap-24">
