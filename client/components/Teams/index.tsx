@@ -11,13 +11,14 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Team_header from "@/public/Teamheader.svg";
-
+import Link from 'next/link'
 import {
   ManagementTeam,
   TechTeam,
   PrTeam,
   DesignTeam,
-  PreviousTeam,
+  Conveners,
+  PhotographyTeam,
 } from "@/public/data/index";
 
 const Index = () => {
@@ -89,10 +90,29 @@ const Index = () => {
         />
       </div>
 
+
+
+
+
+
+{/* 
+      Aratrik
+      name: "Aratrik Bandyopadhyay",
+        img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
+        designation: "Convener",
+        github: "https://github.com/Aratrik123",
+        instagram: "https://www.instagram.com/in_dealing_dead_03/",
+        facebook: "#",
+        twitter: "#",
+        linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/" */}
+
+
+
+
       <div className="flex flex-row  justify-end pr-24 mt-20 ">
-        <div className="border border-black h-[23rem] w-[18rem] mt-12 flex justify-center items-center relative">
+        <div className="bg-white h-[23rem] w-[18rem] mt-12 flex justify-center items-center relative">
           <Image
-            src="/20681554-bb6c-4387-a020-ab0f1b8f86a1-adq5wx.avif"
+            src="https://utfs.io/f/921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif"
             alt="convenor"
             height={400}
             width={200}
@@ -104,10 +124,30 @@ const Index = () => {
             </h1>
 
             <div className="space-y-4 ml-1">
+              <div>
+
+              <Link href="#">
               <FaFacebook color="orange" size={25} />
+              </Link>
+              </div>
+              <div>
+
+              <Link href="https://www.instagram.com/in_dealing_dead_03/">
               <IoLogoInstagram color="orange" size={25} />
+              </Link>
+              </div>
+              <div>
+
+              <Link href="#">
               <FaTwitter size={25} color="orange" />
+              </Link>
+              </div>
+              <div>
+
+              <Link href="https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/">
               <FaLinkedin color="orange" size={25} />
+              </Link>
+              </div>
             </div>
           </div>
           <div className="absolute bottom-0">
@@ -118,9 +158,11 @@ const Index = () => {
 
       {/* core members */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pr-10 pl-16">
         {ManagementTeam.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} />
+          <Card key={index} name={member.name} photo={member.img} designation={member.designation}
+          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+          />
         ))}
       </div>
 
@@ -167,6 +209,14 @@ const Index = () => {
         subtitleFontSize="1.25rem"
       />
 
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
+        {PhotographyTeam.map((member, index) => (
+          <Card key={index} name={member.name} photo={member.img} />
+        ))}
+      </div>
+
+
+
       <HeaderTitle
         title="PREVIOUS CONVENORS"
         subtitle=""
@@ -175,7 +225,7 @@ const Index = () => {
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pl-4">
-        {PreviousTeam.map((member, index) => (
+        {Conveners.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img} />
         ))}
       </div>
