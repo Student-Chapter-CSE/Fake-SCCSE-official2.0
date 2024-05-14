@@ -174,7 +174,10 @@ const Index = () => {
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
         {DesignTeam.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} />
+          <Card key={index} name={member.name} photo={member.img} 
+          designation={member.designation}
+          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+          />
         ))}
       </div>
 
@@ -186,7 +189,9 @@ const Index = () => {
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
         {TechTeam.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} />
+          <Card key={index} name={member.name} photo={member.img}
+          designation={member.designation}
+          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin} />
         ))}
       </div>
 
@@ -198,7 +203,10 @@ const Index = () => {
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
         {PrTeam.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} />
+          <Card key={index} name={member.name} photo={member.img}
+          designation={member.designation}
+          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+          />
         ))}
       </div>
 
@@ -211,7 +219,10 @@ const Index = () => {
 
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
         {PhotographyTeam.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} />
+          <Card key={index} name={member.name} photo={member.img} 
+          designation={member.designation}
+          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+          />
         ))}
       </div>
 
@@ -226,7 +237,10 @@ const Index = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pl-4">
         {Conveners.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} />
+          <Card key={index} name={member.name} photo={member.img} 
+          designation={member.designation}
+          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+          />
         ))}
       </div>
 
