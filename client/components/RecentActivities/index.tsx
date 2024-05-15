@@ -15,6 +15,7 @@ export interface CardProps {
   month?:string;
   year?:string;
   img?:string;
+  gap?:string;
 }
 
 const Recent: React.FC = () => {
@@ -45,11 +46,11 @@ const Recent: React.FC = () => {
   );
 };
 
-export const Card: React.FC<CardProps> = ({ img,date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
+export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
   
   return (
     <div className={`flex flex-col md:flex-row items-center md:items-${align} justify-center  gap-5`}>
-      <div className="flex flex-col gap-24">
+      <div className={`flex flex-col ${gap}`}>
         <h1 className="text-primary_text font-montserrat">
           {subText}
         </h1>

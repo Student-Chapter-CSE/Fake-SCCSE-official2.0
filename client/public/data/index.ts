@@ -622,6 +622,7 @@ export const EVENTS = {
     'techquisitive5':{
         img: "b60087b4-9abb-4d55-8804-10ecb4ed05ba-eij9ie.avif",
         bannerImgUrl: "",
+        gap:"gap-24",
         heading: 'TechQuisitive',
         content: 'Coding, Gaming, Quizzes',
         date: new Date(2024, 3, 19),
@@ -693,6 +694,7 @@ export const EVENTS = {
         img: "ccb1b2c7-4a2b-4fe3-a388-420f4c8d0b63-jks562.avif",
         bannerImgUrl: "f70925be-ea05-46c6-a0a7-fe37e0863fbf-1nr3do.avif",
         heading: 'InterHacktive',
+        gap:"gap-4",
         content: 'Code, Collab, Conquer',
         date: new Date(2023, 8, 26),
         category: 'recent',
@@ -724,6 +726,7 @@ export const EVENTS = {
     'CFP': {
         img: "",
         heading: 'Digital Water Solutions',
+        gap:"gap 24",
         content: 'Sustainable Resource Management',
         date: new Date(),
         category: 'past',
@@ -732,6 +735,7 @@ export const EVENTS = {
     'KuRookShetra':{
         img: "afb69830-0914-4053-aebf-f9237cd72aff-1oz4da.avif",
         heading: 'KuRookShetra',
+        gap:"gap-56",
         content: 'Intra College Chess',
         date: new Date(2023,11,21),
         category: 'recent',
@@ -741,6 +745,7 @@ export const EVENTS = {
     'sportiac':{
         img: "",
         heading: 'Sportiac',
+        gap:"gap 24",
         content: 'Online Sports Quiz',
         date: new Date(2023,11,21),
         category: 'recent',
@@ -758,6 +763,7 @@ export const eventsData = [
     {
         img: "",
         heading: 'One Day Symposium',
+        gap:"gap 24",
         content: 'Innovation & Intelligence',
         date:new Date(2023,10,5),
         category: 'past',
@@ -766,6 +772,7 @@ export const eventsData = [
     {
         img: "3be3f422-f876-492c-91d8-89a38b92f883-2iqc.avif",
         heading: 'Web Master',
+        gap:"gap-56",
         content: 'Website Building',
         date: new Date(),
         category: 'past'
@@ -773,13 +780,15 @@ export const eventsData = [
     {
         img: "adf52a1d-d030-4238-b3e3-77852ad38cb7-eij9if.avif",
         heading: 'Techquisitive 4.0',
-        content: 'Tech Quiz',
+        gap:"gap-[22rem]",
+        content: 'Intra College Tech Quiz',
         date: new Date(),
         category: 'past'
     },
     {
         img: "",
         heading: 'Technocruise',
+        gap:"gap 24",
         content: 'Tech Trends',
         date: new Date(),
         category: 'past'
@@ -787,6 +796,7 @@ export const eventsData = [
     {
         img: "",
         heading: 'Stride',
+        gap:"gap 24",
         content: 'Webinar-Seminar',
         date: new Date(),
         category: 'past'
