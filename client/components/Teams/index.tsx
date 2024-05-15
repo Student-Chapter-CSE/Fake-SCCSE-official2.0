@@ -24,7 +24,7 @@ import {
 const Index = () => {
   return (
     <div className="bg-background">
-      {/* <div className=" order-2 lg:order-1 flex   flex-col md:flex-row  justify-between w-full  gap-4 pt-32 space-x-64">
+      <div className=" order-2 lg:order-1 flex   flex-col md:flex-row  justify-between w-full  gap-4 pt-32 space-x-64">
         <div className="flex flex-row gap-0 position-relative h-48 overflow-hidden ml-48">
           <motion.div
             initial={{ x: "-100vw" }}
@@ -64,8 +64,9 @@ const Index = () => {
           </div>
         </div>
 
-      </div> */}
-      <div className="flex flex-col lg:flex-row justify-between w-full gap-4 pt-32">
+      </div>
+
+      {/* <div className="flex flex-col lg:flex-row justify-between w-full gap-4 pt-32">
   <div className="order-2 lg:order-1 flex flex-col lg:flex-row gap-0 relative h-48 overflow-hidden lg:ml-48">
     <motion.div
       initial={{ x: "-100vw" }}
@@ -103,7 +104,7 @@ const Index = () => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
 
       <HeaderTitle
