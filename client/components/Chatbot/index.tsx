@@ -1,4 +1,4 @@
-
+"use client"
 import {useEffect,useRef} from 'react'; 
 
 declare global {
@@ -7,7 +7,7 @@ declare global {
     }
 }
 
-const index = () => {
+const Chatbot: React.FC = () =>  {
     const ref = useRef<HTMLScriptElement>(null);
     useEffect(() => {
         const initBotpress = () => {
@@ -41,4 +41,4 @@ const index = () => {
     );
 };
 
-export default index
+export default Chatbot;

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import SClogosvg from "/public/sclogo.svg";
 import Link from "next/link";
-const index = () => {
+const Hamburger: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full md:hidden fixed h-[72px]  border-b-[0.5px] border-primary_text  bg-background z-10 py-2">
@@ -84,4 +84,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Hamburger;
