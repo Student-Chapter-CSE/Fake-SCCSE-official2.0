@@ -177,3 +177,196 @@ export const PreviousTeam: Team[] = [
         img: "b21ea9c9-9e8d-4a9f-9782-40e7ff61b332-hvngmr.avif"
     }
 ]
+
+export const EVENTS = {
+    'techquisitive5':{
+        img: '/static/assets/tqLogo_svg.svg',
+        bannerImgUrl: '/static/assets/techlogo.png',
+        heading: 'TechQuisitive',
+        content: 'Coding, Gaming, Quizzes',
+        date: new Date(2024, 3, 19),
+        finalsdate: new Date(2024,3,21),
+        category: 'recent',
+        registrationLink: "https://forms.gle/M5vL3sqn6HJ1AaRM9",
+        pageUrl: '/events/techquisitive',
+        prizes:[
+            {
+                num:'💰 8k Cash',
+                amt:'🎁 10k Swags',
+                image:'/static/assets/trophy.png'
+            },
+        ],
+        tracks: [
+            {
+                name: 'Best All Girls Team',
+                logoUrl: '/static/assets/girls.png',
+                amt:'🏆 500 Rs',
+            },
+            {
+                name: 'Most Versatile Team',
+                logoUrl: '/static/assets/versatile.png',
+                amt:'🏆 500 Rs',
+            },
+            {
+                name: 'Best Freshers Team',
+                logoUrl: '/static/assets/freshers.png',
+                amt:'🏆 500 Rs',
+            },
+        ],
+        event: [
+            {
+                date:'1st March',
+                name:'Registration Open',
+            },
+            {
+                date:'10th March',
+                name:'Registration Close'
+            },
+            {
+                date: '19th March',
+                name: 'Prelims',
+                des:'Offline Quiz',
+            },
+            {
+                date:'20th March',
+                name:'CXTHSENSE 1.0',
+                des:'First Year Coding',
+            },
+            {
+                date: '21st March',
+                name: 'CXTHSENSE 2.0',
+                des:'Second, Third Year Coding',
+            },
+            {
+                date: '22nd March',
+                name: 'HEADSHOT',
+                des:'BGMI Gaming (Online)',
+            },
+            {
+                date: '23rd March',
+                name: 'GRAND FINALE',
+                des:'Reality Gameshow',
+            }
+        ],
+    },
+    'interhacktive0': {
+        img: '/static/assets/ih_logo.png',
+        bannerImgUrl: '/static/assets/ih_1.png',
+        heading: 'InterHacktive',
+        content: 'Code, Collab, Conquer',
+        date: new Date(2023, 8, 26),
+        category: 'recent',
+        registrationLink: "https://forms.gle/1v6a6KyMENJUbCG69",
+        pageUrl: '/events/interhacktive',
+        sponsors: [
+            {
+                name: 'Grid Reputation',
+                logoUrl: '/static/assets/sponsors/grid_reputation.jpg',
+                href: 'https://gridreputation.com/'
+            },
+            {
+                name: 'Google Cloud Kolkata',
+                logoUrl: '/static/assets/sponsors/gdg_kolkata.jpg',
+                href: 'https://gdgcloud.kolkata.dev/ccd2023/'
+            },
+            {
+                name: 'Flutter Kolkata',
+                logoUrl: '/static/assets/sponsors/flutter_kolkata.jpg',
+                href: 'https://in.linkedin.com/company/flutter-kolkata'
+            },
+            {
+                name: 'Dimension Labs',
+                logoUrl: '/static/assets/sponsors/dim_labs.png',
+                href: 'https://www.dimensionlabs.in/'
+            }
+        ]
+    },
+    'CFP': {
+        img: '/static/assets/avatar.png',
+        heading: 'Digital Water Solutions',
+        content: 'Sustainable Resource Management',
+        date: new Date(),
+        category: 'past',
+        pageUrl: '/downloads/SpecialSession_banner.pdf'
+    },
+    'KuRookShetra':{
+        img: '/static/assets/kuruk.jpg',
+        heading: 'KuRookShetra',
+        content: 'Intra College Chess',
+        date: new Date(2023,11,21),
+        category: 'recent',
+        pageUrl: '/events/kurukshetra',
+        prizes: [400 , 200 , 100]
+    },
+    'sportiac':{
+        img: '/static/assets/sportiac.jpg',
+        heading: 'Sportiac',
+        content: 'Online Sports Quiz',
+        date: new Date(2023,11,21),
+        category: 'recent',
+        pageUrl: '/events/sportiac',
+        prizes: "Top 10 Stickers"
+    }
+}
+
+
+
+export const eventsData = [
+    {
+        ...EVENTS.techquisitive5
+    },
+    {
+        img: '/static/assets/avatar.png',
+        heading: 'One Day Symposium',
+        content: 'Innovation & Intelligence',
+        date: new Date(2023, 10, 5),
+        category: 'past',
+    },
+    
+    {
+        img: '/static/assets/webmaster.jpg',
+        heading: 'Web Master',
+        content: 'Website Building',
+        date: new Date(),
+        category: 'past'
+    },
+    {
+        img: '/static/assets/avatar.png',
+        heading: 'Techquisitive 4.0',
+        content: 'Tech Quiz',
+        date: new Date(),
+        category: 'past'
+    },
+    {
+        img: '/static/assets/avatar.png',
+        heading: 'Technocruise',
+        content: 'Tech Trends',
+        date: new Date(),
+        category: 'past'
+    },
+    {
+        img: '/static/assets/avatar.png',
+        heading: 'Stride',
+        content: 'Webinar-Seminar',
+        date: new Date(),
+        category: 'past'
+    },
+    {
+        ...EVENTS.CFP
+    },
+    {
+        ...EVENTS.KuRookShetra
+    },
+    {
+        ...EVENTS.sportiac
+    },
+    {
+        ...EVENTS.interhacktive0
+    }
+    
+];
+
+
+export const getUpcomingEvents = () => {
+    return eventsData.filter(event => event.category === 'upcoming')
+}
