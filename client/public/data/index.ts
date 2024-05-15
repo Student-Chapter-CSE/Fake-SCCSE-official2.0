@@ -726,7 +726,7 @@ export const EVENTS = {
     'CFP': {
         img: "",
         heading: 'Digital Water Solutions',
-        gap:"gap 24",
+        gap:"gap-24",
         content: 'Sustainable Resource Management',
         date: new Date(),
         category: 'past',
@@ -745,7 +745,7 @@ export const EVENTS = {
     'sportiac':{
         img: "",
         heading: 'Sportiac',
-        gap:"gap 24",
+        gap:"gap-24",
         content: 'Online Sports Quiz',
         date: new Date(2023,11,21),
         category: 'recent',
@@ -763,7 +763,7 @@ export const eventsData = [
     {
         img: "",
         heading: 'One Day Symposium',
-        gap:"gap 24",
+        gap:"gap-24",
         content: 'Innovation & Intelligence',
         date:new Date(2023,10,5),
         category: 'past',
@@ -772,7 +772,7 @@ export const eventsData = [
     {
         img: "3be3f422-f876-492c-91d8-89a38b92f883-2iqc.avif",
         heading: 'Web Master',
-        gap:"gap-56",
+        gap:" gap-24",
         content: 'Website Building',
         date: new Date(),
         category: 'past'
@@ -780,7 +780,7 @@ export const eventsData = [
     {
         img: "adf52a1d-d030-4238-b3e3-77852ad38cb7-eij9if.avif",
         heading: 'Techquisitive 4.0',
-        gap:"gap-[22rem]",
+        gap:"gap-[]",
         content: 'Intra College Tech Quiz',
         date: new Date(),
         category: 'past'
@@ -788,7 +788,7 @@ export const eventsData = [
     {
         img: "",
         heading: 'Technocruise',
-        gap:"gap 24",
+        gap:"gap-24",
         content: 'Tech Trends',
         date: new Date(),
         category: 'past'
@@ -796,7 +796,7 @@ export const eventsData = [
     {
         img: "",
         heading: 'Stride',
-        gap:"gap 24",
+        gap:"gap-24",
         content: 'Webinar-Seminar',
         date: new Date(),
         category: 'past'

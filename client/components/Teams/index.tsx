@@ -25,7 +25,7 @@ const Index = () => {
   return (
     <div className="bg-background">
       <div className=" order-2 lg:order-1 flex   flex-col md:flex-row  justify-between w-full  gap-4 pt-32 space-x-64">
-        <div className="flex flex-row gap-0 position-relative h-48 overflow-hidden ml-48">
+        <div className="flex flex-row gap-y-16 h-48 overflow-hidden ml-48">
           <motion.div
             initial={{ x: "-100vw" }}
             animate={{ x: 0 }}
