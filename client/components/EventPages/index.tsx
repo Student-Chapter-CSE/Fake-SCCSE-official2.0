@@ -73,7 +73,10 @@ const Sections: React.FC<SectionsProps> = ({
       <br />
       <div className='w-full flex flex-col sm:justify-center gap-[10rem] sm:items-center'>
         {filteredData.map((item, index) => (
-          <Card
+          <>
+          {console.log(item)}
+          
+            <Card
             key={index}
             width={width}
             height={height}
@@ -84,6 +87,8 @@ const Sections: React.FC<SectionsProps> = ({
             month={month}
             year={year}
           />
+          </>
+          
         ))}
       </div>
     </>

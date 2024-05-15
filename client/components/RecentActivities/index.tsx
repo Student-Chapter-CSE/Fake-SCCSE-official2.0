@@ -3,6 +3,7 @@ import Button from "../Button";
 import Headertitle from "../HeaderTitle";
 import Image from "next/image";
 import Link from 'next/link'
+import { log } from "console";
 
 export interface CardProps {
   width?: number;
@@ -43,7 +44,9 @@ const Recent: React.FC = () => {
   );
 };
 
-export const Card: React.FC<CardProps> = ({ date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
+export const Card: React.FC<CardProps> = ({ date, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
+  console.log(date);
+  const dateObj:Date = new Date(date:number);
   return (
     <div className={`flex flex-col md:flex-row items-center md:items-${align} justify-center  gap-5`}>
       <div className="flex flex-col gap-24">
