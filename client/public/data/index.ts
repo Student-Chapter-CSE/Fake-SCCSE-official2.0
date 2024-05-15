@@ -736,11 +736,7 @@ export const eventsData = [
         heading: 'One Day Symposium',
         content: 'Innovation & Intelligence',
         // date: new Date(2023, 10, 5),
-        date:{
-            day: 5,
-            month: 'Nov',
-            year: 2023
-        },
+        date:new Date(2023,10,5),
         category: 'past',
     },
     

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react';
 import Footer from '../Footer';
 import Image from 'next/image';
@@ -38,24 +38,15 @@ const Sections: React.FC<SectionsProps> = ({
   year,
 }) => {
   const [filteredData, setFilteredData] = useState<any[]>([]);
-  
+
   useEffect(() => {
-    let filtered = [];
-    if (title === 'UPCOMING') {
-      filtered = eventsData.filter((item) => item.category === 'upcoming');
-    } else if (title === 'RECENT') {
-      filtered = eventsData.filter((item) => item.category === 'recent');
-    } else if (title === 'PAST') {
-      filtered = eventsData.filter((item) => item.category === 'past');
-    } else {
-      filtered = eventsData;
-    }
+    const filtered = eventsData.filter((item) => item.category.toLowerCase() === title.toLowerCase());
     setFilteredData(filtered);
   }, [title]);
 
   return (
     <>
-      <div className='w-full flex justify-center '>
+      <div className='w-full flex justify-center'>
         <div className='w-[80%] border-b-2 my-0 pl-0 border-black'>
           <HeaderTitle
             title={title}
@@ -68,28 +59,29 @@ const Sections: React.FC<SectionsProps> = ({
           />
         </div>
       </div>
-
       <br />
       <br />
       <div className='w-full flex flex-col sm:justify-center gap-[10rem] sm:items-center'>
-        {filteredData.map((item, index) => (
-          <>
-          {console.log(item)}
-          
+        {filteredData.map((item, index) => {
+          const dateObj = new Date(item.date);
+          const day = String(dateObj.getUTCDate()).padStart(2, '0');
+          const month = String(dateObj.getUTCMonth() + 1).padStart(2, '0'); // Adding 1 since getUTCMonth returns 0-indexed month
+          const year = String(dateObj.getUTCFullYear());
+
+          return (
             <Card
-            key={index}
-            width={width}
-            height={height}
-            Text={item.heading}
-            subText={item.content}
-            align={align}
-            date={item.date}
-            month={month}
-            year={year}
-          />
-          </>
-          
-        ))}
+              key={index}
+              width={width}
+              height={height}
+              Text={item.heading}
+              subText={item.content}
+              align={align}
+              date={day}
+              month={month}
+              year={year}
+            />
+          );
+        })}
       </div>
     </>
   );
@@ -130,7 +122,6 @@ const IndexPage = () => {
         align="start"
         margin=""
         padding=""
-        
       />
       <br />
 
