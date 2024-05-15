@@ -14,6 +14,7 @@ export interface CardProps {
   date?:string;
   month?:string;
   year?:string;
+  img?:string;
 }
 
 const Recent: React.FC = () => {
@@ -44,7 +45,7 @@ const Recent: React.FC = () => {
   );
 };
 
-export const Card: React.FC<CardProps> = ({ date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
+export const Card: React.FC<CardProps> = ({ img,date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
   
   return (
     <div className={`flex flex-col md:flex-row items-center md:items-${align} justify-center  gap-5`}>
@@ -56,7 +57,7 @@ export const Card: React.FC<CardProps> = ({ date,month,year, width = 300, height
           {Text}
         </p>
       </div>
-      <Image src="/Frame 100.png" alt="HOD" width={width} height={height} />
+      <Image src={`https://utfs.io/f/${img}`} alt="HOD" width={width} height={height} />
       {/*Replace this Frame100.png with the recent activities picture */}
       <div className=" flex flex-col">
         <h1 className="text-primary_text font-anton text-[2rem] ">{month}</h1>

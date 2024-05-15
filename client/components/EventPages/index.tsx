@@ -18,6 +18,7 @@ interface SectionsProps extends HeaderTitleProps {
   date?: string;
   month?: string;
   year?: string;
+  img?: string;
 }
 
 const Sections: React.FC<SectionsProps> = ({
@@ -36,6 +37,7 @@ const Sections: React.FC<SectionsProps> = ({
   date,
   month,
   year,
+  img
 }) => {
   const [filteredData, setFilteredData] = useState<any[]>([]);
 
@@ -79,6 +81,7 @@ const Sections: React.FC<SectionsProps> = ({
               date={day}
               month={month}
               year={year}
+              img={item.img}
             />
           );
         })}
@@ -100,7 +103,7 @@ const IndexPage = () => {
             Indomitable and Captivating
           </div>
           <div className='sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-[18rem] phone:h-[8rem] relative'>
-            <Image src="/Frame 100.png" alt="" fill />
+            <Image src="" alt="" fill />
           </div>
           <div className="text-end phone:text-small">
             <div>Alluring and Charming. Student Chapter CSE is a</div>
