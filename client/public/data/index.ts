@@ -594,10 +594,34 @@ export const PreviousTeam3 = [
     }
 ]
 
+export const images = [
+    {
+        img: "37633ad5-4299-4ed8-a0ef-d4ceece4c38a-22sw.avif",
+    },
+    {
+        img: "4d91f34d-24c3-4580-bc0d-a23971f0f28d-1sewy.avif",
+    },
+    {
+        img: "12d394dc-8004-449c-b9b4-96dc086eee63-1sewz.avif",
+    },
+    {
+        img: "40687946-a717-47f7-897d-9e74f80c47f3-1sex0.avif",
+    },
+    {
+        img: "1420ea77-8344-4c9c-a4d2-9518434b5276-y6aw6c.avif",
+    },
+    {
+        img: "aff86f51-5d48-4a41-8afa-d33bc74f66fc-1w6wc.avif",
+    },
+    {
+        img: "a025b693-05a8-47e3-8e93-9760dab23185-n3ch5g.avif",
+    },
+]
+
 export const EVENTS = {
     'techquisitive5':{
-        img: '/static/assets/tqLogo_svg.svg',
-        bannerImgUrl: '/static/assets/techlogo.png',
+        img: "b60087b4-9abb-4d55-8804-10ecb4ed05ba-eij9ie.avif",
+        bannerImgUrl: "",
         heading: 'TechQuisitive',
         content: 'Coding, Gaming, Quizzes',
         date: new Date(2024, 3, 19),
@@ -666,8 +690,8 @@ export const EVENTS = {
         ],
     },
     'interhacktive0': {
-        img: '/static/assets/ih_logo.png',
-        bannerImgUrl: '/static/assets/ih_1.png',
+        img: "ccb1b2c7-4a2b-4fe3-a388-420f4c8d0b63-jks562.avif",
+        bannerImgUrl: "f70925be-ea05-46c6-a0a7-fe37e0863fbf-1nr3do.avif",
         heading: 'InterHacktive',
         content: 'Code, Collab, Conquer',
         date: new Date(2023, 8, 26),
@@ -698,7 +722,7 @@ export const EVENTS = {
         ]
     },
     'CFP': {
-        img: '/static/assets/avatar.png',
+        img: "",
         heading: 'Digital Water Solutions',
         content: 'Sustainable Resource Management',
         date: new Date(),
@@ -706,7 +730,7 @@ export const EVENTS = {
         pageUrl: '/downloads/SpecialSession_banner.pdf'
     },
     'KuRookShetra':{
-        img: '/static/assets/kuruk.jpg',
+        img: "afb69830-0914-4053-aebf-f9237cd72aff-1oz4da.avif",
         heading: 'KuRookShetra',
         content: 'Intra College Chess',
         date: new Date(2023,11,21),
@@ -715,7 +739,7 @@ export const EVENTS = {
         prizes: [400 , 200 , 100]
     },
     'sportiac':{
-        img: '/static/assets/sportiac.jpg',
+        img: "",
         heading: 'Sportiac',
         content: 'Online Sports Quiz',
         date: new Date(2023,11,21),
@@ -732,7 +756,7 @@ export const eventsData = [
         ...EVENTS.techquisitive5
     },
     {
-        img: '/static/assets/avatar.png',
+        img: "",
         heading: 'One Day Symposium',
         content: 'Innovation & Intelligence',
         // date: new Date(2023, 10, 5),
@@ -745,28 +769,28 @@ export const eventsData = [
     },
     
     {
-        img: '/static/assets/webmaster.jpg',
+        img: "3be3f422-f876-492c-91d8-89a38b92f883-2iqc.avif",
         heading: 'Web Master',
         content: 'Website Building',
         date: new Date(),
         category: 'past'
     },
     {
-        img: '/static/assets/avatar.png',
+        img: "adf52a1d-d030-4238-b3e3-77852ad38cb7-eij9if.avif",
         heading: 'Techquisitive 4.0',
         content: 'Tech Quiz',
         date: new Date(),
         category: 'past'
     },
     {
-        img: '/static/assets/avatar.png',
+        img: "",
         heading: 'Technocruise',
         content: 'Tech Trends',
         date: new Date(),
         category: 'past'
     },
     {
-        img: '/static/assets/avatar.png',
+        img: "",
         heading: 'Stride',
         content: 'Webinar-Seminar',
         date: new Date(),
