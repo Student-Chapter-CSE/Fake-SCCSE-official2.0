@@ -18,8 +18,8 @@ export const ManagementTeam: Team[] = [
         designation: "Convener",
         github: "https://github.com/Aratrik123",
         instagram: "https://www.instagram.com/in_dealing_dead_03/",
-        facebook: "#",
-        twitter: "#",
+        facebook: "",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
     },
     {
@@ -28,8 +28,8 @@ export const ManagementTeam: Team[] = [
         designation: "Marketing Associate",
         github: "https://github.com/Sayan044",
         instagram: "https://www.instagram.com/1010_sayhack/",
-        facebook: "#",
-        twitter: "#",
+        facebook: "",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/sayan-mukherjee-975175229/"
     },
     {
@@ -38,7 +38,7 @@ export const ManagementTeam: Team[] = [
         designation: "Marketing Associate",
         github: "https://github.com/rohit32999",
         instagram: "https://www.instagram.com/_.rohit.2002/",
-        facebook: "#",
+        facebook: "",
         twitter: "https://twitter.com/rohittt_002",
         linkedin: "https://www.linkedin.com/in/rohit-chakrabarti-04b981230/"
     },
@@ -67,10 +67,10 @@ export const ManagementTeam: Team[] = [
         img: "744d30a4-de10-4f2e-bbec-c6a2b54d3e17-wwkofr.avif",
         designation: "Tech Associate",
         github: "http://github.com/sencrypt",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
     },
     {
         name: "Abhirup Saha",
@@ -79,7 +79,7 @@ export const ManagementTeam: Team[] = [
         github: "https://github.com/Abhirup-02",
         instagram: "https://www.instagram.com/zeitgeist_found?igsh=MXY0NXNpMzJqajAx",
         facebook: "https://www.facebook.com/share/ifPLRZp93XnAUQUf/?mibextid=qi2Omg",
-        twitter: "#",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/abhirup-saha-9605b0228"
     },
     {
@@ -89,7 +89,7 @@ export const ManagementTeam: Team[] = [
         github: "https://github.com/diptanshumahish",
         instagram: "https://www.instagram.com/_diptanshuu_",
         facebook: "https://facebook.com/diptanshumahish",
-        twitter: "#",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/diptanshumahish"
     },
     {
@@ -109,7 +109,7 @@ export const ManagementTeam: Team[] = [
         github: "https://github.com/HeyaBanerjee",
         instagram: "https://www.instagram.com/._heya__._?igsh=b2FsNjk4eTQ3c3F4",
         facebook: "https://www.facebook.com/profile.php?id=61557433529792&mibextid=ZbWKwL",
-        twitter: "#",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/heya-banerjee-963801280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
@@ -119,7 +119,7 @@ export const ManagementTeam: Team[] = [
         github: "https://github.com/SuvoneelBasu",
         instagram: "https://www.instagram.com/_ig_leenovus_?igsh=MWN2YW9hYzMyZWhraw==",
         facebook: "https://www.facebook.com/suvoneel.king?mibextid=ZbWKwL",
-        twitter: "#",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/suvoneel-basu-roy-chowdhury-8a96702a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
 ]
@@ -128,169 +128,56 @@ export const TechTeam: Team[] = [
     {
         name: "Rohan Mitra",
         img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/Rohan-450",
         instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
-        facebook: "#",
+        facebook: "",
         twitter: "https://x.com/rohanmitra450?t=jP_uU4pcrVRG5GKArbgTIw&s=09",
         linkedin: "https://www.linkedin.com/in/rohan-mitra-63b7a1245"
     },
     {
         name: "Indrani Som",
         img: "27b29f15-ee71-49f4-ab92-bce6a762edc4-w57bt5.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/IndraniSom",
         instagram: "https://instagram.com/404_coder_not_found?igshid=OGQ5ZDc2ODk2ZA==",
-        facebook: "#",
-        twitter: "#",
+        facebook: "",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/indrani-som-258498248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         name: "Koushik Chowdhury",
         img: "a5a8e6e5-ee8f-4ad1-b146-e2d6ec2a91cd-ffbyp6.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/darkard2003",
         instagram: "https://www.instagram.com/_.code._.life._?igsh=dnh0ZTBtdzhrZmNo",
-        facebook: "#",
-        twitter: "#",
+        facebook: "",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/kaushik-chowdhury-379146266"
     },
     {
         name: "Ashish Gupta",
         img: "dca5dc5e-5ff7-4e4c-8955-d070e31c4fd3-nalq60.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/ASHISH26940",
         instagram: "https://www.instagram.com/just_ashish__/",
-        facebook: "#",
+        facebook: "",
         twitter: "https://twitter.com/AshishGupt22092",
         linkedin: "https://www.linkedin.com/in/ashish-gupta2694/"
     },
     {
         name: "Trishit Bhowmick",
         img: "7650e1b6-ac91-4435-9db2-afac3638f3c6-hith1x.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
     },
     {
         name: "Soumit Srimani",
         img: "c094b3ac-e760-4761-8827-4ff621ff233f-etrbvl.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
-    },
-]
-
-export const PrTeam: Team[] = [
-    {
-        name: "Koustav Chatterjee",
-        img: "c82ed358-9d44-4533-8e05-d1c0abd5e20c-8sp0gp.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
-    },
-    {
-        name: "Supratim Dey",
-        img: "60e893df-bd62-43a9-b829-5254b9078126-rhdlz9.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
-    },
-    {
-        name: "Rohan Mitra",
-        img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
-        designation: "#",
-        github: "https://github.com/Rohan-450",
-        instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
-        facebook: "#",
-        twitter: "https://x.com/rohanmitra450?t=jP_uU4pcrVRG5GKArbgTIw&s=09",
-        linkedin: "https://www.linkedin.com/in/rohan-mitra-63b7a1245"
-    },
-    {
-        name: "Riyanko Mondal",
-        img: "69829981-3386-49f7-b15f-4461afceb1e6-k4kr5f.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
-    },
-    {
-        name: "Ridhi Singh",
-        img: "b2febd53-eb2c-4047-8d95-2f8e1156e3a3-1slpzi.avif",
-        designation: "",
-        github: "https://github.com/Ridhi7595",
-        instagram: "https://www.instagram.com/just_ridhii?igsh=MTdnb2I4a3RucHBheg==",
-        facebook: "https://www.facebook.com/share/1nbzZRP6kgoKNteW/?mibextid=qi2Omg",
-        twitter: "#",
-        linkedin: "http://www.linkedin.com/in/ridhisingh7595"
-    },
-    {
-        name: "Pritanshu Samanta",
-        img: "e5abe51a-f362-43a8-bee5-f3039560e449-r5kxsq.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
-    },
-    {
-        name: "Debanwesha Bandhu",
-        img: "730fc9a6-d052-4eb4-a9da-067536e8459e-yu9als.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
-    },
-    {
-        name: "Debanjana Jha",
-        img: "#",
-        designation: "#",
-        github: "https://github.com/debanjanajha",
-        instagram: "https://www.instagram.com/just_ridhii?igsh=MTdnb2I4a3RucHBheg==",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "https://www.linkedin.com/in/debanjana-jha-a524b1258/"
-    },
-    {
-        name: "Sulagna Hore",
-        img: "#",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
-    },
-    {
-        name: "Debasmita Goswami",
-        img: "#",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
-    },
-    {
-        name: "Abhraneel Karmakar",
-        img: "eb10e64c-7938-41d2-a44b-fb082052da23-fgq1kk.avif",
         designation: "",
         github: "",
         instagram: "",
@@ -300,35 +187,148 @@ export const PrTeam: Team[] = [
     },
 ]
 
+export const PrTeam: Team[] = [
+    {
+        name: "Koustav Chatterjee",
+        img: "c82ed358-9d44-4533-8e05-d1c0abd5e20c-8sp0gp.avif",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
+    },
+    {
+        name: "Supratim Dey",
+        img: "60e893df-bd62-43a9-b829-5254b9078126-rhdlz9.avif",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
+    },
+    {
+        name: "Rohan Mitra",
+        img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
+        designation: "",
+        github: "https://github.com/Rohan-450",
+        instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
+        facebook: "",
+        twitter: "https://x.com/rohanmitra450?t=jP_uU4pcrVRG5GKArbgTIw&s=09",
+        linkedin: "https://www.linkedin.com/in/rohan-mitra-63b7a1245"
+    },
+    {
+        name: "Riyanko Mondal",
+        img: "69829981-3386-49f7-b15f-4461afceb1e6-k4kr5f.avif",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
+    },
+    {
+        name: "Ridhi Singh",
+        img: "b2febd53-eb2c-4047-8d95-2f8e1156e3a3-1slpzi.avif",
+        designation: "",
+        github: "https://github.com/Ridhi7595",
+        instagram: "https://www.instagram.com/just_ridhii?igsh=MTdnb2I4a3RucHBheg==",
+        facebook: "https://www.facebook.com/share/1nbzZRP6kgoKNteW/?mibextid=qi2Omg",
+        twitter: "",
+        linkedin: "http://www.linkedin.com/in/ridhisingh7595"
+    },
+    {
+        name: "Pritanshu Samanta",
+        img: "e5abe51a-f362-43a8-bee5-f3039560e449-r5kxsq.avif",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
+    },
+    {
+        name: "Debanwesha Bandhu",
+        img: "730fc9a6-d052-4eb4-a9da-067536e8459e-yu9als.avif",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
+    },
+    {
+        name: "Debanjana Jha",
+        img: "",
+        designation: "",
+        github: "https://github.com/debanjanajha",
+        instagram: "https://www.instagram.com/just_ridhii?igsh=MTdnb2I4a3RucHBheg==",
+        facebook: "",
+        twitter: "",
+        linkedin: "https://www.linkedin.com/in/debanjana-jha-a524b1258/"
+    },
+    {
+        name: "Sulagna Hore",
+        img: "",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
+    },
+    {
+        name: "Debasmita Goswami",
+        img: "",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
+    },
+    {
+        name: "Abhraneel Karmakar",
+        img: "eb10e64c-7938-41d2-a44b-fb082052da23-fgq1kk.avif",
+        designation: "",
+        github: "https://github.com/abhraneel2004/",
+        instagram: "https://www.instagram.com/abhraneel.karmakar/",
+        facebook: "https://www.facebook.com/profile.php?id=100081850506762",
+        twitter: "",
+        linkedin: "https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/"
+    },
+]
+
 export const DesignTeam: Team[] = [
     {
         name: "Abhraneel Karmakar",
         img: "eb10e64c-7938-41d2-a44b-fb082052da23-fgq1kk.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/abhraneel2004/",
         instagram: "https://www.instagram.com/abhraneel.karmakar/",
         facebook: "https://www.facebook.com/profile.php?id=100081850506762",
-        twitter: "#",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/"
     },
     {
         name: "Neelakshi Das",
         img: "a95669f4-217c-44be-b87c-770fc148d906-lm78to.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/bluecoder2003",
         instagram: "https://www.instagram.com/_crimson_2003/",
-        facebook: "#",
+        facebook: "",
         twitter: "https://twitter.com/bluecoder2003",
         linkedin: "https://www.linkedin.com/in/neelakshi-das-b0ba68244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         name: "Sangneel Deb",
         img: "a83a7e75-9742-4ab2-9f86-7c5f9cb99f15-x0bzqd.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/lord-cyclone100",
         instagram: "https://www.instagram.com/lord_cyclone100/",
-        facebook: "#",
-        twitter: "#",
+        facebook: "",
+        twitter: "",
         linkedin: "http://www.linkedin.com/in/sangneel-deb-0b326028a"
     },
     {
@@ -344,41 +344,41 @@ export const DesignTeam: Team[] = [
     {
         name: "Surendranath Chakraborty",
         img: "b2acb65b-246d-4c7c-8b2d-dd207d47874a-9hpfvj.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/surendranath-chakraborty",
         instagram: "https://www.instagram.com/iamsayan04/",
         facebook: "https://www.facebook.com/profile.php?id=100086521668449",
-        twitter: "#",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/surendranath-chakraborty-740925260/"
     },
     {
         name: "Sankha Subhra Chakraborty",
         img: "2c7a528f-494d-4ca2-87fb-6fd1c402a635-f1kym4.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
     }, 
     {
         name: "Moulendu Chowley",
-        img: "#",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
+        img: "",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
     },
     {
         name: "Sukrit Deb",
         img: "0da3e396-de84-4eab-996c-d9c7e004d037-eqmuh8.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/sukritdeb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
 ]
@@ -387,27 +387,27 @@ export const PhotographyTeam: Team[] = [
     {
         name: "Gourav Kumar Shaw",
         img: "60b38172-7d44-4671-8f1e-2c96b8220ce4-1ii7.avif",
-        designation: "#",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#"
+        designation: "",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: ""
     },
     {
         name: "Debmalya Sadhukhan",
         img: "f86b5121-fcad-46ae-88f4-cfc9284c1e0c-8xng8v.avif",
-        designation: "#",
-        github: "#",
+        designation: "",
+        github: "",
         instagram: "https://www.instagram.com/sir_debmalooo/?hl=en",
         facebook: "https://www.facebook.com/debmalya.sadhukhan.92",
-        twitter: "#",
+        twitter: "",
         linkedin: "http://www.linkedin.com/in/debmalooo"
     },
     {
         name: "Debadrita Mondal",
-        img: "#",
-        designation: "#",
+        img: "",
+        designation: "",
         github: "https://github.com/mondaldebadrita03",
         instagram: "https://www.instagram.com/mondaldebadrita_?igsh=MmVkOGlva202amh6",
         facebook: "https://www.facebook.com/mondaldebadrita03?mibextid=ZbWKwL",
@@ -417,7 +417,7 @@ export const PhotographyTeam: Team[] = [
     {
         name: "Aritra Hui",
         img: "b4112519-5804-4445-9adf-b8d43429505d-nb4nn9.avif",
-        designation: "#",
+        designation: "",
         github: "https://github.com/aritra0342",
         instagram: "https://www.instagram.com/void_0342?igsh=aGdrYW5mdXU2cnZn",
         facebook: "https://www.facebook.com/yoursoul0342?mibextid=ZbWKwL",
@@ -429,13 +429,13 @@ export const PhotographyTeam: Team[] = [
 export const Conveners= [
     {
         name: "Deepesh Soni",
-        img: "#",
+        img: "",
         tenure: "2018-2019",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: "",
         events: [
             {
                 event1: "TechQuisitive Season 1",
@@ -446,11 +446,11 @@ export const Conveners= [
         name: "Abhishek Singh",
         img: "c0f5e0a5-2e0e-4b6d-8c4a-0b4b7a8b6f2b-1q5z5i.avif",
         tenure: "2019-2021",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: "",
         events: [
             {
                 event1: "TechQuisitive Season 2 & 3"
@@ -467,11 +467,11 @@ export const Conveners= [
         name: "Prasun Kumar Mondal",
         img: "87d3cbda-e68a-413f-891b-e5ce04fd14a9-g7lgab.avif",
         tenure: "2021-2023",
-        github: "#",
-        instagram: "#",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "#",
+        github: "",
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        linkedin: "",
         events: [
             {
                 event1: "TechQuisitive Season 4"
@@ -504,11 +504,11 @@ export const PreviousTeam1 = [
     },
     {
         name: "Debdeep Maitra",
-        img: "#"
+        img: ""
     },
     {
         name: "Arnab Chatterjee",
-        img: "#"
+        img: ""
     },
     {
         name: "Irshit Mukherjee",
@@ -531,66 +531,66 @@ export const PreviousTeam2 = [
     },
     {
         name: "Mayukh Sasmal",
-        img: "#"
+        img: ""
     },
     {
         name: "Debdut Goswami",
-        img: "#"
+        img: ""
     },
     {
         name: "Sandipan",
-        img: "#"
+        img: ""
     },
     {
         name: "Sayan Kundu",
-        img: "#"
+        img: ""
     },
     {
         name: " Trisha",
-        img: "#"
+        img: ""
     },
     {
         name: "Riddhi",
-        img: "#"
+        img: ""
     },
     {
         name: "Akash Munshi",
-        img: "#"
+        img: ""
     },
     {
         name: "Abhinav Jain",
-        img: "#"
+        img: ""
     },
     {
         name: "Ankit Saha",
-        img: "#"
+        img: ""
     }
 ]
 
 export const PreviousTeam3 = [
     {
         name: "Deepesh Soni",
-        img: "#"
+        img: ""
     },
     {
-        name: "#",
-        img: "#"
+        name: "",
+        img: ""
     },
     {
-        name: "#",
-        img: "#"
+        name: "",
+        img: ""
     },
     {
-        name: "#",
-        img: "#"
+        name: "",
+        img: ""
     },
     {
-        name: "#",
-        img: "#"
+        name: "",
+        img: ""
     },
     {
-        name: "#",
-        img: "#"
+        name: "",
+        img: ""
     }
 ]
 
