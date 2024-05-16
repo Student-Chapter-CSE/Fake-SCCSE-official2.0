@@ -49,7 +49,7 @@ const Sections: React.FC<SectionsProps> = ({
   return (
     <>
       <div className='w-full flex justify-center'>
-        <div className='w-[80%] border-b-2 my-0 pl-0 border-black'>
+        <div className='w-[80%] border-b-2 border-black'>
           <HeaderTitle
             title={title}
             subtitle={subtitle}
@@ -99,13 +99,16 @@ const IndexPage = () => {
       {/* Image Section and Text Section */}
       <div className="w-full pt-24 flex justify-center">
         <div>
-          <div className=' text-mlarge font-anton font-light text-primary_text flex justify-end phone:text-large'>
-            EVENTS
+          {/* */}
+          <div className='w-full  h-fit flex items-end justify-end'>
+            <div className='w-[60rem]  h-[10rem]    flex items-end relative '>
+              <Image src='/icons/events.svg' alt='' fill />
+            </div> 
           </div>
           <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex justify-end phone:text-small">
             Indomitable and Captivating
           </div>
-          <div className='sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-[18rem] phone:h-[8rem] relative'>
+          <div className=' mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-[18rem] phone:h-[8rem] relative'>
             <Image src="" alt="" fill />
           </div>
           <div className="text-end phone:text-small">

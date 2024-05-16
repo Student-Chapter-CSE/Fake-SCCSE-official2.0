@@ -35,10 +35,17 @@ const Recent: React.FC = () => {
             <Card width={300} height={400} />
             <Card width={300} height={400} />
           </div>
-          <div className="flex justify-end w-full mt-24">
+          {/* <div className="flex justify-end w-full mt-24">
             <Link href="/events" passHref>
               <Button title="VIEW ALL" />
             </Link>
+          </div> */}
+          <div className="w-[64.4rem] h-fit ">
+              <div className="flex justify-end w-full mt-24">
+                <Link href="/events" passHref>
+                  <Button title="VIEW ALL" />
+                </Link>
+              </div> 
           </div>
         </div>
       </div>
@@ -49,25 +56,25 @@ const Recent: React.FC = () => {
 export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
   console.log(gap)
   return (
-    <div className={`h-fit flex flex-col md:flex-row items-end md:items-${align} justify-center  gap-5`}>
-      <div className={`flex flex-col w-full h-[20rem] items-end justify-between flex-grow ${gap}  `}>
-        <h1 className="w-[30rem] text-[1.5rem] justify-end flex text-primary_text font-montserrat">
+    <div className={`h-fit xl:w-full  flex flex-col md:flex-row lg:items-start phone:items-center  gap-5`}>
+      <div className={` xl:h-[45rem] mxl:h-[40rem]   lg:ml-0 flex flex-col lg:w-full  sm:w-[20rem] md:h-[10rem] lg:h-[20rem] sm:h-fit md:items-end sm:items-end justify-between  `}>
+        <h1 className=" lg:text-[1.1rem] xl:text-[3rem] mxl:text-[2.5rem] md:text-[.9rem] sm:text-[0.7rem] justify-end flex text-primary_text font-montserrat">
           {subText}
         </h1>
         <div>
-        <p className="w-[30rem]  justify-end flex text-primary_text font-anton text-[3.4rem] ">
+        <p className="md:text-[1.1rem] xl:text-[6rem] mxl:text-[5.5rem] justify-end flex text-primary_text font-anton lg:text-[3.4rem] sm:text-[1.7rem]">
           {Text}
         </p>  
         </div>
       </div>
-      <div className="relative w-[40rem] h-[20rem]">
+      <div className="relative xl:w-[80rem] mxl:w-[75rem] mxl:h-[40rem] xl:h-[45rem] md:h-[22rem] mphone:h-[10rem]  lg:w-[40rem] lg:h-[20rem] sm:w-[20rem] sm:h-[15rem] lphone:w-[15rem] lphone:h-[15rem] phone:w-[10rem] phone:h-[7rem]">
       <Image src={`https://utfs.io/f/${img}`} alt="HOD" fill />
       </div>
       {/*Replace this Frame100.png with the recent activities picture */}
-      <div className=" flex flex-col w-[20rem] ">
-        <h1 className="text-primary_text font-anton text-[2.4rem] ">{month}</h1>
+      <div className=" flex xl:h-[45rem] xl:mr-10  flex-col lphone:w-[15rem] phone:w-[10rem] md:w-fit md:h-[10rem] phone:items-end md:items-start md:text-start phone:text-end h-full">
+        <h1 className="lg:w-[15rem]  xl:text-[6rem] mxl:text-[5rem]  text-primary_text font-anton lg:text-[2.4rem]  sm:text-[1.2rem] ">{month}</h1>
         <hr className="border-b-[0.5px] border-black w-[44px]" />
-        <h1 className=" text-secondary_orange font-anton text-[3rem] ">{date} th</h1>
+        <h1 className="lg:w-[15rem]  xl:text-[6.8rem] mxl:text-[5rem] text-secondary_orange font-anton lg:text-[3rem]   sm:text-[1.7rem]">{date} th</h1>
       </div>
     </div>
   );

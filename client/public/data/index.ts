@@ -431,6 +431,7 @@ export const Conveners= [
         name: "Deepesh Soni",
         img: "",
         tenure: "2018-2019",
+        designation: "",
         github: "",
         instagram: "",
         facebook: "",
@@ -446,6 +447,7 @@ export const Conveners= [
         name: "Abhishek Singh",
         img: "c0f5e0a5-2e0e-4b6d-8c4a-0b4b7a8b6f2b-1q5z5i.avif",
         tenure: "2019-2021",
+        designation: "",
         github: "",
         instagram: "",
         facebook: "",
@@ -467,6 +469,7 @@ export const Conveners= [
         name: "Prasun Kumar Mondal",
         img: "87d3cbda-e68a-413f-891b-e5ce04fd14a9-g7lgab.avif",
         tenure: "2021-2023",
+        designation: "",
         github: "",
         instagram: "",
         facebook: "",
@@ -620,7 +623,7 @@ export const images = [
 
 export const EVENTS = {
     'techquisitive5':{
-        img: "b60087b4-9abb-4d55-8804-10ecb4ed05ba-eij9ie.avif",
+        img: "249ca6a2-85ff-480e-808e-88daf94bc77a-1lbr6z.avif",
         bannerImgUrl: "",
         gap:"gap-24",
         heading: 'TechQuisitive',
@@ -691,7 +694,7 @@ export const EVENTS = {
         ],
     },
     'interhacktive0': {
-        img: "ccb1b2c7-4a2b-4fe3-a388-420f4c8d0b63-jks562.avif",
+        img: "d4258cfb-55f0-4241-ab7d-d50c2fa97396-j97y9g.avif",
         bannerImgUrl: "f70925be-ea05-46c6-a0a7-fe37e0863fbf-1nr3do.avif",
         heading: 'InterHacktive',
         gap:"gap-4",
@@ -778,8 +781,8 @@ export const eventsData = [
         category: 'past'
     },
     {
-        img: "adf52a1d-d030-4238-b3e3-77852ad38cb7-eij9if.avif",
-        heading: 'Techquisitive 4.0',
+        img: "249ca6a2-85ff-480e-808e-88daf94bc77a-1lbr6z.avif",
+        heading: 'Techquisitive 5.0',
         gap:"gap-[]",
         content: 'Intra College Tech Quiz',
         date: new Date(),

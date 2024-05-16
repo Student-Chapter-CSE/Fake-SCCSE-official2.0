@@ -39,7 +39,11 @@ const config: Config = {
       screens:{
         'desktop':'1360px',
         'phone':'320px',
-        'lphone':'425px'
+        'mphone':'375px',
+        'lphone':'425px',
+        'lg':'1075px',
+        'xl':'2560px',
+        'mxl':'1780px',
       },
     },
   },
