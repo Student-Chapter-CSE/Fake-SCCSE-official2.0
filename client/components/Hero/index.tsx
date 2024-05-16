@@ -1,6 +1,7 @@
 import React from "react";
 import RoundMarquee from "/public/roundmarquee.svg"
 import Maruqee from "../Marquee";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
     
@@ -22,7 +23,16 @@ const Hero: React.FC = () => {
                             </div>
                             <RoundMarquee className="animate-spin-slow flex items-end w-20 lg:hidden" />
                         </div>
-                        <div className="lg:w-[35vw] w-full lg:h-[45vh] h-[30vh] border border-red-400"></div>
+                        <div className="lg:w-[35vw] w-full lg:h-[45vh] h-[30vh] relative">
+                        <Image 
+                        priority 
+                        src="https://utfs.io/f/0dd8e831-2dec-4a9f-90a8-74edc70af0d9-y6aw6c.jpg" 
+                        fill 
+                        alt="SC Team image"
+                        className="filter saturate-50"
+                        ></Image>
+                        <div className="bg-secondary_orange/40 h-[40%] absolute z-10 w-full top-[50%] -translate-y-[50%]"></div>
+                        </div>
                     </div>
                     <h1 data-scroll data-scroll-speed="-0.2" className="text-[11vmax] md:text-[16vmax] font-anton text-primary_text leading-[0.9] tracking-wider text-right text-nowrap">IEI SC CSE</h1>
                 </div>

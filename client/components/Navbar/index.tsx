@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
   })
 
   return (
-    <div id="navbar" className="h-[76px] w-full border-b-[0.5px] border-primary_text fixed bg-background z-10 py-2 px-4 duration-[600ms]">
+    <div id="navbar" className="h-[76px] w-full border-b-[0.5px] border-primary_text fixed z-50 bg-background py-2 px-4 duration-[600ms]">
       <div className="hidden md:flex justify-between h-full items-center">
         {/*need to add the hamburger here*/}
         <SClogosvg />
