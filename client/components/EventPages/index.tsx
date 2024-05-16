@@ -45,7 +45,7 @@ const Sections: React.FC<SectionsProps> = ({
     const filtered = eventsData.filter((item) => item.category.toLowerCase() === title.toLowerCase());
     setFilteredData(filtered);
   }, [title]);
-
+  //w-full flex flex-col justify-end  sm:justify-center gap-[10rem] sm:items-center
   return (
     <>
       <div className='w-full flex justify-center'>
@@ -63,11 +63,13 @@ const Sections: React.FC<SectionsProps> = ({
       </div>
       <br />
       <br />
-      <div className='w-full flex flex-col sm:justify-center gap-[10rem] sm:items-center'>
+      <div className='w-full flex flex-col lg:items-end sm:items-center gap-[10rem]'>
         {filteredData.map((item, index) => {
           const dateObj = new Date(item.date);
+          console.log(dateObj);
+          
           const day = String(dateObj.getUTCDate()).padStart(2, '0');
-          const month = String(dateObj.getUTCMonth() + 1).padStart(2, '0'); // Adding 1 since getUTCMonth returns 0-indexed month
+          const month = String(dateObj.toString().split(' ')[1]);
           const year = String(dateObj.getUTCFullYear());
 
           return (
@@ -93,11 +95,11 @@ const Sections: React.FC<SectionsProps> = ({
 
 const IndexPage = () => {
   return (
-    <div className="relative w-full h-fit bg-background">
+    <div className="relative w-full h-fit bg-background ">
       {/* Image Section and Text Section */}
       <div className="w-full pt-24 flex justify-center">
         <div>
-          <div className='text-mlarge font-anton font-light text-primary_text flex justify-end phone:text-large'>
+          <div className=' text-mlarge font-anton font-light text-primary_text flex justify-end phone:text-large'>
             EVENTS
           </div>
           <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex justify-end phone:text-small">

@@ -49,25 +49,25 @@ const Recent: React.FC = () => {
 export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
   console.log(gap)
   return (
-    <div className={`flex flex-col md:flex-row items-center md:items-${align} justify-center  gap-5`}>
-      <div className={`flex flex-col w-full h-full flex-grow ${gap}  bg-red-400 `}>
-        <div>
-        <h1 className="text-primary_text font-montserrat">
+    <div className={`h-fit flex flex-col md:flex-row items-end md:items-${align} justify-center  gap-5`}>
+      <div className={`flex flex-col w-full h-[20rem] items-end justify-between flex-grow ${gap}  `}>
+        <h1 className="w-[30rem] text-[1.5rem] justify-end flex text-primary_text font-montserrat">
           {subText}
         </h1>
-        </div>
         <div>
-        <p className="text-primary_text font-anton text-[2rem] ">
+        <p className="w-[30rem]  justify-end flex text-primary_text font-anton text-[3.4rem] ">
           {Text}
         </p>  
         </div>
       </div>
-      <Image src={`https://utfs.io/f/${img}`} alt="HOD" width={width} height={height} />
+      <div className="relative w-[40rem] h-[20rem]">
+      <Image src={`https://utfs.io/f/${img}`} alt="HOD" fill />
+      </div>
       {/*Replace this Frame100.png with the recent activities picture */}
-      <div className=" flex flex-col">
-        <h1 className="text-primary_text font-anton text-[2rem] ">{month}</h1>
+      <div className=" flex flex-col w-[20rem] ">
+        <h1 className="text-primary_text font-anton text-[2.4rem] ">{month}</h1>
         <hr className="border-b-[0.5px] border-black w-[44px]" />
-        <h1 className=" text-secondary_orange font-anton text-[2rem] ">{date} th</h1>
+        <h1 className=" text-secondary_orange font-anton text-[3rem] ">{date} th</h1>
       </div>
     </div>
   );
