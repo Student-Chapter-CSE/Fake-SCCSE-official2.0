@@ -8,6 +8,7 @@ import { Card } from '../RecentActivities';
 import { eventsData } from '@/public/data';
 import { motion } from 'framer-motion';
 
+
 interface EventData {
   category: string;
   date: string;
@@ -31,6 +32,8 @@ interface SectionsProps extends HeaderTitleProps {
   img?: string;
 }
 
+
+
 const Sections: React.FC<SectionsProps> = ({
   title,
   subtitle,
@@ -49,13 +52,13 @@ const Sections: React.FC<SectionsProps> = ({
   year,
   img
 }) => {
-  const [filteredData, setFilteredData] = useState<EventData[]>([]);
+  const [filteredData, setFilteredData] = useState<any[]>([]);
+
 
   useEffect(() => {
     const filtered = eventsData.filter((item) => item.category.toLowerCase() === title.toLowerCase());
     setFilteredData(filtered);
   }, [title]);
-
   return (
     <>
       <div className='w-full flex justify-center'>
@@ -72,14 +75,14 @@ const Sections: React.FC<SectionsProps> = ({
         </div>
       </div>
       <br />
-      <div className='w-full flex flex-col lg:items-end sm:items-center gap-[10rem]'>
+      <div className='w-full flex flex-col lg:items-end phone:items-center gap-[10rem]'>
         {filteredData.map((item, index) => {
+          
           const dateObj = new Date(item.date);
-
           const day = String(dateObj.getUTCDate()).padStart(2, '0');
           const month = dateObj.toLocaleString('default', { month: 'short' });
           const year = String(dateObj.getUTCFullYear());
-
+          //console.log(item);
           return (
             <Card
               key={index}
@@ -107,7 +110,7 @@ const IndexPage: React.FC = () => {
       {/* Image Section and Text Section */}
       <div className="w-full pt-24 flex justify-center">
         <div>
-          <motion.div
+        <motion.div
             initial={{ x: '-100px', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ type: 'spring', duration: 1.5, delay: 0.8 }}
@@ -120,7 +123,7 @@ const IndexPage: React.FC = () => {
           <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex lg:justify-end phone:justify-center phone:text-small">
             Indomitable and Captivating
           </div>
-          <div className='mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-[18rem] phone:h-[8rem] relative'>
+          <div className='mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-full phone:h-[8rem] relative'>
             <Image src="" alt="" fill />
           </div>
           <div className="text-end phone:text-small">
