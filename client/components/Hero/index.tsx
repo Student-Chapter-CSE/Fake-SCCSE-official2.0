@@ -1,11 +1,23 @@
+"use client"
 import React from "react";
 import RoundMarquee from "/public/roundmarquee.svg"
 import Maruqee from "../Marquee";
 import Image from "next/image";
+import ImageLoader from "../ImageLoader";
+import { useEffect } from "react";
 
 
 const bg = "0dd8e831-2dec-4a9f-90a8-74edc70af0d9-y6aw6c.jpg"
 const Hero: React.FC = () => {
+    useEffect(() => {
+   
+        (
+          async () => {
+            const LocomotiveScroll = (await import('locomotive-scroll')).default;
+            const locomotiveScroll = new LocomotiveScroll();
+          }
+        )()
+    }, [])
     
     return (
         <section data-scroll-container id="hero" className="relative w-full h-[100svh] flex flex-col items-center lg:items-end text-body pt-32 md:pt-48 lg:pt-24 px-10 text-right overflow-hidden">
@@ -25,8 +37,9 @@ const Hero: React.FC = () => {
                             </div>
                             <RoundMarquee className="animate-spin-slow flex items-end w-20 lg:hidden" />
                         </div>
-                        <div className="lg:w-[35vw] w-full lg:h-[45vh] h-[30vh]">
-                            <Image src={`https://utfs.io/f/${bg}`} width={600} height={300} alt="team"></Image>
+                        <div className=" w-fit relative">
+                            <Image priority src={`https://utfs.io/f/${bg}`} width={500} height={300} alt="team" className="filter saturate-[.1]"></Image>
+                            <div className="backdrop-saturate-[10] mix-blend-soft-light bg-white/10 absolute h-[50%] w-[200%] top-[55%] -translate-y-[50%] -left-20"></div>
                         </div>
                     </div>
                     <h1 data-scroll data-scroll-speed="-0.2" className="text-[11vmax] md:text-[16vmax] font-anton text-primary_text leading-[0.9] tracking-wider text-right text-nowrap">IEI SC CSE</h1>

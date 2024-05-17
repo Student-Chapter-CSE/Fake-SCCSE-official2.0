@@ -1,11 +1,10 @@
 import React from "react";
-
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
-
+import Link from "next/link";
 
 interface CardProps {
   name: string;
@@ -26,59 +25,47 @@ const Card: React.FC<CardProps> = ({
   twitter,
   linkedin,
 }) => {
-    
+
   return (
     <>
-      <div className="bg-white  mt-12 flex pl-10 pt-10  justify-center items-center relative">
-        <Image src={`https://utfs.io/f/${photo}`} alt="convenor "  height={380} width={180} />
-        <div className="flex flex-col justify-between space-y-36 ">
-          <h1 className="text-orange-400 text-sm text-bold transform rotate-90 flex justify-start    ">
-            {designation}
-          </h1>
-          <div className="space-y-2 ml-4">
-            <div>
-              {facebook ? (
-                <a href={facebook}>
-                  <FaFacebook className="text-gray-400 hover:text-secondary_orange duration-200" size={22} />
-                </a>
-              ) : (
-                <FaFacebook className="text-gray-400 hover:text-secondary_orange duration-200" size={22} />
-              )}
-            </div>
+      <div className="bg-white pl-8 pr-12 py-6 mt-12 flex flex-col justify-center items-start gap-2 w-fit">
+        <div className="flex h-[220px] w-fit">
+          <div className="relative">
+            <Image
+              src={`https://utfs.io/f/${photo}`}
+              alt="convenor"
+              height={200}
+              width={150}
+              quality={20}
+            />
 
-            <div>
-              {instagram ? (
-                <a href={instagram}>
-                  <IoLogoInstagram className="text-gray-400 hover:text-secondary_orange duration-200" size={22} />
-                </a>
-              ) : (
-                <IoLogoInstagram className="text-gray-400 hover:text-secondary_orange duration-200" size={22} />
-              )}
-            </div>
+            <div className="absolute flex flex-col gap-2 h-full top-0 right-0 translate-x-[100%]">
 
-            <div>
-              {twitter ? (
-                <a href={twitter}>
-                  <FaTwitter size={22} className="text-gray-400 hover:text-secondary_orange duration-200" />
-                </a>
-              ) : (
-                <FaTwitter size={22} className="text-gray-400 hover:text-secondary_orange duration-200" />
-              )}
-            </div>
+              <div className="flex flex-col gap-2 px-2 ">
+                <Link href={facebook.length>0?facebook:"#"} className="w-fit text-gray-400 hover:text-secondary_orange duration-300">
+                  <FaFacebook size={16} />
+                </Link>
 
-            <div>
-              {linkedin ? (
-                <a href={linkedin}>
-                  <FaLinkedin size={22} className="text-gray-400 hover:text-secondary_orange duration-200" />
-                </a>
-              ) : (
-                <FaLinkedin size={22} className="text-gray-400 hover:text-secondary_orange duration-200" />
-              )}
+                <Link href={instagram.length>0?instagram:"#"} className="w-fit text-gray-400 hover:text-secondary_orange duration-300">
+                  <IoLogoInstagram size={16} />
+                </Link>
+
+                <Link href={twitter.length>0?twitter:"#"} className="w-fit text-gray-400 hover:text-secondary_orange duration-300">
+                  <FaTwitter size={16} />
+                </Link>
+
+                <Link href={linkedin.length>0?linkedin:"#"} className="w-fit text-gray-400 hover:text-secondary_orange duration-300">
+                  <FaLinkedin size={16} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0">
-          <h1 className="text-l ">{name}</h1>
+        <div className="">
+          <h1 className="text-orange-400 font-bold">
+            {designation}
+          </h1>
+          <h1 className="">{name}</h1>
         </div>
       </div>
     </>

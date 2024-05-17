@@ -12,16 +12,16 @@ interface Team {
 }
 
 export const ManagementTeam: Team[] = [
-    {
-        name: "Aratrik Bandyopadhyay",
-        img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
-        designation: "Convener",
-        github: "https://github.com/Aratrik123",
-        instagram: "https://www.instagram.com/in_dealing_dead_03/",
-        facebook: "https://www.facebook.com",
-        twitter: "https://twitter.com",
-        linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
-    },
+    // {
+    //     name: "Aratrik Bandyopadhyay",
+    //     img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
+    //     designation: "Convener",
+    //     github: "https://github.com/Aratrik123",
+    //     instagram: "https://www.instagram.com/in_dealing_dead_03/",
+    //     facebook: "https://www.facebook.com",
+    //     twitter: "https://twitter.com",
+    //     linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
+    // },
     {
         name: "Sayan Mukherjee",
         img: "e2db74fc-9fee-4470-8ec9-9aff789e95aa-1t0u3c.avif",
@@ -113,7 +113,7 @@ export const ManagementTeam: Team[] = [
         linkedin: "https://www.linkedin.com/in/heya-banerjee-963801280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
-        name: "Suvoneel Basu RoyChowdhury",
+        name: "Suvoneel Basu R.C.",
         img: "3f36f0bf-ce24-4fbf-8a2c-5cc84fd74871-ooj9s7.avif",
         designation: "Design Associate",
         github: "https://github.com/SuvoneelBasu",
@@ -352,7 +352,7 @@ export const DesignTeam: Team[] = [
         linkedin: "https://www.linkedin.com/in/surendranath-chakraborty-740925260/"
     },
     {
-        name: "Sankha Subhra Chakraborty",
+        name: "Sankha S. Chakraborty",
         img: "2c7a528f-494d-4ca2-87fb-6fd1c402a635-f1kym4.avif",
         designation: "#",
         github: "#",
