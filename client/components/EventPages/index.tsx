@@ -6,7 +6,9 @@ import HeaderTitle from "../HeaderTitle";
 import { HeaderTitleProps } from "../HeaderTitle";
 import { Card } from "../RecentActivities";
 import { eventsData } from "@/public/data";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 
 interface EventData {
   category: string;
@@ -102,6 +104,15 @@ const Sections: React.FC<SectionsProps> = ({
 };
 
 const IndexPage: React.FC = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.1 });
+  const [hasAnimated, setHasAnimated] = useState(false);
+  useEffect(() => {
+    if (inView && !hasAnimated) {
+      controls.start("visible");
+      setHasAnimated(true);
+    }
+  }, [controls, inView]);
   return (
     <div className="relative w-full h-fit bg-background">
       {/* Image Section and Text Section */}
@@ -120,9 +131,17 @@ const IndexPage: React.FC = () => {
           <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex lg:justify-end phone:justify-center phone:text-small">
             Indomitable and Captivating
           </div>
-          <div className="mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-full phone:h-[8rem] relative">
-            <Image src="" alt="" fill />
-          </div>
+          <motion.div
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={{
+            visible: { opacity: 1, scale: 1, transition: {delay:2.5, duration: 0.5 } },
+            hidden: { opacity: 0, scale: 0.8 },
+          }}
+          className="mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[30rem] xl:w-[60rem] xl:h-[30rem] phone:w-full phone:h-[8rem] relative">
+            <Image src="/icons/collage1.avif" alt="" fill />
+          </motion.div>
           <div className="text-end phone:text-small">
             <div>Alluring and Charming. Student Chapter CSE is a</div>
             <div>Brand</div>
