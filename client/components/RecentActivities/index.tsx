@@ -20,7 +20,7 @@ export interface CardProps {
 
 const Recent: React.FC = () => {
   return (
-    <div id="events" className="flex flex-col w-full items-center">
+    <div id="events" className=" w-full flex flex-col items-center">
       <Headertitle
         title="RECENT"
         subtitle="ACTIVITIES"
@@ -40,7 +40,7 @@ const Recent: React.FC = () => {
               <Button title="VIEW ALL" />
             </Link>
           </div> */}
-          <div className="w-[64.4rem] h-fit ">
+          <div className=" h-fit ">
               <div className="flex justify-end w-full mt-24">
                 <Link href="/events" passHref>
                   <Button title="VIEW ALL" />
@@ -56,7 +56,7 @@ const Recent: React.FC = () => {
 export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
   console.log(gap)
   return (
-    <div className={`h-fit xl:w-full  flex flex-col md:flex-row lg:items-start phone:items-center  gap-5`}>
+    <div className={`w-fit h-fit xl:w-full  flex flex-col md:flex-row lg:items-start phone:items-center  gap-5`}>
       <div className={` xl:h-[45rem] mxl:h-[40rem]   lg:ml-0 flex flex-col lg:w-full  sm:w-[20rem] md:h-[10rem] lg:h-[20rem] sm:h-fit md:items-end sm:items-end justify-between  `}>
         <h1 className=" lg:text-[1.1rem] xl:text-[3rem] mxl:text-[2.5rem] md:text-[.9rem] sm:text-[0.7rem] justify-end flex text-primary_text font-montserrat">
           {subText}
