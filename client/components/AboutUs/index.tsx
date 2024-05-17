@@ -16,6 +16,9 @@ const AboutUs: React.FC = () => {
           subtitle="US"
           content="We are a group of students from (SCCSE)"
           subtitleFontSize="2.5rem"
+          margin="my-36"
+          padding="pl-12"
+          
         />
       </div>
       <div className="flex flex-col justify-center items-center gap-16">

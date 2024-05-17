@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import Marqueeelement from "@/public/roundMarqueeElement.svg"
 
 const elements = [
-    "IEI Students' Chapter",
-    "IEI Students' Chapter",
-    "IEI Students' Chapter",
-    "IEI Students' Chapter",
-    "IEI Students' Chapter",
-    "IEI Students' Chapter",
-    "IEI Students' Chapter",
-    "IEI Students' Chapter",
-    "IEI Students' Chapter",
+    "IEI Students' Chapter CSE",
+    "IEI Students' Chapter CSE",
+    "IEI Students' Chapter CSE",
+    "IEI Students' Chapter CSE",
+    "IEI Students' Chapter CSE",
+    "IEI Students' Chapter CSE",
+    "IEI Students' Chapter CSE",
+    "IEI Students' Chapter CSE",
+    "IEI Students' Chapter CSE",
 ]
 
 const Maruqee: React.FC = () => {

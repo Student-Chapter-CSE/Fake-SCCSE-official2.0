@@ -4,8 +4,8 @@ import AOTsvg from "/public/whitelogo.svg";
 import Link from "next/link";
 
 const LINKS = [
-  { name: "Teams", href: "#" },
-  { name: "Events", href: "#" },
+  { name: "Teams", href: "/teams" },
+  { name: "Events", href: "/events" },
   { name: "Join Us", href: "#" },
 ];
 

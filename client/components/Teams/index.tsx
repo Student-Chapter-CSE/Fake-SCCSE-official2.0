@@ -20,19 +20,19 @@ import {
   PhotographyTeam,
 } from "@/public/data/index";
 import TeamsPhotoAnimation from "../TeamsPhotoAnimation";
-
+const coreteam="1420ea77-8344-4c9c-a4d2-9518434b5276-y6aw6c.avif";
 
 
 const Index = () => {
   return (
     <div className="bg-background text-sm flex flex-col items-end overflow-hidden">
-      <div className="flex flex-col md:flex-row  md:justify-end gap-40 md:gap-4 pt-24 md:pt-32 w-[80%] lg:w-[70%] pr-24">
+      <div className="flex flex-col md:flex-row  md:justify-end gap-40 md:gap-4 pt-24 md:pt-32 w-[80%] lg:w-[70%] pr-24 ">
         <div className="flex overflow-hidden ">
           <TeamsPhotoAnimation />
         </div>
 
         <div className="font-light text-large text-primary_text text-end flex justify-center">
-          <div className="flex flex-col pt-20 w-[25vmax] justify-end">
+          <div className="flex flex-col pt-20 w-[25vmax]">
             <Team_header />
 
             <div className="font-normal text-[.9rem]  tracking-wider h-fit ">
@@ -47,6 +47,8 @@ const Index = () => {
         subtitle="TEAM"
         content="The backbone,The undisputable dominators"
         subtitleFontSize="1.5rem"
+        margin="my-36"
+        padding="pl-12"
       />
 
       <div className="flex flex-col-reverse sm:flex-row  items-end w-[80%] lg:w-[70%] pr-24">
@@ -60,7 +62,7 @@ const Index = () => {
           </div>
         </div>
         <Image
-          src="/Frame 100.png"
+          src={`https://utfs.io/f/${coreteam}`}
           alt="management team"
           height={200}
           width={400}
@@ -128,6 +130,8 @@ const Index = () => {
         subtitle="TEAM"
         content="Aestheticism,beauty and gracefulness"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+        padding="pl-12"
       />
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {DesignTeam.map((member, index) => (
@@ -143,6 +147,9 @@ const Index = () => {
         subtitle="TEAM"
         content="Charisma,Perception and Ingeniousness"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+          padding="pl-12"
+
       />
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {TechTeam.map((member, index) => (
@@ -157,6 +164,8 @@ const Index = () => {
         subtitle="TEAM"
         content="Pros at the art of mind manipulation"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+          padding="pl-12"
       />
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {PrTeam.map((member, index) => (
@@ -172,6 +181,8 @@ const Index = () => {
         subtitle="TEAM"
         content="Click,Set and Flash"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+          padding="pl-12"
       />
 
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
@@ -190,6 +201,8 @@ const Index = () => {
         subtitle=""
         content="Community influencers"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+          padding="pl-12"
       />
 
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
