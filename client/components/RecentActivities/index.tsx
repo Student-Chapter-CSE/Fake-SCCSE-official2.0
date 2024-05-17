@@ -65,8 +65,8 @@ const Recent: React.FC = () => {
               <Button title="VIEW ALL" />
             </Link>
           </div> */}
-          <div className=" h-fit  ">
-              <div className="flex justify-end  w-full mt-24 pr-0 md:pr-48">
+          <div className=" h-fit lg:w-[51.8rem] md:w-[43.2rem]">
+              <div className="flex  justify-end w-full  ">
                 <Link href="/events" passHref>
                   <Button title="VIEW ALL" />
                 </Link>
@@ -82,13 +82,13 @@ export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300
 
   
   return (
-    <div className={`w-fit h-fit xl:w-full  flex flex-col md:flex-row lg:items-start phone:items-center  gap-5`}>
-      <div className={` xl:h-[45rem] mxl:h-[40rem]   lg:ml-0 flex flex-col lg:w-full  sm:w-[20rem] md:h-[10rem] lg:h-[20rem] sm:h-fit md:items-end sm:items-end justify-between  `}>
-        <h1 className=" lg:text-[1.1rem] xl:text-[3rem] mxl:text-[2.5rem] md:text-[.9rem] sm:text-[0.7rem] justify-end flex text-primary_text font-montserrat">
+    <div className={`w-full h-full xl:w-full lg:w-[68rem] md:w-[48rem] flex flex-col items-end justify-end md:flex-row lg:items-start phone:items-center  gap-5`}>
+      <div className={` xl:h-[45rem] mxl:h-[40rem]   lg:ml-0 flex flex-col lg:w-full  sm:w-[20rem] md:h-[20rem] lg:h-[20rem] sm:h-fit md:items-end sm:items-end justify-between  `}>
+        <h1 className=" lg:text-[1.1rem] xl:text-[3rem] mxl:text-[2.5rem] md:text-[1.4rem] sm:text-[0.7rem] justify-end flex text-primary_text font-montserrat">
           {subText}
         </h1>
         <div>
-        <p className="md:text-[1.1rem] xl:text-[6rem] mxl:text-[5.5rem] justify-end flex text-primary_text font-anton lg:text-[3.4rem] sm:text-[1.7rem]">
+        <p className="md:text-[3.7rem] xl:text-[6rem] mxl:text-[5.5rem]  justify-end flex text-primary_text font-anton lg:text-[3.4rem] sm:text-[1.7rem]">
           {Text}
         </p>  
         </div>
@@ -97,7 +97,7 @@ export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300
       <Image src={`https://utfs.io/f/${img}`} alt="HOD" fill />
       </div>
       {/*Replace this Frame100.png with the recent activities picture */}
-      <div className=" flex xl:h-[45rem] xl:mr-10  flex-col lphone:w-[15rem] phone:w-[10rem] md:w-fit md:h-[10rem] phone:items-end md:items-start md:text-start phone:text-end h-full">
+      <div className=" flex xl:h-[45rem]  xl:mr-10  flex-col lphone:w-[15rem] phone:w-[10rem] md:w-fit md:h-[22rem] phone:items-end md:items-start md:text-start phone:text-end lg:h-[20rem]">
         <h1 className="lg:w-[15rem]  xl:text-[6rem] mxl:text-[5rem]  text-primary_text font-anton lg:text-[2.4rem]  sm:text-[1.2rem] ">{month}</h1>
         <hr className="border-b-[0.5px] border-black w-[44px]" />
         <h1 className="lg:w-[15rem]  xl:text-[6.8rem] mxl:text-[5rem] text-secondary_orange font-anton lg:text-[3rem]   sm:text-[1.7rem]">{date} th</h1>
