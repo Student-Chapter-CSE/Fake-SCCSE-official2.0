@@ -32,6 +32,7 @@ const config: Config = {
       fontFamily:{
         'anton':['Anton','sans-serif'],
         'montserrat':['Montserrat','sans-serif'],
+        'antonio':['Antonio','sans-serif'],
       },
       animation: {
         'spin-slow':'spin 10s linear infinite',

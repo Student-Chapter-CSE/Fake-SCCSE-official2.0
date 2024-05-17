@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import SClogosvg from "/public/sclogo.svg";
 import Link from "next/link";
+import Burger from "@/public/icons/HAMBURGER.svg";
+import Cross from "@/public/icons/Cross.svg";
 const Hamburger: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -12,35 +14,21 @@ const Hamburger: React.FC = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="fixed top-5 right-5 z-50 md:hidden"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="h-6 w-6"
-        >
+        
           {isOpen ? (
             // "X" icon
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
+            <Cross
             />
           ) : (
             //hamburger icon
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
+            <Burger
             />
           )}
-        </svg>
+        
       </button>
 
       <div
-        className={`md:hidden fixed flex flex-col bg-background items-center font-montserrat font-bold text-[2rem] text-secondary_text justify-center top-0 right-0 h-full w-[70%] z-20 transform transition-transform duration-200 ease-in-out ${
+        className={`md:hidden fixed flex flex-col bg-background items-center font-bold text-secondary_text justify-center top-0 right-0 h-full w-[70%] z-20 transform transition-transform duration-200 ease-in-out font-antonio text-[30px] ${
           isOpen ? "animate-slide-in delay-200" : "translate-x-full"
         } md:translate-x-0 md:static md:transition-none`}
       >
