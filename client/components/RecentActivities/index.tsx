@@ -2,9 +2,8 @@ import React from "react";
 import Button from "../Button";
 import Headertitle from "../HeaderTitle";
 import Image from "next/image";
-import Link from 'next/link'
-import { log } from "console";
-
+import Link from 'next/link';
+import { eventsData } from "@/public/data";
 export interface CardProps {
   width?: number;
   height?: number;
@@ -17,6 +16,9 @@ export interface CardProps {
   img?:string;
   gap?:string;
 }
+
+const recent=eventsData.filter((event)=>event.category==="recent").slice(0,2);
+
 
 const Recent: React.FC = () => {
   return (
@@ -32,16 +34,39 @@ const Recent: React.FC = () => {
       <div className="w-fit h-fit items-center justify-center">
         <div className="">
           <div className="flex flex-col gap-16">
-            <Card width={300} height={400} />
-            <Card width={300} height={400} />
+            {/* <Card width={300} height={400} />
+            <Card width={300} height={400} /> */}
+            {
+              recent.map((item, index) => {
+                const dateObj = new Date(item.date);
+                const day = String(dateObj.getUTCDate()).padStart(2, '0');
+                const month = dateObj.toLocaleString('default', { month: 'short' });
+                const year = String(dateObj.getUTCFullYear());
+                return (
+                  <Card
+                    key={index}
+                    width={300}
+                    height={400}
+                    Text={item.heading}
+                    subText={item.content}
+                    align="start"
+                    date={day}
+                    month={month}
+                    year={year}
+                    img={item.img}
+                    gap={item.gap}
+                  />
+                );
+              })
+            }
           </div>
           {/* <div className="flex justify-end w-full mt-24">
             <Link href="/events" passHref>
               <Button title="VIEW ALL" />
             </Link>
           </div> */}
-          <div className=" h-fit ">
-              <div className="flex justify-end w-full mt-24 pr-0 md:pr-48">
+          <div className=" h-fit  ">
+              <div className="flex justify-end  w-full mt-24 pr-0 md:pr-48">
                 <Link href="/events" passHref>
                   <Button title="VIEW ALL" />
                 </Link>
@@ -54,7 +79,8 @@ const Recent: React.FC = () => {
 };
 
 export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300, height = 400,subText="Some content about the event",Text="TechQuisitive 3.0",align="center" }) => {
-  console.log(gap)
+
+  
   return (
     <div className={`w-fit h-fit xl:w-full  flex flex-col md:flex-row lg:items-start phone:items-center  gap-5`}>
       <div className={` xl:h-[45rem] mxl:h-[40rem]   lg:ml-0 flex flex-col lg:w-full  sm:w-[20rem] md:h-[10rem] lg:h-[20rem] sm:h-fit md:items-end sm:items-end justify-between  `}>

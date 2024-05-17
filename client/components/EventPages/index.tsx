@@ -1,12 +1,12 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import Footer from '../Footer';
-import Image from 'next/image';
-import HeaderTitle from '../HeaderTitle';
-import { HeaderTitleProps } from '../HeaderTitle';
-import { Card } from '../RecentActivities';
-import { eventsData } from '@/public/data';
-import { motion } from 'framer-motion';
+"use client";
+import React, { useEffect, useState } from "react";
+import Footer from "../Footer";
+import Image from "next/image";
+import HeaderTitle from "../HeaderTitle";
+import { HeaderTitleProps } from "../HeaderTitle";
+import { Card } from "../RecentActivities";
+import { eventsData } from "@/public/data";
+import { motion } from "framer-motion";
 
 interface EventData {
   category: string;
@@ -47,19 +47,20 @@ const Sections: React.FC<SectionsProps> = ({
   date,
   month,
   year,
-  img
+  img,
 }) => {
   const [filteredData, setFilteredData] = useState<any[]>([]);
 
   useEffect(() => {
-    const filtered = eventsData.filter((item) => item.category.toLowerCase() === title.toLowerCase());
+    const filtered = eventsData.filter(
+      (item) => item.category.toLowerCase() === title.toLowerCase()
+    );
     setFilteredData(filtered);
   }, [title]);
-
   return (
     <>
-      <div className='w-full flex justify-center'>
-        <div className='w-[80%] border-b-2 border-black'>
+      <div className="w-full flex justify-center">
+        <div className="w-[80%] border-b-2 border-black">
           <HeaderTitle
             title={title}
             subtitle={subtitle}
@@ -72,14 +73,13 @@ const Sections: React.FC<SectionsProps> = ({
         </div>
       </div>
       <br />
-      <div className='w-full flex flex-col lg:items-end sm:items-center gap-[10rem]'>
+      <div className="w-full flex flex-col lg:items-end phone:items-center gap-[10rem]">
         {filteredData.map((item, index) => {
           const dateObj = new Date(item.date);
-
-          const day = String(dateObj.getUTCDate()).padStart(2, '0');
-          const month = dateObj.toLocaleString('default', { month: 'short' });
+          const day = String(dateObj.getUTCDate()).padStart(2, "0");
+          const month = dateObj.toLocaleString("default", { month: "short" });
           const year = String(dateObj.getUTCFullYear());
-
+          //console.log(item);
           return (
             <Card
               key={index}
@@ -108,19 +108,19 @@ const IndexPage: React.FC = () => {
       <div className="w-full pt-24 flex justify-center">
         <div>
           <motion.div
-            initial={{ x: '-100px', opacity: 0 }}
+            initial={{ x: "-100px", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ type: 'spring', duration: 1.5, delay: 0.8 }}
-            className='w-full h-fit flex items-end md:justify-end phone:justify-center'
+            transition={{ type: "spring", duration: 1.5, delay: 0.8 }}
+            className="w-full h-fit flex items-end md:justify-end phone:justify-center"
           >
-            <div className='w-[20rem] h-[10rem] flex items-end relative'>
-              <Image src='/icons/events.svg' alt='Events Icon' fill />
+            <div className="w-[20rem] h-[10rem] flex items-end relative">
+              <Image src="/icons/events.svg" alt="Events Icon" fill />
             </div>
           </motion.div>
           <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex lg:justify-end phone:justify-center phone:text-small">
             Indomitable and Captivating
           </div>
-          <div className='mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-[18rem] phone:h-[8rem] relative'>
+          <div className="mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-full phone:h-[8rem] relative">
             <Image src="" alt="" fill />
           </div>
           <div className="text-end phone:text-small">
@@ -147,7 +147,7 @@ const IndexPage: React.FC = () => {
       <br />
 
       {/* Recent Activities Section */}
-      <Sections 
+      <Sections
         title="RECENT"
         subtitle="ACTIVITIES"
         subtitleFontSize="text-[1.5rem]"
