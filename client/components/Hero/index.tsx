@@ -1,9 +1,20 @@
+"use client"
 import React from "react";
 import RoundMarquee from "/public/roundmarquee.svg"
 import Maruqee from "../Marquee";
 import Image from "next/image";
-
+import { useEffect } from "react";
+const bg = "0dd8e831-2dec-4a9f-90a8-74edc70af0d9-y6aw6c.jpg"
 const Hero: React.FC = () => {
+    useEffect(() => {
+   
+        (
+          async () => {
+            const LocomotiveScroll = (await import('locomotive-scroll')).default;
+            const locomotiveScroll = new LocomotiveScroll();
+          }
+        )()
+    }, [])
     
     return (
         <section data-scroll-container id="hero" className="relative w-full h-[100svh] flex flex-col items-center lg:items-end text-body pt-32 md:pt-48 lg:pt-24 px-10 text-right overflow-hidden">

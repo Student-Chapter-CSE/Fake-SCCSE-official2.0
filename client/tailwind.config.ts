@@ -32,9 +32,24 @@ const config: Config = {
       fontFamily:{
         'anton':['Anton','sans-serif'],
         'montserrat':['Montserrat','sans-serif'],
+        'antonio':['Antonio','sans-serif'],
       },
-      animation:{
+      animation: {
         'spin-slow':'spin 10s linear infinite',
+        'slide-in': 'slideIn 0.5s forwards',
+      },
+      keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+      animationDelay: {
+        '200': '200ms',
+        '400': '400ms',
+        '600': '600ms',
+        '800': '800ms',
+        '1000': '1000ms',
       },
       screens:{
         'desktop':'1360px',

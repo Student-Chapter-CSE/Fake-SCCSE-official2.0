@@ -65,7 +65,7 @@ const Recent: React.FC = () => {
               <Button title="VIEW ALL" />
             </Link>
           </div> */}
-          <div className=" h-fit lg:w-[51.8rem] md:w-[43.2rem]">
+          <div className=" h-fit lg:w-[50.5rem] md:w-[43.2rem]">
               <div className="flex  justify-end w-full  ">
                 <Link href="/events" passHref>
                   <Button title="VIEW ALL" />

@@ -1,4 +1,4 @@
-"use client";
+
 import Image from "next/image";
 import React from "react";
 import HeaderTitle from "../HeaderTitle";
@@ -9,7 +9,6 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion";
 import Team_header from "@/public/Teamheader.svg";
 import Link from 'next/link'
 import {
@@ -20,112 +19,50 @@ import {
   Conveners,
   PhotographyTeam,
 } from "@/public/data/index";
+import TeamsPhotoAnimation from "../TeamsPhotoAnimation";
+const coreteam="1420ea77-8344-4c9c-a4d2-9518434b5276-y6aw6c.avif";
+
 
 const Index = () => {
   return (
-    <div className="bg-background">
-      <div className=" order-2 lg:order-1 flex   flex-col md:flex-row  justify-between w-full  gap-4 pt-32 space-x-64">
-        <div className="flex flex-row gap-y-16 h-48 overflow-hidden ml-48">
-          <motion.div
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            transition={{ type: "spring", duration: 1.5, delay: 0.8 }}
-            className="absolute left-0 ml-[10%]"
-          >
-            <Image src="/Base.png" alt="header" width={250} height={200} />
-          </motion.div>
-          <motion.div
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            transition={{ type: "spring", duration: 1.5, delay: 0.4 }}
-            className="absolute left-52 ml-[10%]" 
-          >
-            <Image src="/Base.png" alt="header" width={250} height={200} />
-          </motion.div>
-          <motion.div
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
-            className="absolute left-96 ml-[10%]" 
-          >
-            <Image src="/Base.png" alt="header" width={250} height={200} />
-          </motion.div>
+    <div className="bg-background text-sm flex flex-col items-end overflow-hidden">
+      <div className="flex flex-col md:flex-row  md:justify-end gap-40 md:gap-4 pt-24 md:pt-32 w-[80%] lg:w-[70%] pr-24 ">
+        <div className="flex overflow-hidden ">
+          <TeamsPhotoAnimation />
         </div>
 
-        <div className="order-1 lg:order-2 pr-[8%]">
-          <div className="font-anton font-light text-large text-primary_text text-end  ">
-            <div className="flex flex-col space-y-8 pt-16">
-              <Team_header />
+        <div className="font-light text-large text-primary_text text-end flex justify-center">
+          <div className="flex flex-col pt-20 w-[25vmax]">
+            <Team_header />
 
-              <div className="font-normal font-montserrat text-[.9rem]  tracking-wider h-fit ">
-                Lets meet the wizards/mages the community
-              </div>
+            <div className="font-normal text-[.9rem]  tracking-wider h-fit ">
+              Lets meet the wizards/mages the community
             </div>
           </div>
         </div>
-
       </div>
-
-      {/* <div className="flex flex-col lg:flex-row justify-between w-full gap-4 pt-32">
-  <div className="order-2 lg:order-1 flex flex-col lg:flex-row gap-0 relative h-48 overflow-hidden lg:ml-48">
-    <motion.div
-      initial={{ x: "-100vw" }}
-      animate={{ x: 0 }}
-      transition={{ type: "spring", duration: 1.5, delay: 0.8 }}
-      className="absolute left-0 ml-[10%]"
-    >
-      <Image src="/Base.png" alt="header" width={250} height={200} />
-    </motion.div>
-    <motion.div
-      initial={{ x: "-100vw" }}
-      animate={{ x: 0 }}
-      transition={{ type: "spring", duration: 1.5, delay: 0.4 }}
-      className="absolute left-52 ml-[10%]"
-    >
-      <Image src="/Base.png" alt="header" width={250} height={200} />
-    </motion.div>
-    <motion.div
-      initial={{ x: "-100vw" }}
-      animate={{ x: 0 }}
-      transition={{ type: "spring", duration: 1.5, delay: 0.2 }}
-      className="absolute left-96 ml-[10%]"
-    >
-      <Image src="/Base.png" alt="header" width={250} height={200} />
-    </motion.div>
-  </div>
-
-  <div className="order-1 lg:order-2 pr-[8%]">
-    <div className="font-anton font-light text-large text-primary_text text-end">
-      <div className="flex flex-col space-y-8 pt-16">
-        <Team_header />
-        <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit">
-          Let's meet the wizards/mages of the community
-        </div>
-      </div>
-    </div>
-  </div>
-</div> */}
-
 
       <HeaderTitle
         title="CORE"
         subtitle="TEAM"
         content="The backbone,The undisputable dominators"
         subtitleFontSize="1.5rem"
+        margin="my-36"
+        padding="pl-12"
       />
 
-      <div className="flex flex-row">
-        <div className="flex flex-col space-y-40">
-          <p className="flex justify-end pr-4">The management team</p>
+      <div className="flex flex-col-reverse sm:flex-row  items-end w-[80%] lg:w-[70%] pr-24">
+        <div className="flex flex-col space-y-4 sm:space-y-40 mt-4 sm:mt-0 sm:mr-4">
+          <p className="flex justify-end sm:pr-4 text-right">The management team</p>
           <div className="flex justify-end">
-            <p className="w-1/2   ">
-              Transparency,determination,dedication,trust,and companionship
-              defines the management tenure 2024
+            <p className="text-right text-wrap ">
+              Transparency, determination, dedication, trust and companionship
+              defines the management tenure 2024.
             </p>
           </div>
         </div>
         <Image
-          src="/Frame 100.png"
+          src={`https://utfs.io/f/${coreteam}`}
           alt="management team"
           height={200}
           width={400}
@@ -133,79 +70,59 @@ const Index = () => {
       </div>
 
 
+      <div className="flex justify-end pr-24 mt-20 w-full">
+        <div className="bg-white pl-8 pr-12  py-6 mt-12 flex flex-col justify-center items-end gap-2">
+          <div className="h-[220px] w-fit">
+            <div className="relative ">
+              <Image
+                priority
+                src="https://utfs.io/f/921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif"
+                alt="convenor"
+                height={200}
+                width={150}
+              />
+
+              <div className="absolute flex flex-col h-full top-0 right-0 translate-x-[100%]">
 
 
+                <div className="flex flex-col gap-2 px-2 ">
+                  <Link href="#" className="w-fit text-gray-400 hover:text-secondary_orange duration-300">
+                    <FaFacebook size={16} />
+                  </Link>
 
+                  <Link href="https://www.instagram.com/in_dealing_dead_03/" className="w-fit text-gray-400 hover:text-secondary_orange duration-300">
+                    <IoLogoInstagram size={16} />
+                  </Link>
 
-{/* 
-      Aratrik
-      name: "Aratrik Bandyopadhyay",
-        img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
-        designation: "Convener",
-        github: "https://github.com/Aratrik123",
-        instagram: "https://www.instagram.com/in_dealing_dead_03/",
-        facebook: "#",
-        twitter: "#",
-        linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/" */}
+                  <Link href="#" className="w-fit text-gray-400 hover:text-secondary_orange duration-300">
+                    <FaTwitter size={16} />
+                  </Link>
 
-
-
-
-      <div className="flex flex-row  justify-end pr-24 mt-20 ">
-        <div className="bg-white h-[23rem] w-[18rem] mt-12 flex justify-center items-center relative">
-          <Image
-            src="https://utfs.io/f/921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif"
-            alt="convenor"
-            height={400}
-            width={200}
-          />
-
-          <div className="flex flex-col justify-between space-y-36 ">
-            <h1 className="text-orange-400 text-xl text-bold transform rotate-90 flex justify-start absolute top-16 right-0  ">
-              Convenor
-            </h1>
-
-            <div className="space-y-4 ml-1">
-              <div>
-
-              <Link href="#">
-              <FaFacebook color="orange" size={25} />
-              </Link>
-              </div>
-              <div>
-
-              <Link href="https://www.instagram.com/in_dealing_dead_03/">
-              <IoLogoInstagram color="orange" size={25} />
-              </Link>
-              </div>
-              <div>
-
-              <Link href="#">
-              <FaTwitter size={25} color="orange" />
-              </Link>
-              </div>
-              <div>
-
-              <Link href="https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/">
-              <FaLinkedin color="orange" size={25} />
-              </Link>
+                  <Link href="https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/" className="w-fit text-gray-400 hover:text-secondary_orange duration-300">
+                    <FaLinkedin size={16} />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0">
-            <h1 className="text-xl ">Aratrik Bandopadhaya</h1>
+          <div className="">
+            <h1 className="text-orange-400 font-bold">
+              Convenor
+            </h1>
+            <h1 className="">Aratrik Bandopadhaya</h1>
           </div>
         </div>
       </div>
 
       {/* core members */}
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pr-10 pl-16">
-        {ManagementTeam.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} designation={member.designation}
-          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
-          />
-        ))}
+      <div className="w-full flex justify-center pr-24">
+        <div className="justify-end flex flex-wrap gap-20 w-fit">
+          {ManagementTeam.map((member, index) => (
+            <Card key={index} name={member.name} photo={member.img} designation={member.designation}
+              instagram={member.instagram} facebook={member.facebook} twitter={member.twitter} linkedin={member.linkedin}
+            />
+          ))}
+        </div>
       </div>
 
       <HeaderTitle
@@ -213,12 +130,14 @@ const Index = () => {
         subtitle="TEAM"
         content="Aestheticism,beauty and gracefulness"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+        padding="pl-12"
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {DesignTeam.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} 
-          designation={member.designation}
-          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+          <Card key={index} name={member.name} photo={member.img}
+            designation={member.designation}
+            instagram={member.instagram} facebook={member.facebook} twitter={member.twitter} linkedin={member.linkedin}
           />
         ))}
       </div>
@@ -228,12 +147,15 @@ const Index = () => {
         subtitle="TEAM"
         content="Charisma,Perception and Ingeniousness"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+          padding="pl-12"
+
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {TechTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
-          designation={member.designation}
-          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin} />
+            designation={member.designation}
+            instagram={member.instagram} facebook={member.facebook} twitter={member.twitter} linkedin={member.linkedin} />
         ))}
       </div>
 
@@ -242,12 +164,14 @@ const Index = () => {
         subtitle="TEAM"
         content="Pros at the art of mind manipulation"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+          padding="pl-12"
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {PrTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
-          designation={member.designation}
-          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+            designation={member.designation}
+            instagram={member.instagram} facebook={member.facebook} twitter={member.twitter} linkedin={member.linkedin}
           />
         ))}
       </div>
@@ -257,13 +181,15 @@ const Index = () => {
         subtitle="TEAM"
         content="Click,Set and Flash"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+          padding="pl-12"
       />
 
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pr-10 pl-32">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {PhotographyTeam.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} 
-          designation={member.designation}
-          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+          <Card key={index} name={member.name} photo={member.img}
+            designation={member.designation}
+            instagram={member.instagram} facebook={member.facebook} twitter={member.twitter} linkedin={member.linkedin}
           />
         ))}
       </div>
@@ -275,13 +201,15 @@ const Index = () => {
         subtitle=""
         content="Community influencers"
         subtitleFontSize="1.25rem"
+        margin="my-36"
+          padding="pl-12"
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pl-4">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {Conveners.map((member, index) => (
-          <Card key={index} name={member.name} photo={member.img} 
-          designation={member.designation}
-          instagram={member.instagram} facebook={member.facebook}  twitter={member.twitter}  linkedin={member.linkedin}
+          <Card key={index} name={member.name} photo={member.img}
+            designation={member.designation}
+            instagram={member.instagram} facebook={member.facebook} twitter={member.twitter} linkedin={member.linkedin}
           />
         ))}
       </div>

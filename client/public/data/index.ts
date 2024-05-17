@@ -12,16 +12,16 @@ interface Team {
 }
 
 export const ManagementTeam: Team[] = [
-    {
-        name: "Aratrik Bandyopadhyay",
-        img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
-        designation: "Convener",
-        github: "https://github.com/Aratrik123",
-        instagram: "https://www.instagram.com/in_dealing_dead_03/",
-        facebook: "",
-        twitter: "",
-        linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
-    },
+    // {
+    //     name: "Aratrik Bandyopadhyay",
+    //     img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
+    //     designation: "Convener",
+    //     github: "https://github.com/Aratrik123",
+    //     instagram: "https://www.instagram.com/in_dealing_dead_03/",
+    //     facebook: "",
+    //     twitter: "",
+    //     linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
+    // },
     {
         name: "Sayan Mukherjee",
         img: "e2db74fc-9fee-4470-8ec9-9aff789e95aa-1t0u3c.avif",
