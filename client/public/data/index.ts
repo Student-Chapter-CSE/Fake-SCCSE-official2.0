@@ -9,7 +9,6 @@ interface Team {
     facebook: string;
     twitter: string;
     linkedin: string;
-   
 }
 
 export const ManagementTeam: Team[] = [
@@ -19,30 +18,19 @@ export const ManagementTeam: Team[] = [
     //     designation: "Convener",
     //     github: "https://github.com/Aratrik123",
     //     instagram: "https://www.instagram.com/in_dealing_dead_03/",
-    //     facebook: "https://www.facebook.com",
-    //     twitter: "https://twitter.com",
+    //     facebook: "",
+    //     twitter: "",
     //     linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
     // },
-    {
-        name: "Aratrik Bandyopadhyay",
-        img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
-        designation: "Convener",
-        github: "https://github.com/Aratrik123",
-        instagram: "https://www.instagram.com/in_dealing_dead_03/",
-        facebook: "",
-        twitter: "",
-        linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
-    },
     {
         name: "Sayan Mukherjee",
         img: "e2db74fc-9fee-4470-8ec9-9aff789e95aa-1t0u3c.avif",
         designation: "Marketing Associate",
         github: "https://github.com/Sayan044",
         instagram: "https://www.instagram.com/1010_sayhack/",
-        facebook: "https://www.facebook.com",
-        twitter: "https://twitter.com",
+        facebook: "",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/sayan-mukherjee-975175229/"
-        
     },
     {
         name: "Rohit Chakrabarty",
@@ -63,7 +51,6 @@ export const ManagementTeam: Team[] = [
         facebook: "https://www.facebook.com/profile.php?id=100010835343565&mibextid=kFxxJD",
         twitter: "https://twitter.com/Sayan67das",
         linkedin: "https://linkedin.com/in/sayan-daas"
-        
     },
     {
         name: "Nabajit Bhadury",
@@ -74,7 +61,6 @@ export const ManagementTeam: Team[] = [
         facebook: "https://www.facebook.com/profile.php?id=100085957776075",
         twitter: "https://twitter.com/BhaduryNabajit",
         linkedin: "https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/"
-       
     },
     {
         name: "Sayantan Sen",
@@ -103,9 +89,8 @@ export const ManagementTeam: Team[] = [
         github: "https://github.com/diptanshumahish",
         instagram: "https://www.instagram.com/_diptanshuu_",
         facebook: "https://facebook.com/diptanshumahish",
-        twitter: "https://twitter.com",
+        twitter: "",
         linkedin: "https://www.linkedin.com/in/diptanshumahish"
-        
     },
     {
         name: "Jisnu Hazra",
@@ -355,7 +340,6 @@ export const DesignTeam: Team[] = [
         facebook: "https://www.facebook.com/profile.php?id=61550742771507",
         twitter: "https://twitter.com/ghsh_S_ohm_7781",
         linkedin: "https://www.linkedin.com/in/soham-ghosh-826809275/"
-        
     },
     {
         name: "Surendranath Chakraborty",
@@ -447,6 +431,7 @@ export const Conveners= [
         name: "Deepesh Soni",
         img: "",
         tenure: "2018-2019",
+        designation: "",
         github: "",
         instagram: "",
         facebook: "",
@@ -462,6 +447,7 @@ export const Conveners= [
         name: "Abhishek Singh",
         img: "c0f5e0a5-2e0e-4b6d-8c4a-0b4b7a8b6f2b-1q5z5i.avif",
         tenure: "2019-2021",
+        designation: "",
         github: "",
         instagram: "",
         facebook: "",
@@ -483,6 +469,7 @@ export const Conveners= [
         name: "Prasun Kumar Mondal",
         img: "87d3cbda-e68a-413f-891b-e5ce04fd14a9-g7lgab.avif",
         tenure: "2021-2023",
+        designation: "",
         github: "",
         instagram: "",
         facebook: "",
@@ -636,8 +623,9 @@ export const images = [
 
 export const EVENTS = {
     'techquisitive5':{
-        img: "b60087b4-9abb-4d55-8804-10ecb4ed05ba-eij9ie.avif",
+        img: "249ca6a2-85ff-480e-808e-88daf94bc77a-1lbr6z.avif",
         bannerImgUrl: "",
+        gap:"gap-24",
         heading: 'TechQuisitive',
         content: 'Coding, Gaming, Quizzes',
         date: new Date(2024, 3, 19),
@@ -706,9 +694,10 @@ export const EVENTS = {
         ],
     },
     'interhacktive0': {
-        img: "ccb1b2c7-4a2b-4fe3-a388-420f4c8d0b63-jks562.avif",
+        img: "d4258cfb-55f0-4241-ab7d-d50c2fa97396-j97y9g.avif",
         bannerImgUrl: "f70925be-ea05-46c6-a0a7-fe37e0863fbf-1nr3do.avif",
         heading: 'InterHacktive',
+        gap:"gap-4",
         content: 'Code, Collab, Conquer',
         date: new Date(2023, 8, 26),
         category: 'recent',
@@ -740,6 +729,7 @@ export const EVENTS = {
     'CFP': {
         img: "",
         heading: 'Digital Water Solutions',
+        gap:"gap-24",
         content: 'Sustainable Resource Management',
         date: new Date(),
         category: 'past',
@@ -748,6 +738,7 @@ export const EVENTS = {
     'KuRookShetra':{
         img: "afb69830-0914-4053-aebf-f9237cd72aff-1oz4da.avif",
         heading: 'KuRookShetra',
+        gap:"gap-56",
         content: 'Intra College Chess',
         date: new Date(2023,11,21),
         category: 'recent',
@@ -757,6 +748,7 @@ export const EVENTS = {
     'sportiac':{
         img: "",
         heading: 'Sportiac',
+        gap:"gap-24",
         content: 'Online Sports Quiz',
         date: new Date(2023,11,21),
         category: 'recent',
@@ -774,33 +766,32 @@ export const eventsData = [
     {
         img: "",
         heading: 'One Day Symposium',
+        gap:"gap-24",
         content: 'Innovation & Intelligence',
-        // date: new Date(2023, 10, 5),
-        date:{
-            day: 5,
-            month: 'Nov',
-            year: 2023
-        },
+        date:new Date(2023,10,5),
         category: 'past',
     },
     
     {
         img: "3be3f422-f876-492c-91d8-89a38b92f883-2iqc.avif",
         heading: 'Web Master',
+        gap:" gap-24",
         content: 'Website Building',
         date: new Date(),
         category: 'past'
     },
     {
-        img: "adf52a1d-d030-4238-b3e3-77852ad38cb7-eij9if.avif",
-        heading: 'Techquisitive 4.0',
-        content: 'Tech Quiz',
+        img: "249ca6a2-85ff-480e-808e-88daf94bc77a-1lbr6z.avif",
+        heading: 'Techquisitive 5.0',
+        gap:"gap-[]",
+        content: 'Intra College Tech Quiz',
         date: new Date(),
         category: 'past'
     },
     {
         img: "",
         heading: 'Technocruise',
+        gap:"gap-24",
         content: 'Tech Trends',
         date: new Date(),
         category: 'past'
@@ -808,6 +799,7 @@ export const eventsData = [
     {
         img: "",
         heading: 'Stride',
+        gap:"gap-24",
         content: 'Webinar-Seminar',
         date: new Date(),
         category: 'past'

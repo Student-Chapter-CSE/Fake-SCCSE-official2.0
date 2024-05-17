@@ -7,6 +7,7 @@ import ImageLoader from "../ImageLoader";
 import { useEffect } from "react";
 
 
+const bg = "0dd8e831-2dec-4a9f-90a8-74edc70af0d9-y6aw6c.jpg"
 const Hero: React.FC = () => {
     useEffect(() => {
    
