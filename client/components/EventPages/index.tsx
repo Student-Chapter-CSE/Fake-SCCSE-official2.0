@@ -91,7 +91,7 @@ const Sections: React.FC<SectionsProps> = ({
               date={day}
               month={month}
               year={year}
-              // img={item.img}
+              img={item.img}
               gap={item.gap}
             />
           );
