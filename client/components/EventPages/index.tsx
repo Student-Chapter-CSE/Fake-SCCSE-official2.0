@@ -124,7 +124,7 @@ const IndexPage: React.FC = () => {
             Indomitable and Captivating
           </div>
           <div className='mxl:w-[60rem] mxl:h-[38.4rem] sm:w-[25rem] sm:h-[16rem] md:w-[35rem] md:h-[22.4rem] lg:w-[50rem] lg:h-[32rem] xl:w-[60rem] xl:h-[38.4rem] phone:w-full phone:h-[13rem] relative'>
-            <Image src="/Event-main.png" alt="" fill />
+            <Image src="/Event-main.png" alt="" fill  />
           </div>
           <div className="text-end phone:text-small">
             <div>Alluring and Charming. Student Chapter CSE is a</div>

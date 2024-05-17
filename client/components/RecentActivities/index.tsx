@@ -82,7 +82,7 @@ export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300
 
   
   return (
-    <div className={`w-full h-full xl:w-full lg:w-[68rem] md:w-[48rem] flex flex-col items-end justify-end md:flex-row lg:items-start phone:items-center  gap-5`}>
+    <div className={`w-full h-full xl:w-full lg:w-[68rem] md:w-[48rem] flex flex-col items-end justify-end md:flex-row lg:items-start phone:items-center  gap-10`}>
       <div className={` xl:h-[45rem] mxl:h-[40rem]   lg:ml-0 flex flex-col lg:w-full  sm:w-[20rem] md:h-[20rem] lg:h-[20rem] sm:h-fit md:items-end sm:items-end justify-between  `}>
         <h1 className=" lg:text-[1.1rem] xl:text-[3rem] mxl:text-[2.5rem] md:text-[1.4rem] sm:text-[0.7rem] justify-end flex text-primary_text font-montserrat">
           {subText}
@@ -93,8 +93,8 @@ export const Card: React.FC<CardProps> = ({gap, img,date,month,year, width = 300
         </p>  
         </div>
       </div>
-      <div className="relative xl:w-[80rem] mxl:w-[75rem] mxl:h-[40rem] xl:h-[45rem] md:h-[22rem] mphone:h-[10rem]  lg:w-[40rem] lg:h-[20rem] sm:w-[20rem] sm:h-[15rem] lphone:w-[15rem] lphone:h-[15rem] phone:w-[10rem] phone:h-[7rem]">
-      <Image src={`https://utfs.io/f/${img}`} alt="HOD" fill />
+      <div className="relative xl:w-[80rem] mxl:w-[75rem] mxl:h-[40rem] xl:h-[45rem] md:h-[22rem] mphone:h-[10rem]  lg:w-[40rem] h-full sm:w-[20rem] sm:h-[15rem] lphone:w-[15rem] lphone:h-[15rem] phone:w-[10rem] phone:h-[7rem]">
+        <Image src={`https://utfs.io/f/${img}`} alt="HOD" fill className="object-contain" />
       </div>
       {/*Replace this Frame100.png with the recent activities picture */}
       <div className=" flex xl:h-[45rem]  xl:mr-10  flex-col lphone:w-[15rem] phone:w-[10rem] md:w-fit md:h-[22rem] phone:items-end md:items-start md:text-start phone:text-end lg:h-[20rem]">
