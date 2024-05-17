@@ -1,4 +1,3 @@
-"use client"
 import AboutUs from "@/components/AboutUs";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
@@ -8,15 +7,6 @@ import Recent from "@/components/RecentActivities";
 import React, { use, useEffect, useLayoutEffect, useState } from "react";
 
 export default function Home() {
-  useEffect(() => {
-   
-    (
-      async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default;
-        const locomotiveScroll = new LocomotiveScroll();
-      }
-    )()
-}, [])
 
 return (
   <main className="min-h-[100svh] bg-background text-primary_text">
@@ -25,6 +15,7 @@ return (
     <Recent />
     <ContactUs />
     <Footer />
+      
   </main>
 );
 };

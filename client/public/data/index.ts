@@ -9,9 +9,20 @@ interface Team {
     facebook: string;
     twitter: string;
     linkedin: string;
+   
 }
 
 export const ManagementTeam: Team[] = [
+    // {
+    //     name: "Aratrik Bandyopadhyay",
+    //     img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
+    //     designation: "Convener",
+    //     github: "https://github.com/Aratrik123",
+    //     instagram: "https://www.instagram.com/in_dealing_dead_03/",
+    //     facebook: "https://www.facebook.com",
+    //     twitter: "https://twitter.com",
+    //     linkedin: "https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
+    // },
     {
         name: "Aratrik Bandyopadhyay",
         img: "921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif",
@@ -28,9 +39,10 @@ export const ManagementTeam: Team[] = [
         designation: "Marketing Associate",
         github: "https://github.com/Sayan044",
         instagram: "https://www.instagram.com/1010_sayhack/",
-        facebook: "",
-        twitter: "",
+        facebook: "https://www.facebook.com",
+        twitter: "https://twitter.com",
         linkedin: "https://www.linkedin.com/in/sayan-mukherjee-975175229/"
+        
     },
     {
         name: "Rohit Chakrabarty",
@@ -51,6 +63,7 @@ export const ManagementTeam: Team[] = [
         facebook: "https://www.facebook.com/profile.php?id=100010835343565&mibextid=kFxxJD",
         twitter: "https://twitter.com/Sayan67das",
         linkedin: "https://linkedin.com/in/sayan-daas"
+        
     },
     {
         name: "Nabajit Bhadury",
@@ -61,6 +74,7 @@ export const ManagementTeam: Team[] = [
         facebook: "https://www.facebook.com/profile.php?id=100085957776075",
         twitter: "https://twitter.com/BhaduryNabajit",
         linkedin: "https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/"
+       
     },
     {
         name: "Sayantan Sen",
@@ -89,8 +103,9 @@ export const ManagementTeam: Team[] = [
         github: "https://github.com/diptanshumahish",
         instagram: "https://www.instagram.com/_diptanshuu_",
         facebook: "https://facebook.com/diptanshumahish",
-        twitter: "",
+        twitter: "https://twitter.com",
         linkedin: "https://www.linkedin.com/in/diptanshumahish"
+        
     },
     {
         name: "Jisnu Hazra",
@@ -340,6 +355,7 @@ export const DesignTeam: Team[] = [
         facebook: "https://www.facebook.com/profile.php?id=61550742771507",
         twitter: "https://twitter.com/ghsh_S_ohm_7781",
         linkedin: "https://www.linkedin.com/in/soham-ghosh-826809275/"
+        
     },
     {
         name: "Surendranath Chakraborty",
