@@ -113,7 +113,7 @@ export const ManagementTeam: Team[] = [
         linkedin: "https://www.linkedin.com/in/heya-banerjee-963801280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
-        name: "Suvoneel Basu RoyChowdhury",
+        name: "Suvoneel Basu R.",
         img: "3f36f0bf-ce24-4fbf-8a2c-5cc84fd74871-ooj9s7.avif",
         designation: "Design Associate",
         github: "https://github.com/SuvoneelBasu",
@@ -128,7 +128,7 @@ export const TechTeam: Team[] = [
     {
         name: "Rohan Mitra",
         img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
-        designation: "",
+        designation: "Techie",
         github: "https://github.com/Rohan-450",
         instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
         facebook: "",
@@ -138,7 +138,7 @@ export const TechTeam: Team[] = [
     {
         name: "Indrani Som",
         img: "27b29f15-ee71-49f4-ab92-bce6a762edc4-w57bt5.avif",
-        designation: "",
+        designation: "Techie",
         github: "https://github.com/IndraniSom",
         instagram: "https://instagram.com/404_coder_not_found?igshid=OGQ5ZDc2ODk2ZA==",
         facebook: "",
@@ -148,7 +148,7 @@ export const TechTeam: Team[] = [
     {
         name: "Koushik Chowdhury",
         img: "a5a8e6e5-ee8f-4ad1-b146-e2d6ec2a91cd-ffbyp6.avif",
-        designation: "",
+        designation: "Techie",
         github: "https://github.com/darkard2003",
         instagram: "https://www.instagram.com/_.code._.life._?igsh=dnh0ZTBtdzhrZmNo",
         facebook: "",
@@ -158,7 +158,7 @@ export const TechTeam: Team[] = [
     {
         name: "Ashish Gupta",
         img: "dca5dc5e-5ff7-4e4c-8955-d070e31c4fd3-nalq60.avif",
-        designation: "",
+        designation: "Techie",
         github: "https://github.com/ASHISH26940",
         instagram: "https://www.instagram.com/just_ashish__/",
         facebook: "",
@@ -168,7 +168,7 @@ export const TechTeam: Team[] = [
     {
         name: "Trishit Bhowmick",
         img: "7650e1b6-ac91-4435-9db2-afac3638f3c6-hith1x.avif",
-        designation: "",
+        designation: "Techie",
         github: "",
         instagram: "",
         facebook: "",
@@ -178,12 +178,12 @@ export const TechTeam: Team[] = [
     {
         name: "Soumit Srimani",
         img: "c094b3ac-e760-4761-8827-4ff621ff233f-etrbvl.avif",
-        designation: "",
-        github: "",
+        designation: "Techie",
+        github: "https://github.com/soumit-s",
         instagram: "",
         facebook: "",
         twitter: "",
-        linkedin: ""
+        linkedin: "https://www.linkedin.com/in/soumit-srimany"
     },
 ]
 
@@ -191,7 +191,7 @@ export const PrTeam: Team[] = [
     {
         name: "Koustav Chatterjee",
         img: "c82ed358-9d44-4533-8e05-d1c0abd5e20c-8sp0gp.avif",
-        designation: "",
+        designation: "Potentios",
         github: "",
         instagram: "",
         facebook: "",
@@ -201,17 +201,17 @@ export const PrTeam: Team[] = [
     {
         name: "Supratim Dey",
         img: "60e893df-bd62-43a9-b829-5254b9078126-rhdlz9.avif",
-        designation: "",
-        github: "",
+        designation: "Potentios",
+        github: "https://github.com/supratimsd",
         instagram: "",
         facebook: "",
-        twitter: "",
-        linkedin: ""
+        twitter: "https://x.com/DeyDe33361?t=0UCybsSfkwALJcDtXL5DwQ&s=09",
+        linkedin: "https://www.linkedin.com/in/supratim-dey-a4ab5b253"
     },
     {
         name: "Rohan Mitra",
         img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
-        designation: "",
+        designation: "Potentios",
         github: "https://github.com/Rohan-450",
         instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
         facebook: "",
@@ -221,17 +221,17 @@ export const PrTeam: Team[] = [
     {
         name: "Riyanko Mondal",
         img: "69829981-3386-49f7-b15f-4461afceb1e6-k4kr5f.avif",
-        designation: "",
-        github: "",
-        instagram: "",
-        facebook: "",
+        designation: "Potentios",
+        github: "https://github.com/Riyanko",
+        instagram: "https://www.instagram.com/krit_xd007?igsh=eGVpMDYxNWFiMms1",
+        facebook: "https://www.facebook.com/share/qTjonytHvmLAKPpU/?mibextid=qi2Omg",
         twitter: "",
-        linkedin: ""
+        linkedin: "https://www.linkedin.com/in/riyanko-mondal-5547a3200?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         name: "Ridhi Singh",
         img: "b2febd53-eb2c-4047-8d95-2f8e1156e3a3-1slpzi.avif",
-        designation: "",
+        designation: "Potentios",
         github: "https://github.com/Ridhi7595",
         instagram: "https://www.instagram.com/just_ridhii?igsh=MTdnb2I4a3RucHBheg==",
         facebook: "https://www.facebook.com/share/1nbzZRP6kgoKNteW/?mibextid=qi2Omg",
@@ -241,27 +241,27 @@ export const PrTeam: Team[] = [
     {
         name: "Pritanshu Samanta",
         img: "e5abe51a-f362-43a8-bee5-f3039560e449-r5kxsq.avif",
-        designation: "",
-        github: "",
-        instagram: "",
-        facebook: "",
-        twitter: "",
-        linkedin: ""
+        designation: "Potentios",
+        github: "https://github.com/Pritanshu69",
+        instagram: "https://www.instagram.com/__pritfloyd__/",
+        facebook: "https://www.facebook.com/pritanshu.samanta.1/",
+        twitter: "https://twitter.com/Prit_Lmao",
+        linkedin: "https://www.linkedin.com/in/pritanshu-samanta-956450260/"
     },
     {
         name: "Debanwesha Bandhu",
         img: "730fc9a6-d052-4eb4-a9da-067536e8459e-yu9als.avif",
-        designation: "",
+        designation: "Potentios",
         github: "",
         instagram: "",
         facebook: "",
         twitter: "",
         linkedin: ""
     },
-    {
+    /*{
         name: "Debanjana Jha",
         img: "",
-        designation: "",
+        designation: "Potentios",
         github: "https://github.com/debanjanajha",
         instagram: "https://www.instagram.com/just_ridhii?igsh=MTdnb2I4a3RucHBheg==",
         facebook: "",
@@ -271,7 +271,7 @@ export const PrTeam: Team[] = [
     {
         name: "Sulagna Hore",
         img: "",
-        designation: "",
+        designation: "Potentios",
         github: "",
         instagram: "",
         facebook: "",
@@ -281,17 +281,17 @@ export const PrTeam: Team[] = [
     {
         name: "Debasmita Goswami",
         img: "",
-        designation: "",
-        github: "",
-        instagram: "",
+        designation: "Potentios",
+        github: "https://github.com/Debasmita-Goswami",
+        instagram: "https://www.instagram.com/__niniii__13?igsh=c3FqY3VvbGVrM2Fn&utm_source=qr",
         facebook: "",
         twitter: "",
-        linkedin: ""
-    },
+        linkedin: "http://www.linkedin.com/in/debasmita-goswami-246831249"
+    },*/
     {
         name: "Abhraneel Karmakar",
-        img: "eb10e64c-7938-41d2-a44b-fb082052da23-fgq1kk.avif",
-        designation: "",
+        img: "45e06d31-7806-4ac2-b64e-b7f9bf33b01e-htd136.avif",
+        designation: "Potentios",
         github: "https://github.com/abhraneel2004/",
         instagram: "https://www.instagram.com/abhraneel.karmakar/",
         facebook: "https://www.facebook.com/profile.php?id=100081850506762",
@@ -303,8 +303,8 @@ export const PrTeam: Team[] = [
 export const DesignTeam: Team[] = [
     {
         name: "Abhraneel Karmakar",
-        img: "eb10e64c-7938-41d2-a44b-fb082052da23-fgq1kk.avif",
-        designation: "",
+        img: "45e06d31-7806-4ac2-b64e-b7f9bf33b01e-htd136.avif",
+        designation: "Designer",
         github: "https://github.com/abhraneel2004/",
         instagram: "https://www.instagram.com/abhraneel.karmakar/",
         facebook: "https://www.facebook.com/profile.php?id=100081850506762",
@@ -314,7 +314,7 @@ export const DesignTeam: Team[] = [
     {
         name: "Neelakshi Das",
         img: "a95669f4-217c-44be-b87c-770fc148d906-lm78to.avif",
-        designation: "",
+        designation: "Designer",
         github: "https://github.com/bluecoder2003",
         instagram: "https://www.instagram.com/_crimson_2003/",
         facebook: "",
@@ -324,7 +324,7 @@ export const DesignTeam: Team[] = [
     {
         name: "Sangneel Deb",
         img: "a83a7e75-9742-4ab2-9f86-7c5f9cb99f15-x0bzqd.avif",
-        designation: "",
+        designation: "Designer",
         github: "https://github.com/lord-cyclone100",
         instagram: "https://www.instagram.com/lord_cyclone100/",
         facebook: "",
@@ -334,7 +334,7 @@ export const DesignTeam: Team[] = [
     {
         name: "Soham Ghosh",
         img: "c38f76e9-b3e4-421e-90c1-e15abc614fca-etzvjl.avif",
-        designation: "",
+        designation: "Designer",
         github: "https://github.com/magnum7701",
         instagram: "https://www.instagram.com/thunder_bird_3046/",
         facebook: "https://www.facebook.com/profile.php?id=61550742771507",
@@ -344,17 +344,17 @@ export const DesignTeam: Team[] = [
     {
         name: "Surendranath Chakraborty",
         img: "b2acb65b-246d-4c7c-8b2d-dd207d47874a-9hpfvj.avif",
-        designation: "",
+        designation: "Designer",
         github: "https://github.com/surendranath-chakraborty",
         instagram: "https://www.instagram.com/iamsayan04/",
         facebook: "https://www.facebook.com/profile.php?id=100086521668449",
         twitter: "",
         linkedin: "https://www.linkedin.com/in/surendranath-chakraborty-740925260/"
     },
-    {
-        name: "Sankha Subhra Chakraborty",
+    /*{
+        name: "Sankha Chakraborty",
         img: "2c7a528f-494d-4ca2-87fb-6fd1c402a635-f1kym4.avif",
-        designation: "",
+        designation: "Designer",
         github: "",
         instagram: "",
         facebook: "",
@@ -364,21 +364,21 @@ export const DesignTeam: Team[] = [
     {
         name: "Moulendu Chowley",
         img: "",
-        designation: "",
-        github: "",
-        instagram: "",
-        facebook: "",
-        twitter: "",
-        linkedin: ""
-    },
+        designation: "Designer",
+        github: "https://github.com/Moulendu-Chowley",
+        instagram: "https://www.instagram.com/moulendu.dev",
+        facebook: "https://www.facebook.com/moulenduchowley",
+        twitter: "https://twitter.com/moulenduchowley",
+        linkedin: "https://www.linkedin.com/in/moulendu"
+    },*/
     {
         name: "Sukrit Deb",
         img: "0da3e396-de84-4eab-996c-d9c7e004d037-eqmuh8.avif",
-        designation: "",
+        designation: "Designer",
         github: "",
-        instagram: "",
-        facebook: "",
-        twitter: "",
+        instagram: "https://www.instagram.com/krit_xd007?igsh=eGVpMDYxNWFiMms1",
+        facebook: "https://www.facebook.com/su.krit.773?mibextid=ZbWKwL",
+        twitter: "https://x.com/sukrit_deb?t=cA400uoK3byQfiSMcTbrlg&s=09",
         linkedin: "https://www.linkedin.com/in/sukritdeb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
 ]
@@ -387,37 +387,37 @@ export const PhotographyTeam: Team[] = [
     {
         name: "Gourav Kumar Shaw",
         img: "60b38172-7d44-4671-8f1e-2c96b8220ce4-1ii7.avif",
-        designation: "",
+        designation: "Photographer",
         github: "",
-        instagram: "",
-        facebook: "",
+        instagram: "https://www.instagram.com/gourav_2807?igsh=ejFsZmN1ZWg5YjY2",
+        facebook: "https://www.facebook.com/profile.php?id=100010371942191&mibextid=ZbWKwL",
         twitter: "",
-        linkedin: ""
+        linkedin: "https://www.linkedin.com/in/GKS0728"
     },
     {
         name: "Debmalya Sadhukhan",
         img: "f86b5121-fcad-46ae-88f4-cfc9284c1e0c-8xng8v.avif",
-        designation: "",
+        designation: "Photographer",
         github: "",
         instagram: "https://www.instagram.com/sir_debmalooo/?hl=en",
         facebook: "https://www.facebook.com/debmalya.sadhukhan.92",
         twitter: "",
         linkedin: "http://www.linkedin.com/in/debmalooo"
     },
-    {
+    /*{
         name: "Debadrita Mondal",
         img: "",
-        designation: "",
+        designation: "Photographer",
         github: "https://github.com/mondaldebadrita03",
         instagram: "https://www.instagram.com/mondaldebadrita_?igsh=MmVkOGlva202amh6",
         facebook: "https://www.facebook.com/mondaldebadrita03?mibextid=ZbWKwL",
         twitter: "https://x.com/DebadritaMonda3?t=dlycNECk9RWsPU3EiGQMfw&s=09",
         linkedin: "https://www.linkedin.com/in/debadrita-mondal-b373b6257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
+    },*/
     {
         name: "Aritra Hui",
         img: "b4112519-5804-4445-9adf-b8d43429505d-nb4nn9.avif",
-        designation: "",
+        designation: "Photographer",
         github: "https://github.com/aritra0342",
         instagram: "https://www.instagram.com/void_0342?igsh=aGdrYW5mdXU2cnZn",
         facebook: "https://www.facebook.com/yoursoul0342?mibextid=ZbWKwL",
@@ -431,7 +431,7 @@ export const Conveners= [
         name: "Deepesh Soni",
         img: "",
         tenure: "2018-2019",
-        designation: "",
+        designation: "2018-2019",
         github: "",
         instagram: "",
         facebook: "",
@@ -445,9 +445,9 @@ export const Conveners= [
     },
     {
         name: "Abhishek Singh",
-        img: "c0f5e0a5-2e0e-4b6d-8c4a-0b4b7a8b6f2b-1q5z5i.avif",
+        img: "20681554-bb6c-4387-a020-ab0f1b8f86a1-adq5wx.avif",
         tenure: "2019-2021",
-        designation: "",
+        designation: "2019-2021",
         github: "",
         instagram: "",
         facebook: "",
@@ -469,7 +469,7 @@ export const Conveners= [
         name: "Prasun Kumar Mondal",
         img: "87d3cbda-e68a-413f-891b-e5ce04fd14a9-g7lgab.avif",
         tenure: "2021-2023",
-        designation: "",
+        designation: "2021-2023",
         github: "",
         instagram: "",
         facebook: "",
@@ -599,26 +599,41 @@ export const PreviousTeam3 = [
 
 export const images = [
     {
-        img: "37633ad5-4299-4ed8-a0ef-d4ceece4c38a-22sw.avif",
+        aud1: "37633ad5-4299-4ed8-a0ef-d4ceece4c38a-22sw.avif",
     },
     {
-        img: "4d91f34d-24c3-4580-bc0d-a23971f0f28d-1sewy.avif",
+        aud2: "4d91f34d-24c3-4580-bc0d-a23971f0f28d-1sewy.avif",
     },
     {
-        img: "12d394dc-8004-449c-b9b4-96dc086eee63-1sewz.avif",
+        aud3: "12d394dc-8004-449c-b9b4-96dc086eee63-1sewz.avif",
     },
     {
-        img: "40687946-a717-47f7-897d-9e74f80c47f3-1sex0.avif",
+        aud4: "40687946-a717-47f7-897d-9e74f80c47f3-1sex0.avif",
     },
     {
-        img: "1420ea77-8344-4c9c-a4d2-9518434b5276-y6aw6c.avif",
+        img_allmember: "1420ea77-8344-4c9c-a4d2-9518434b5276-y6aw6c.avif",
     },
     {
-        img: "aff86f51-5d48-4a41-8afa-d33bc74f66fc-1w6wc.avif",
+        img_grp_photo: "aff86f51-5d48-4a41-8afa-d33bc74f66fc-1w6wc.avif",
     },
     {
-        img: "a025b693-05a8-47e3-8e93-9760dab23185-n3ch5g.avif",
+        img_banner: "a025b693-05a8-47e3-8e93-9760dab23185-n3ch5g.avif",
     },
+    {
+        img_core:"cd7e03bb-84b6-4f4b-80f7-bbfb4fafe891-1tktb.avif",
+    },
+    {
+        img_teams_animate1:"67690c25-e4c5-48f2-b701-5cefd618ff84-9wuybm.avif",
+    },
+    {
+        img_teams_animate2:"2019bbe0-f3c1-47f9-b4d5-ce8c3d867d6b-9wuybl.avif",
+    },
+    {
+        img_teams_animate3:"3cdc7d5f-54df-443c-80c2-7bb1634f4a8d-9wuybk.avif",
+    },
+    {
+        img_teams_animate4:"7ab4334f-f0a1-4976-805f-2e7df0a7acde-9wuybj.avif",
+    }
 ]
 
 export const EVENTS = {
@@ -726,15 +741,6 @@ export const EVENTS = {
             }
         ]
     },
-    'CFP': {
-        img: "",
-        heading: 'Digital Water Solutions',
-        gap:"gap-24",
-        content: 'Sustainable Resource Management',
-        date: new Date(),
-        category: 'past',
-        pageUrl: '/downloads/SpecialSession_banner.pdf'
-    },
     'KuRookShetra':{
         img: "afb69830-0914-4053-aebf-f9237cd72aff-1oz4da.avif",
         heading: 'KuRookShetra',
@@ -746,7 +752,7 @@ export const EVENTS = {
         prizes: [400 , 200 , 100]
     },
     'sportiac':{
-        img: "",
+        img: "b19f16e6-70c4-4009-a305-aa69f4faed4f-umax8g.avif",
         heading: 'Sportiac',
         gap:"gap-24",
         content: 'Online Sports Quiz',
@@ -764,7 +770,7 @@ export const eventsData = [
         ...EVENTS.techquisitive5
     },
     {
-        img: "",
+        img: "2a414e79-9946-4dd8-8458-7d13f3190301-tcvg82.avif",
         heading: 'One Day Symposium',
         gap:"gap-24",
         content: 'Innovation & Intelligence',
@@ -781,15 +787,15 @@ export const eventsData = [
         category: 'past'
     },
     {
-        img: "249ca6a2-85ff-480e-808e-88daf94bc77a-1lbr6z.avif",
-        heading: 'Techquisitive 5.0',
+        img: "bb9c5db5-3e05-4c36-b6b6-d8e5c0c74e20-d67rsb.avif",
+        heading: 'Techquisitive 4.0',
         gap:"gap-[]",
         content: 'Intra College Tech Quiz',
         date: new Date(),
         category: 'past'
     },
     {
-        img: "",
+        img: "dfe46bd5-756e-492c-8f65-87e4cf36dd8d-tbhpz8.avif",
         heading: 'Technocruise',
         gap:"gap-24",
         content: 'Tech Trends',
@@ -797,15 +803,12 @@ export const eventsData = [
         category: 'past'
     },
     {
-        img: "",
+        img: "082a8a45-c830-4c8f-9fdf-7af9a5f5f302-75q9c1.avif",
         heading: 'Stride',
         gap:"gap-24",
         content: 'Webinar-Seminar',
         date: new Date(),
         category: 'past'
-    },
-    {
-        ...EVENTS.CFP
     },
     {
         ...EVENTS.KuRookShetra
