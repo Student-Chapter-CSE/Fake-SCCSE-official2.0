@@ -23,7 +23,7 @@ const HeaderTitle: React.FC<HeaderTitleProps> = ({
   padding,
 }) => {
   return (
-    <div className={`w-full flex flex-col md:flex-row  bg-${color} ${margin} ${padding}   h-36  pt-9 md:pt-10 `} >
+    <div className={`w-full   flex flex-col md:flex-row  bg-${color} ${margin} ${padding}   md:h-36 phone:h-fit  pt-9 md:pt-10 `} >
       <div className="flex flex-row">
         <h1 className="text-[3.5rem] xl:text-[9rem] mxl:text-[7rem] md:text-[4rem] phone:text-medium lphone:text-[2.5rem] font-anton text-primary_text leading-[0.9] tracking-wider">
           {title}

@@ -62,7 +62,6 @@ const Sections: React.FC<SectionsProps> = ({
         </div>
       </div>
       <br />
-      <br />
       <div className='w-full flex flex-col lg:items-end sm:items-center gap-[10rem]'>
         {filteredData.map((item, index) => {
           const dateObj = new Date(item.date);
@@ -100,12 +99,12 @@ const IndexPage = () => {
       <div className="w-full pt-24 flex justify-center">
         <div>
           {/* */}
-          <div className='w-full  h-fit flex items-end justify-end'>
-            <div className='w-[60rem]  h-[10rem]    flex items-end relative '>
+          <div className='w-full  h-fit flex items-end lg:justify-end phone:justify-center'>
+            <div className='w-[20rem]  h-[10rem]    flex items-end relative '>
               <Image src='/icons/events.svg' alt='' fill />
             </div> 
           </div>
-          <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex justify-end phone:text-small">
+          <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex lg:justify-end phone:justify-center phone:text-small">
             Indomitable and Captivating
           </div>
           <div className=' mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[25rem] xl:w-[60rem] xl:h-[30rem] phone:w-[18rem] phone:h-[8rem] relative'>
