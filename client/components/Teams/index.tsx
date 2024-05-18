@@ -25,14 +25,14 @@ const coreteam="cd7e03bb-84b6-4f4b-80f7-bbfb4fafe891-1tktb.avif";
 
 const Index = () => {
   return (
-    <div className="bg-background text-sm flex flex-col items-end overflow-hidden">
-      <div className="flex flex-col md:flex-row  md:justify-end gap-40 md:gap-4 pt-24 md:pt-32 w-[80%] lg:w-[70%] pr-24 ">
-        <div className="flex overflow-hidden ">
+    <div className="bg-background text-sm flex flex-col items-end overflow-hidden ">
+      <div className="w-fit flex flex-col md:flex-row  md:justify-end gap-40 md:gap-4 pt-24 md:pt-32 pr-24 ">
+        <div className="flex flex-col md:flex-row gap-20 overflow-hidden ">
           <TeamsPhotoAnimation />
         </div>
 
-        <div className="font-light text-large text-primary_text text-end flex justify-center">
-          <div className="flex flex-col pt-20 w-[25vmax]">
+        <div className="font-light text-large text-primary_text text-end flex justify-center pt-32">
+          <div className="flex flex-col pt-40 md:pt-0 w-[25vmax]">
             <Team_header />
 
             <div className="font-normal text-[.9rem]  tracking-wider h-fit ">
@@ -41,21 +41,22 @@ const Index = () => {
           </div>
         </div>
       </div>
-
+      
       <HeaderTitle
         title="CORE"
         subtitle="TEAM"
         content="The backbone,The undisputable dominators"
-        subtitleFontSize="1.5rem"
+        subtitleFontSize="text-[0.6rem] md:text-[1.2rem]"
         margin="my-36"
-        padding="pl-12"
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
 
-      <div className="flex flex-col-reverse sm:flex-row  items-end w-[80%] lg:w-[70%] pr-24">
+      <div className="w-fit flex flex-col-reverse sm:flex-row  items-end md:w-[80%] lg:w-[70%] md:pr-24 px-10 md:px-0">
         <div className="flex flex-col space-y-4 sm:space-y-40 mt-4 sm:mt-0 sm:mr-4">
-          <p className="flex justify-end sm:pr-4 text-right">The management team</p>
+          <p className="flex justify-end sm:pr-4 text-right font-montserrat">The management team</p>
           <div className="flex justify-end">
-            <p className="text-right text-wrap ">
+            <p className="text-right text-wrap font-montserrat ">
               Transparency, determination, dedication, trust and companionship
               defines the management tenure 2024.
             </p>
@@ -129,9 +130,10 @@ const Index = () => {
         title="DESIGN"
         subtitle="TEAM"
         content="Aestheticism,beauty and gracefulness"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
         margin="my-36"
-        padding="pl-12"
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {DesignTeam.map((member, index) => (
@@ -146,10 +148,10 @@ const Index = () => {
         title="TECH"
         subtitle="TEAM"
         content="Charisma,Perception and Ingeniousness"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
         margin="my-36"
-          padding="pl-12"
-
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {TechTeam.map((member, index) => (
@@ -163,9 +165,10 @@ const Index = () => {
         title="PR & MARKETING"
         subtitle="TEAM"
         content="Pros at the art of mind manipulation"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
         margin="my-36"
-          padding="pl-12"
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
         {PrTeam.map((member, index) => (
@@ -180,9 +183,10 @@ const Index = () => {
         title="PHOTOGRAPHY"
         subtitle="TEAM"
         content="Click,Set and Flash"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
         margin="my-36"
-          padding="pl-12"
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
 
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
@@ -200,9 +204,10 @@ const Index = () => {
         title="PREVIOUS CONVENORS"
         subtitle=""
         content="Community influencers"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize=""
         margin="my-36"
-          padding="pl-12"
+        padding="pl-5 md:pl-36"
+        
       />
 
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">

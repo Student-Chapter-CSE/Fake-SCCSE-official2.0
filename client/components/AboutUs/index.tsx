@@ -7,7 +7,7 @@ const AboutUs: React.FC = () => {
   return (
     <section
       id="about"
-      className="w-full h-fit items-center justify-center text-body"
+      className="w-full h-fit items-center justify-center text-body "
       data-scroll-container
     >
       <div data-scroll data-scroll-sticky data-scroll-target="#about" className="w-full sticky">
@@ -15,9 +15,10 @@ const AboutUs: React.FC = () => {
           title="ABOUT"
           subtitle="US"
           content="We are a group of students from (SCCSE)"
-          subtitleFontSize="2.5rem"
+          subtitleFontSize="text-[1.2rem] md:text-[2.5rem]"
           margin="my-36"
-          padding="pl-12"
+          padding="pl-12 md:pl-36"
+          subpadding={"pr-0"}
           
         />
       </div>
