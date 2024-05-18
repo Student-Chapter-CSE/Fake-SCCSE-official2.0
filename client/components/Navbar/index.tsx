@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import SClogosvg from "/public/sclogo.svg";
+import SClogosvg from "/public/greylogo.svg";
 import Contact from "/public/icons/mail.svg";
 import Event from "/public/icons/event.svg";
 import HomeDark from "/public/icons/Home_dark.svg";
