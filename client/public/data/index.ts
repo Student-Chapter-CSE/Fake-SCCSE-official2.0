@@ -598,6 +598,7 @@ export const PreviousTeam3 = [
 ]
 
 export const images = [
+    
     {
         aud1: "37633ad5-4299-4ed8-a0ef-d4ceece4c38a-22sw.avif",
     },
@@ -633,6 +634,9 @@ export const images = [
     },
     {
         img_teams_animate4:"7ab4334f-f0a1-4976-805f-2e7df0a7acde-9wuybj.avif",
+    },
+    {
+        img_teams_animate5:"3f65fd18-83fa-4df5-847e-81850618480f-j0vd1l.avif",
     }
 ]
 

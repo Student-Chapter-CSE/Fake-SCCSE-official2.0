@@ -20,7 +20,7 @@ import {
   PhotographyTeam,
 } from "@/public/data/index";
 import TeamsPhotoAnimation from "../TeamsPhotoAnimation";
-const coreteam="1420ea77-8344-4c9c-a4d2-9518434b5276-y6aw6c.avif";
+const coreteam="cd7e03bb-84b6-4f4b-80f7-bbfb4fafe891-1tktb.avif";
 
 
 const Index = () => {
