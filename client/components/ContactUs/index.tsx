@@ -23,7 +23,7 @@ const ContactUs: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await emailjs.send("service_z7a8c3h","template_sv908q9",templateParams,"hA4akak_srSrO6Lpz");
+      await emailjs.send("service_4zefj4p","template_sv908q9",templateParams,"hA4akak_srSrO6Lpz");
       console.log("Email sent successfully");
     } catch (error) {
       console.error("Error sending email:", error);
