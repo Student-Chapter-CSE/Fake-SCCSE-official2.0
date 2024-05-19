@@ -25,20 +25,12 @@ const coreteam="cd7e03bb-84b6-4f4b-80f7-bbfb4fafe891-1tktb.avif";
 
 const Index = () => {
   return (
-    <div className="bg-background text-sm flex flex-col items-end overflow-hidden ">
-      <div className="w-fit flex flex-col md:flex-row  md:justify-end gap-40 md:gap-4 pt-24 md:pt-32 pr-24 ">
-        <div className="flex flex-col md:flex-row gap-20 overflow-hidden ">
-          <TeamsPhotoAnimation />
-        </div>
-
-        <div className="font-light text-large text-primary_text text-end flex justify-center pt-32">
-          <div className="flex flex-col pt-40 md:pt-0 w-[25vmax]">
-            <Team_header />
-
-            <div className="font-normal text-[.9rem]  tracking-wider h-fit ">
-              Lets meet the wizards/mages the community
-            </div>
-          </div>
+    <div className="bg-background text-sm flex flex-col items-center ">
+      <div className=" w-full flex pt-32 ">
+        <div className="hidden md:flex"><TeamsPhotoAnimation/></div>
+        <div className="w-fit h-fit flex-col justify-end pr-5 md:pr-28  ml-auto py-28 pt-28 "> {/* ok i know padding isnot a good idea but can't help it */}
+          <Team_header/>
+          <div className="font-montserrat ">Let's meet the wizards/mages of the community</div>
         </div>
       </div>
       
@@ -52,7 +44,7 @@ const Index = () => {
         subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
 
-      <div className="w-fit flex flex-col-reverse sm:flex-row  items-end md:w-[80%] lg:w-[70%] md:pr-24 px-10 md:px-0">
+      <div className="w-fit flex flex-col-reverse sm:flex-row items-center md:items-end md:w-[80%] lg:w-[70%] px-6 md:px-0"> 
         <div className="flex flex-col space-y-4 sm:space-y-40 mt-4 sm:mt-0 sm:mr-4">
           <p className="flex justify-end sm:pr-4 text-right font-montserrat">The management team</p>
           <div className="flex justify-end">
@@ -65,6 +57,7 @@ const Index = () => {
         <Image
           src={`https://utfs.io/f/${coreteam}`}
           alt="management team"
+          objectFit="cover"
           height={200}
           width={400}
         />
