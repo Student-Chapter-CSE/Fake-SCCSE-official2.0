@@ -156,6 +156,7 @@ const IndexPage: React.FC = () => {
         subtitle="EVENTS"
         subtitleFontSize="text-[1.5rem]"
         color="transparent"
+        date=""
         content=""
         width={300}
         height={400}

@@ -781,6 +781,14 @@ export const eventsData = [
         date:new Date(2023,10,5),
         category: 'past',
     },
+    {
+        img: "5c7b40df-fb74-488e-b93f-c20ffdda1f43-n1yepz.avif",
+        heading: '',
+        gap:"gap-24",
+        content: 'Upcoming Soon',
+        date:new Date(),
+        category: 'upcoming',
+    },
     
     {
         img: "3be3f422-f876-492c-91d8-89a38b92f883-2iqc.avif",

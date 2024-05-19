@@ -25,7 +25,7 @@ const recent=eventsData.filter((event)=>event.category==="recent").slice(0,2);
 
 const Recent: React.FC = () => {
   return (
-    <div id="events" className=" w-full flex flex-col items-center">
+    <div id="events" className=" w-full flex flex-col lg:items-end phone:items-center">
       <Headertitle
         title="RECENT"
         subtitle="ACTIVITIES"
@@ -68,7 +68,7 @@ const Recent: React.FC = () => {
               <Button title="VIEW ALL" />
             </Link>
           </div> */}
-          <div className=" h-fit lg:w-[50.5rem] md:w-[42rem] phone:w-[17.5rem] ">
+          <div className=" h-fit lg:w-[50.5rem] md:w-[42rem] phone:w-[17.5rem] mt-[6rem]">
               <div className="flex  justify-end w-full  ">
                 <Link href="/events" passHref>
                   <Button title="VIEW ALL" />
