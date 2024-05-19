@@ -1,6 +1,6 @@
 import React from "react";
 import RoundMarquee from "/public/roundmarquee.svg";
-import AOTsvg from "/public/whitelogo.svg";
+import AOTsvg from "/public/whitelogo_new.svg";
 import Link from "next/link";
 
 const LINKS = [
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <div className="flex flex-col md:flex-row items-center justify-between w-full gap-5 md:gap-0">
         <div className="flex flex-col items-center">
           <AOTsvg className="w-48" />
-          IEI Students&apos; Chapter CSE (AOT)
+          {/* IEI Students&apos; Chapter CSE (AOT) */}
         </div>
         <div className="flex flex-col gap-5">
           {LINKS.map((item, idx) => (

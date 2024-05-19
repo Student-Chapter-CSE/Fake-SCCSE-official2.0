@@ -7,7 +7,7 @@ const AboutUs: React.FC = () => {
   return (
     <section
       id="about"
-      className="w-full h-fit items-center justify-center text-body"
+      className="w-full h-fit items-center justify-center text-body "
       data-scroll-container
     >
       <div data-scroll data-scroll-sticky data-scroll-target="#about" className="w-full sticky">
@@ -15,9 +15,10 @@ const AboutUs: React.FC = () => {
           title="ABOUT"
           subtitle="US"
           content="We are a group of students from (SCCSE)"
-          subtitleFontSize="2.5rem"
+          subtitleFontSize="text-[1.2rem] md:text-[2.5rem]"
           margin="my-36"
-          padding="pl-12"
+          padding="pl-12 md:pl-36"
+          subpadding={"pr-0"}
           
         />
       </div>
@@ -71,7 +72,7 @@ const AboutUs: React.FC = () => {
         <div className="flex flex-col md:flex-row pt-12 border-t-[0.5px] border-primary_text w-[80%] md:w-[70%] text-secondary_text">
           <div className="flex flex-col md:w-1/2 items-center md:items-start">
             <div className="flex gap-2 justify-center md:justify-start">
-              <div className="w-48 h-60 relative [transform:rotateY(180deg)] overflow-hidden">
+              <div className="w-48 h-60 relative [transform:rotateY(180deg)] ">
                 <Image
                   src="/hod_img.webp"
                   alt="HOD"
