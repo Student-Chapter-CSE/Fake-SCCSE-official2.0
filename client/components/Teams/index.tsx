@@ -11,6 +11,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Team_header from "@/public/Teamheader.svg";
 import Link from 'next/link'
+
 import {
   ManagementTeam,
   TechTeam,
@@ -28,7 +29,7 @@ const Index = () => {
     <div className="bg-background text-sm flex flex-col items-center ">
       <div className=" w-full flex pt-32 ">
         <div className="hidden md:flex"><TeamsPhotoAnimation/></div>
-        <div className="w-fit h-fit flex-col justify-end pr-5 md:pr-28  ml-auto py-28 pt-28 "> {/* ok i know padding isnot a good idea but can't help it */}
+        <div className="w-fit h-fit flex-col justify-end pr-16 md:pr-28  ml-auto py-28 pt-28 "> {/* ok i know padding isnot a good idea but can't help it */}
           <Team_header/>
           <div className="font-montserrat ">Let's meet the wizards/mages of the community</div>
         </div>
@@ -38,7 +39,7 @@ const Index = () => {
         title="CORE"
         subtitle="TEAM"
         content="The backbone,The undisputable dominators"
-        subtitleFontSize="text-[0.6rem] md:text-[1.2rem]"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
         padding="pl-12 md:pl-36"
         subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
@@ -64,7 +65,7 @@ const Index = () => {
       </div>
 
 
-      <div className="flex justify-end pr-24 mt-20 w-full">
+      <div className="flex justify-end pr-20 md:pr-24 mt-20 w-full">
         <div className="bg-white pl-8 pr-12  py-6 mt-12 flex flex-col justify-center items-end gap-2">
           <div className="h-[220px] w-fit">
             <div className="relative ">
@@ -109,7 +110,7 @@ const Index = () => {
       </div>
 
       {/* core members */}
-      <div className="w-full flex justify-center pr-24">
+      <div className="w-full flex justify-center pr-20 md:pr-24">
         <div className="justify-end flex flex-wrap gap-20 w-fit">
           {ManagementTeam.map((member, index) => (
             <Card key={index} name={member.name} photo={member.img} designation={member.designation}
@@ -123,12 +124,12 @@ const Index = () => {
         title="DESIGN"
         subtitle="TEAM"
         content="Aestheticism,beauty and gracefulness"
-        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
         padding="pl-12 md:pl-36"
         subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {DesignTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
@@ -141,12 +142,12 @@ const Index = () => {
         title="TECH"
         subtitle="TEAM"
         content="Charisma,Perception and Ingeniousness"
-        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
         padding="pl-12 md:pl-36"
         subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {TechTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
@@ -158,12 +159,12 @@ const Index = () => {
         title="PR & MARKETING"
         subtitle="TEAM"
         content="Pros at the art of mind manipulation"
-        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
         padding="pl-12 md:pl-36"
         subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {PrTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
@@ -176,13 +177,13 @@ const Index = () => {
         title="PHOTOGRAPHY"
         subtitle="TEAM"
         content="Click,Set and Flash"
-        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
         padding="pl-12 md:pl-36"
         subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
 
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {PhotographyTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
@@ -203,7 +204,7 @@ const Index = () => {
         
       />
 
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {Conveners.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
