@@ -72,7 +72,7 @@ const AboutUs: React.FC = () => {
         <div className="flex flex-col md:flex-row pt-12 border-t-[0.5px] border-primary_text w-[80%] md:w-[70%] text-secondary_text">
           <div className="flex flex-col md:w-1/2 items-center md:items-start">
             <div className="flex gap-2 justify-center md:justify-start">
-              <div className="w-48 h-60 relative [transform:rotateY(180deg)] overflow-hidden">
+              <div className="w-48 h-60 relative [transform:rotateY(180deg)] ">
                 <Image
                   src="/hod_img.webp"
                   alt="HOD"

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Button from "../Button";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-const socialLinkStyle = "text-secondary_text text-[1rem] flex gap-2 items-center hover:text-primary_text hover:font-medium hover:text-pop_orange";
+const socialLinkStyle = "text-secondary_text text-[1rem] flex gap-2 items-center hover:font-medium hover:text-pop_orange";
 const contactInputStyle = "appearance-none block w-full bg-background border-b-[0.5px] border-black text-secondary_text py-5 px-5 leading-tight focus:outline-none caret-pop_orange focus:border-pop_orange focus:border-b";
 
 const ContactUs: React.FC = () => {
@@ -118,7 +118,7 @@ const ContactUs: React.FC = () => {
               Instagram<Arrow />
             </Link>
             <Link href="mailto:sccseaot@gmail.com" target="_blank" className={socialLinkStyle}>
-              sccseaot@gmail.com<Arrow />
+              sccseaot@gmail.com<Arrow/>
             </Link>
           </div>
         </div>
