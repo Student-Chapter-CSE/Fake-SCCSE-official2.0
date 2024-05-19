@@ -31,7 +31,7 @@ const Index = () => {
         <div className="hidden md:flex"><TeamsPhotoAnimation/></div>
         <div className="w-fit h-fit flex-col justify-end pr-16 md:pr-28  ml-auto py-28 pt-28 "> {/* ok i know padding isnot a good idea but can't help it */}
           <Team_header/>
-          <div className="font-montserrat ">Let's meet the wizards/mages of the community</div>
+          <div className="font-montserrat ">Let &apos; meet the wizards/mages of the community</div>
         </div>
       </div>
       
