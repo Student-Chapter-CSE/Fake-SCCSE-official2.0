@@ -1,18 +1,36 @@
 import React from "react";
 import { useState } from "react";
-import SClogosvg from "/public/sclogo.svg";
+import SClogosvg from "@/public/greylogo.svg"
 import Link from "next/link";
 import Burger from "@/public/icons/HAMBURGER.svg";
 import Cross from "@/public/icons/Cross.svg";
+import { useEffect } from "react";
 const Hamburger: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    let lastScrollStop = window.scrollY;
+    const navbar =
+      document.getElementById("navbar") || document.createElement("div");
+    window.addEventListener("scroll", function () {
+      //on every scroll this funtion will be called
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      //This line will get the location on scroll
+      if (scrollTop > lastScrollStop && scrollTop > 80) {
+        //if it will be greater than the previous
+        navbar.style.top = "-100%";
+      } else {
+        navbar.style.top = "0";
+      }
+      lastScrollStop = scrollTop;
+    });
+  });
   return (
-    <div className="w-full md:hidden fixed h-[72px]  border-b-[0.5px] border-primary_text  bg-background z-10 py-2">
-      <SClogosvg />
+    <div id="navbar" className="w-fit md:hidden h-fit">
+      
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-5 right-5 z-50 md:hidden"
+        className=" top-5 right-5 z-50 md:hidden "
       >
         
           {isOpen ? (
@@ -33,7 +51,7 @@ const Hamburger: React.FC = () => {
         } md:translate-x-0 md:static md:transition-none`}
       >
         <Link
-          href="#hero"
+          href="/"
           className="py-3 transition-colors duration-200 "
           onClick={() => setIsOpen(false)}
         >
@@ -47,7 +65,7 @@ const Hamburger: React.FC = () => {
           Teams
         </Link>
         <Link
-          href="#events"
+          href="/#events"
           className="py-3 delay-600 transition-colors duration-200 "
           onClick={() => setIsOpen(false)}
         >

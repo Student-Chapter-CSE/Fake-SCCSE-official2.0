@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import SClogosvg from "/public/sclogo.svg";
+import SClogosvg from "/public/greylogo.svg";
 import Contact from "/public/icons/mail.svg";
 import Event from "/public/icons/event.svg";
 import HomeDark from "/public/icons/Home_dark.svg";
@@ -40,14 +40,14 @@ const Navbar: React.FC = () => {
     <>
     <div
       id="navbar"
-      className="h-[76px] w-full border-b-0  md:border-b-[0.5px] border-primary_text fixed bg-background z-10 py-2 px-4 duration-[600ms]"
+      className=" h-[76px] w-full border-b-[0.5px] border-primary_text fixed bg-background z-10 py-2 px-4 duration-[600ms]"
     >
-      <div className="hidden md:flex justify-between h-full items-center">
+      <div className="flex justify-between h-full items-center">
         {/*need to add the hamburger here*/}
         <SClogosvg />
 
-        <div className="flex">
-          <Link href="/#hero">
+        <div className="hidden md:flex ">
+          <Link href="/">
             <div className="flex space-x-1 group">
               <div className={navItemBorderStyle}>
                 <HomeDark className={logoPositionStyle} />
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
             </div>
           </Link>
 
-          <Link href="#contact">
+          <Link href="/#contact">
             <div className="flex space-x-1 group">
               <div className={navItemBorderStyle}>
                 <Contact className={`${logoPositionStyle} right-0.5`} />
@@ -97,10 +97,11 @@ const Navbar: React.FC = () => {
             </div>
           </Link>
         </div>
+        <Hamburger />
       </div>
       
     </div>
-    <Hamburger />
+    
     </>
   );
 };

@@ -11,6 +11,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Team_header from "@/public/Teamheader.svg";
 import Link from 'next/link'
+
 import {
   ManagementTeam,
   TechTeam,
@@ -25,37 +26,30 @@ const coreteam="cd7e03bb-84b6-4f4b-80f7-bbfb4fafe891-1tktb.avif";
 
 const Index = () => {
   return (
-    <div className="bg-background text-sm flex flex-col items-end overflow-hidden">
-      <div className="flex flex-col md:flex-row  md:justify-end gap-40 md:gap-4 pt-24 md:pt-32 w-[80%] lg:w-[70%] pr-24 ">
-        <div className="flex overflow-hidden ">
-          <TeamsPhotoAnimation />
-        </div>
-
-        <div className="font-light text-large text-primary_text text-end flex justify-center">
-          <div className="flex flex-col pt-20 w-[25vmax]">
-            <Team_header />
-
-            <div className="font-normal text-[.9rem]  tracking-wider h-fit ">
-              Lets meet the wizards/mages the community
-            </div>
-          </div>
+    <div className="bg-background text-sm flex flex-col items-center ">
+      <div className=" w-full flex pt-32 ">
+        <div className="hidden md:flex"><TeamsPhotoAnimation/></div>
+        <div className="w-fit h-fit flex-col justify-end pr-16 md:pr-28  ml-auto py-28 pt-28 "> {/* ok i know padding isnot a good idea but can't help it */}
+          <Team_header/>
+          <div className="font-montserrat ">Let &apos; meet the wizards/mages of the community</div>
         </div>
       </div>
-
+      
       <HeaderTitle
         title="CORE"
         subtitle="TEAM"
         content="The backbone,The undisputable dominators"
-        subtitleFontSize="1.5rem"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
-        padding="pl-12"
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
 
-      <div className="flex flex-col-reverse sm:flex-row  items-end w-[80%] lg:w-[70%] pr-24">
+      <div className="w-fit flex flex-col-reverse sm:flex-row items-center md:items-end md:w-[80%] lg:w-[70%] px-6 md:px-0"> 
         <div className="flex flex-col space-y-4 sm:space-y-40 mt-4 sm:mt-0 sm:mr-4">
-          <p className="flex justify-end sm:pr-4 text-right">The management team</p>
+          <p className="flex justify-end sm:pr-4 text-right font-montserrat">The management team</p>
           <div className="flex justify-end">
-            <p className="text-right text-wrap ">
+            <p className="text-right text-wrap font-montserrat ">
               Transparency, determination, dedication, trust and companionship
               defines the management tenure 2024.
             </p>
@@ -64,13 +58,14 @@ const Index = () => {
         <Image
           src={`https://utfs.io/f/${coreteam}`}
           alt="management team"
+          objectFit="cover"
           height={200}
           width={400}
         />
       </div>
 
 
-      <div className="flex justify-end pr-24 mt-20 w-full">
+      <div className="flex justify-end pr-20 md:pr-24 mt-20 w-full">
         <div className="bg-white pl-8 pr-12  py-6 mt-12 flex flex-col justify-center items-end gap-2">
           <div className="h-[220px] w-fit">
             <div className="relative ">
@@ -115,7 +110,7 @@ const Index = () => {
       </div>
 
       {/* core members */}
-      <div className="w-full flex justify-center pr-24">
+      <div className="w-full flex justify-center pr-20 md:pr-24">
         <div className="justify-end flex flex-wrap gap-20 w-fit">
           {ManagementTeam.map((member, index) => (
             <Card key={index} name={member.name} photo={member.img} designation={member.designation}
@@ -129,11 +124,12 @@ const Index = () => {
         title="DESIGN"
         subtitle="TEAM"
         content="Aestheticism,beauty and gracefulness"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
-        padding="pl-12"
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {DesignTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
@@ -146,12 +142,12 @@ const Index = () => {
         title="TECH"
         subtitle="TEAM"
         content="Charisma,Perception and Ingeniousness"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
-          padding="pl-12"
-
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {TechTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
@@ -163,11 +159,12 @@ const Index = () => {
         title="PR & MARKETING"
         subtitle="TEAM"
         content="Pros at the art of mind manipulation"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
-          padding="pl-12"
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {PrTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
@@ -180,12 +177,13 @@ const Index = () => {
         title="PHOTOGRAPHY"
         subtitle="TEAM"
         content="Click,Set and Flash"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize="text-[0.5rem] md:text-[1.2rem]"
         margin="my-36"
-          padding="pl-12"
+        padding="pl-12 md:pl-36"
+        subpadding={"pr-1 md:pr-2 pb-1 md:pb-8"}
       />
 
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {PhotographyTeam.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}
@@ -200,12 +198,13 @@ const Index = () => {
         title="PREVIOUS CONVENORS"
         subtitle=""
         content="Community influencers"
-        subtitleFontSize="1.25rem"
+        subtitleFontSize=""
         margin="my-36"
-          padding="pl-12"
+        padding="pl-5 md:pl-36"
+        
       />
 
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-24">
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {Conveners.map((member, index) => (
           <Card key={index} name={member.name} photo={member.img}
             designation={member.designation}

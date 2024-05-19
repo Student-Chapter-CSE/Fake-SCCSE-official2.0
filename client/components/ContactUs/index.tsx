@@ -4,8 +4,8 @@ import HeaderTitle from "../HeaderTitle";
 import Link from "next/link";
 import Button from "../Button";
 import emailjs from '@emailjs/browser';
-
-const socialLinkStyle = "text-secondary_text text-[1rem] flex gap-2 items-center hover:text-primary_text hover:font-medium";
+import Swal from 'sweetalert2';
+const socialLinkStyle = "text-secondary_text text-[1rem] flex gap-2 items-center hover:font-medium hover:text-pop_orange";
 const contactInputStyle = "appearance-none block w-full bg-background border-b-[0.5px] border-black text-secondary_text py-5 px-5 leading-tight focus:outline-none caret-pop_orange focus:border-pop_orange focus:border-b";
 
 const ContactUs: React.FC = () => {
@@ -24,7 +24,11 @@ const ContactUs: React.FC = () => {
     e.preventDefault();
     try {
       await emailjs.send("service_4zefj4p","template_sv908q9",templateParams,"hA4akak_srSrO6Lpz");
-      console.log("Email sent successfully");
+      Swal.fire({
+        title: "Thanks for connecting with us!",
+        text: "Please Check your inbox for further details.",
+        icon: "success"
+      });
     } catch (error) {
       console.error("Error sending email:", error);
     }
@@ -45,9 +49,9 @@ const ContactUs: React.FC = () => {
         title="CONTACT"
         subtitle="US"
         content="We are a group of students from (SCCSE)"
-        subtitleFontSize="2.5rem"
+        subtitleFontSize="text-[1.2rem] md:text-[2.5rem]"
         margin="my-36"
-        padding="pl-12"
+        padding="pl-12 md:pl-36"
       />
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col md:flex-row md:items-start items-center justify-center w-[70%] border-t-[0.5px] border-primary_text gap-20 pt-5 pb-40">
@@ -114,7 +118,7 @@ const ContactUs: React.FC = () => {
               Instagram<Arrow />
             </Link>
             <Link href="mailto:sccseaot@gmail.com" target="_blank" className={socialLinkStyle}>
-              sccseaot@gmail.com<Arrow />
+              sccseaot@gmail.com<Arrow/>
             </Link>
           </div>
         </div>

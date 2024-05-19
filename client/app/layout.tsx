@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} font-montserrat scroll-smooth overflow-x-hidden`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+      <body
+        className={`${inter.className} font-montserrat scroll-smooth overflow-x-hidden `}//
+      >
         <Navbar />
         {children}
       </body>

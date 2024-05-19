@@ -30,9 +30,10 @@ const Recent: React.FC = () => {
         title="RECENT"
         subtitle="ACTIVITIES"
         content="We are a group of students from (SCCSE)"
-        subtitleFontSize="10px"
+        subtitleFontSize="text-[0.2rem] md:text-[0.6rem]"
+        subpadding={"pb-10"}
         margin="my-36"
-        padding="pl-12"
+        padding="pl-12 md:pl-36"
       />
       <div className="w-fit h-fit items-center justify-center">
         <div className="">
