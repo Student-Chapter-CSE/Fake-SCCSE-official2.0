@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 const img = "2019bbe0-f3c1-47f9-b4d5-ce8c3d867d6b-9wuybl.avif";
 const img2 = "7ab4334f-f0a1-4976-805f-2e7df0a7acde-9wuybj.avif";
-const img3 = "05ab0933-86db-4dfc-8d19-c2c925a5ba51-y0w5qv.avif ";
+const img3 = "05ab0933-86db-4dfc-8d19-c2c925a5ba51-y0w5qv.avif";
 const TeamsPhotoAnimation = () => {
   return (
     <div className="w-fit items-center justify-center overflow-hidden">
