@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-row gap-5">
           <div className="flex flex-col gap-5">
             <span>Evolve Inspire Guidance </span>
-            <span>Evolve Inspire Guidance </span>
+            <span>Learn Connect Grow </span>
           </div>
           <div className="h-20vh flex items-end">
             <RoundMarquee className="animate-spin-slow flex items-end w-20" />
