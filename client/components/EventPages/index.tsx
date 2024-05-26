@@ -154,7 +154,7 @@ const IndexPage: React.FC = () => {
       <Sections
         title="UPCOMING"
         subtitle="EVENTS"
-        subtitleFontSize="text-[1.5rem]"
+        subtitleFontSize="text-[1rem]"
         color="transparent"
         date=""
         content=""
@@ -163,6 +163,7 @@ const IndexPage: React.FC = () => {
         align="start"
         margin=""
         padding=""
+        subpadding={" pb-10"}
       />
       <br />
 

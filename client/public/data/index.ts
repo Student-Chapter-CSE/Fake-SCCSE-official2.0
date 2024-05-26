@@ -24,7 +24,7 @@ export const ManagementTeam: Team[] = [
         linkedin: "https://www.linkedin.com/in/sayan-mukherjee-975175229/"
     },
     {
-        name: "Rohit Chakrabarty",
+        name: "Rohit Chakrabarti",
         img: "bcc56a93-5b06-454b-ad41-6b9ab413874e-1spmwm.avif",
         designation: "Marketing Associate",
         github: "https://github.com/rohit32999",
@@ -55,7 +55,7 @@ export const ManagementTeam: Team[] = [
     },
     {
         name: "Sayantan Sen",
-        img: "744d30a4-de10-4f2e-bbec-c6a2b54d3e17-wwkofr.avif",
+        img: "8891ee67-8ed2-40d3-aac0-3cddfd8ab2fc-e9r10n.avif",
         designation: "Tech Associate",
         github: "http://github.com/sencrypt",
         instagram: "",
@@ -199,16 +199,16 @@ export const PrTeam: Team[] = [
         twitter: "https://x.com/DeyDe33361?t=0UCybsSfkwALJcDtXL5DwQ&s=09",
         linkedin: "https://www.linkedin.com/in/supratim-dey-a4ab5b253"
     },
-    {
-        name: "Rohan Mitra",
-        img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
-        designation: "Potentios",
-        github: "https://github.com/Rohan-450",
-        instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
-        facebook: "",
-        twitter: "https://x.com/rohanmitra450?t=jP_uU4pcrVRG5GKArbgTIw&s=09",
-        linkedin: "https://www.linkedin.com/in/rohan-mitra-63b7a1245"
-    },
+    // {
+    //     name: "Rohan Mitra",
+    //     img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
+    //     designation: "Potentios",
+    //     github: "https://github.com/Rohan-450",
+    //     instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
+    //     facebook: "",
+    //     twitter: "https://x.com/rohanmitra450?t=jP_uU4pcrVRG5GKArbgTIw&s=09",
+    //     linkedin: "https://www.linkedin.com/in/rohan-mitra-63b7a1245"
+    // },
     {
         name: "Riyanko Mondal",
         img: "69829981-3386-49f7-b15f-4461afceb1e6-k4kr5f.avif",
@@ -279,16 +279,16 @@ export const PrTeam: Team[] = [
         twitter: "",
         linkedin: "http://www.linkedin.com/in/debasmita-goswami-246831249"
     },*/
-    {
-        name: "Abhraneel Karmakar",
-        img: "45e06d31-7806-4ac2-b64e-b7f9bf33b01e-htd136.avif",
-        designation: "Potentios",
-        github: "https://github.com/abhraneel2004/",
-        instagram: "https://www.instagram.com/abhraneel.karmakar/",
-        facebook: "https://www.facebook.com/profile.php?id=100081850506762",
-        twitter: "",
-        linkedin: "https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/"
-    },
+    // {
+    //     name: "Abhraneel Karmakar",
+    //     img: "45e06d31-7806-4ac2-b64e-b7f9bf33b01e-htd136.avif",
+    //     designation: "Potentios",
+    //     github: "https://github.com/abhraneel2004/",
+    //     instagram: "https://www.instagram.com/abhraneel.karmakar/",
+    //     facebook: "https://www.facebook.com/profile.php?id=100081850506762",
+    //     twitter: "",
+    //     linkedin: "https://www.linkedin.com/in/abhraneel-karmakar-1b51971ba/"
+    // },
 ]
 
 export const DesignTeam: Team[] = [
@@ -420,14 +420,14 @@ export const PhotographyTeam: Team[] = [
 export const Conveners= [
     {
         name: "Deepesh Soni",
-        img: "",
+        img: "d4fda626-ed40-4a04-9090-491649031a84-u4quzl.avif",
         tenure: "2018-2019",
         designation: "2018-2019",
         github: "",
         instagram: "",
         facebook: "",
         twitter: "",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/deepesh-soni-1a3bb9184/",
         events: [
             {
                 event1: "TechQuisitive Season 1",

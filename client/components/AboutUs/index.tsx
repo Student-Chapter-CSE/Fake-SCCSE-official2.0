@@ -15,10 +15,10 @@ const AboutUs: React.FC = () => {
           title="ABOUT"
           subtitle="US"
           content="We are a group of students from (SCCSE)"
-          subtitleFontSize="text-[1.2rem] md:text-[2.5rem]"
+          subtitleFontSize="text-[2.5rem]"
           margin="my-36"
-          padding="pl-12 md:pl-36"
-          subpadding={"pr-0"}
+          padding="pl-24 md:pl-36"
+          subpadding={"pl-10 pb-10"}
           
         />
       </div>
