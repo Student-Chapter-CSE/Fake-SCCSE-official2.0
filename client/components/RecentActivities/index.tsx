@@ -30,10 +30,10 @@ const Recent: React.FC = () => {
         title="RECENT"
         subtitle="ACTIVITIES"
         content="We are a group of students from (SCCSE)"
-        subtitleFontSize="text-[0.2rem] md:text-[0.6rem]"
+        subtitleFontSize="text-[0.6rem]"
         subpadding={"pb-10"}
         margin="my-36"
-        padding="pl-12 md:pl-36"
+        padding="pl-24 md:pl-36"
       />
       <div className="w-fit h-fit items-center justify-center">
         <div className="">
@@ -69,7 +69,7 @@ const Recent: React.FC = () => {
               <Button title="VIEW ALL" />
             </Link>
           </div> */}
-          <div className=" h-fit lg:w-[50.5rem] md:w-[42rem] phone:w-[17.5rem] ">
+          <div className=" h-fit lg:w-[50.5rem] md:w-[42rem] phone:w-[17.5rem] pt-10 md:pt-0  pr-10 md:pr-0">
               <div className="flex  justify-end w-full  ">
                 <Link href="/events" passHref>
                   <Button title="VIEW ALL" />

@@ -30,12 +30,13 @@ const Hamburger: React.FC = () => {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className=" top-5 right-5 z-50 md:hidden "
+        className=" fixed top-5 right-5 z-50  "
       >
         
           {isOpen ? (
             // "X" icon
             <Cross
+            
             />
           ) : (
             //hamburger icon
