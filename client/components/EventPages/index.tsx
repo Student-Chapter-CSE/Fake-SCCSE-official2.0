@@ -8,7 +8,7 @@ import { Card } from "../RecentActivities";
 import { eventsData } from "@/public/data";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import Events from "/public/events.svg";
 
 interface EventData {
   category: string;
@@ -61,8 +61,8 @@ const Sections: React.FC<SectionsProps> = ({
   }, [title]);
   return (
     <>
-      <div className="w-full flex justify-center">
-        <div className="w-[80%] border-b-2 border-black">
+      <div className="w-full  flex justify-center">
+        <div className="lphone:w-[80%]   border-b-2 border-black">
           <HeaderTitle
             title={title}
             subtitle={subtitle}
@@ -116,7 +116,7 @@ const IndexPage: React.FC = () => {
   return (
     <div className="relative w-full h-fit bg-background">
       {/* Image Section and Text Section */}
-      <div className="w-full pt-24 flex justify-center">
+      <div  className="w-full pt-24 flex justify-center">
         <div>
           <motion.div
             initial={{ x: "-100px", opacity: 0 }}
@@ -124,25 +124,25 @@ const IndexPage: React.FC = () => {
             transition={{ type: "spring", duration: 1.5, delay: 0.8 }}
             className="w-full h-fit flex items-end md:justify-end phone:justify-center"
           >
-            <div className="w-[20rem] h-[10rem] flex items-end relative">
-              <Image src="/icons/events.svg" alt="Events Icon" fill />
+            <div style={{objectFit:"cover"}}  className="phone:mt-4 sm:mt-0  scale-[1.2]  lg:w-[30rem] phone:w-[20rem]  flex items-end relative">
+              <Events />
             </div>
+            
           </motion.div>
-          <div className="font-normal font-montserrat text-[.9rem] tracking-wider h-fit pb-20 flex lg:justify-end phone:justify-center phone:text-small">
-            Indomitable and Captivating
-          </div>
+          <br />
+            <br />
           <motion.div
           ref={ref}
           animate={controls}
           initial="hidden"
           variants={{
-            visible: { opacity: 1, scale: 1, transition: {delay:2.5, duration: 0.5 } },
+            visible: { opacity: 1, scale: 1, transition: {delay:2.1, duration: 0.5 } },
             hidden: { opacity: 0, scale: 0.8 },
           }}
-          className="mxl:w-[60rem] mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[30rem] xl:w-[60rem] xl:h-[30rem] phone:w-full phone:h-[8rem] relative">
+          className="mxl:w-[60rem] phone:mt-8 sm:mt-0 mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[30rem] xl:w-[60rem] xl:h-[30rem] phone:w-full phone:h-[12rem] relative">
             <Image src="/icons/collage1.avif" alt="" fill />
           </motion.div>
-          <div className="text-end phone:text-small">
+          <div className="text-end phone:text-small lphone:opacity-100 phone:opacity-0">
             <div>Alluring and Charming. Student Chapter CSE is a</div>
             <div>Brand</div>
           </div>
@@ -154,16 +154,15 @@ const IndexPage: React.FC = () => {
       <Sections
         title="UPCOMING"
         subtitle="EVENTS"
-        subtitleFontSize="text-[1rem]"
+        subtitleFontSize="1rem"
         color="transparent"
         date=""
         content=""
         width={300}
         height={400}
         align="start"
-        margin=""
-        padding=""
-        subpadding={" pb-10"}
+        margin="1remadd ."
+        padding="-1.5rem"
       />
       <br />
 
@@ -171,14 +170,14 @@ const IndexPage: React.FC = () => {
       <Sections
         title="RECENT"
         subtitle="ACTIVITIES"
-        subtitleFontSize="text-[1.5rem]"
+        subtitleFontSize=".7rem"
         color="transparent"
         content=""
         width={300}
         height={400}
         align="start"
-        margin=""
-        padding=""
+        margin="1rem"
+        padding="-1.5rem"
       />
       <br />
 
@@ -191,8 +190,8 @@ const IndexPage: React.FC = () => {
         width={300}
         height={400}
         align="start"
-        margin=""
-        padding=""
+        margin="1rem"
+        padding="-1.5rem"
       />
       <br />
       <br />

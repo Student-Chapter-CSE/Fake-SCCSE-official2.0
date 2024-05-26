@@ -66,7 +66,7 @@ const Hamburger: React.FC = () => {
           Teams
         </Link>
         <Link
-          href="/#events"
+          href="/events"
           className="py-3 delay-600 transition-colors duration-200 "
           onClick={() => setIsOpen(false)}
         >

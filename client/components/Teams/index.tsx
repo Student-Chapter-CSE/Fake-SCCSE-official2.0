@@ -21,21 +21,15 @@ import {
   PhotographyTeam,
 } from "@/public/data/index";
 import TeamsPhotoAnimation from "../TeamsPhotoAnimation";
-import Team from "@/public/Group 310.png";
+import Teams from "/public/Teams.svg";
 const coreteam = "cd7e03bb-84b6-4f4b-80f7-bbfb4fafe891-1tktb.avif";
 
 const Index = () => {
   return (
-    <div className="bg-background text-sm flex flex-col items-center ">
+    <div className="bg-background text-sm flex flex-col items-center  ">
       <div className="flex md:justify-end  justify-center w-full ">
-        <div className="w-[31rem] h-[20rem] pt-28 md:mr-28 ">
-          <Image
-            src={Team}
-            alt="header"
-            layout="responsive"
-            objectFit="cover"
-            objectPosition="center"
-          />
+        <div className="w-[31rem] relative scale-[.8] h-[20rem] pt-28 md:mr-28 ">
+          <Teams />
         </div>
       </div>
 
