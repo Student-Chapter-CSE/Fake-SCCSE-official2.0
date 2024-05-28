@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Recent from "@/components/RecentActivities";
 import React, { use, useEffect, useLayoutEffect, useState } from "react";
 import Chatbot from "@/components/Chatbot/index"
+
 export default function Home() {
   useEffect(() => {
 
