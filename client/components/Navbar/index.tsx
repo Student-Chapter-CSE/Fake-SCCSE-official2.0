@@ -18,23 +18,22 @@ const orangeSlideStyle =
   "absolute bg-pop_orange border-t-primary_text border-t h-1/3 w-full -bottom-[100%] group-hover:bottom-0 duration-500";
 
 const Navbar: React.FC = () => {
-  useEffect(() => {
-    let lastScrollStop = window.scrollY;
-    const navbar =
-      document.getElementById("navbar") || document.createElement("div");
-    window.addEventListener("scroll", function () {
-      //on every scroll this funtion will be called
-      var scrollTop = window.scrollY || document.documentElement.scrollTop;
-      //This line will get the location on scroll
-      if (scrollTop > lastScrollStop && scrollTop > 80) {
-        //if it will be greater than the previous
-        navbar.style.top = "-100%";
-      } else {
-        navbar.style.top = "0";
-      }
-      lastScrollStop = scrollTop;
-    });
-  });
+  // useEffect(() => {
+  //   if (window.innerWidth > 768) { // Only run the code if the viewport is wider than 768px
+  //     let lastScrollStop = window.scrollY;
+  //     const navbar =
+  //       document.getElementById("navbar") || document.createElement("div");
+  //     window.addEventListener("scroll", function () {
+  //       var scrollTop = window.scrollY || document.documentElement.scrollTop;
+  //       if (scrollTop > lastScrollStop && scrollTop > 80) {
+  //         navbar.style.top = "-100%";
+  //       } else {
+  //         navbar.style.top = "0";
+  //       }
+  //       lastScrollStop = scrollTop;
+  //     });
+  //   }
+  // });
 
   return (
     <>

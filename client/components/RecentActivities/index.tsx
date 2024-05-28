@@ -25,7 +25,7 @@ const recent=eventsData.filter((event)=>event.category==="recent").slice(0,2);
 
 const Recent: React.FC = () => {
   return (
-    <div id="events" className=" w-full flex flex-col items-center">
+    <div id="events" className=" w-full flex flex-col lg:items-end phone:items-center">
       <Headertitle
         title="RECENT"
         subtitle="ACTIVITIES"
@@ -69,8 +69,8 @@ const Recent: React.FC = () => {
               <Button title="VIEW ALL" />
             </Link>
           </div> */}
-          <div className=" h-fit lg:w-[50.5rem] md:w-[42rem] phone:w-[17.5rem] pt-10 md:pt-0  pr-10 md:pr-0">
-              <div className="flex  justify-end w-full  ">
+          <div className=" lg:w-[50.5rem] md:w-[42rem] phone:w-[17.5rem] mt-24 phone:ml-[8rem] sm:mr-14   ">
+              <div className="flex flex-  justify-end w-full  ">
                 <Link href="/events" passHref>
                   <Button title="VIEW ALL" />
                 </Link>
@@ -106,10 +106,10 @@ export const Card: React.FC<CardProps> = ({
 
   return (
     <div
-      className={`w-full h-full xl:w-full lg:w-[68rem] md:w-[48rem] flex flex-col items-end justify-end md:flex-row lg:items-start phone:items-center md:gap-10 phone:gap-5`}
+      className={`relative w-full h-full xl:w-full lg:w-[68rem] md:w-[48rem] flex flex-col  items-end justify-end md:flex-row lg:items-start phone:items-center md:gap-10 phone:gap-5`}
     >
       <div
-        className={`md:w-[20rem] phone:flex-col-reverse sm:flex-col xl:h-[45rem] mxl:h-[40rem] lg:ml-0 flex flex-col lg:w-full sm:w-[20rem] md:h-[20rem] lg:h-[20rem] sm:h-fit md:items-end sm:items-end justify-between`}
+        className={`sm:relative lphone:w-full phone:w-[92%]  phone:absolute  phone:items-start md:w-[20rem]       mxl:h-[40rem] lg:ml-0 flex flex-col-reverse lg:w-full sm:w-[20rem] md:h-[20rem] lg:h-[20rem] sm:h-fit md:items-end sm:items-end justify-between`}
       >
         <motion.h1
         ref={ref}
@@ -126,7 +126,7 @@ export const Card: React.FC<CardProps> = ({
             x: "-100px",
           },
         }}
-        className="lg:text-[1.1rem] xl:text-[3rem] mxl:text-[2.5rem] md:text-[1.4rem] sm:text-[0.7rem] justify-end phone:items-center flex text-primary_text font-montserrat">
+        className="lg:text-[1.1rem] phone:ml-[1.2rem] sm:ml-0 xl:text-[3rem] mxl:text-[2.5rem] md:text-[1.4rem] sm:text-[0.7rem] justify-end phone:items-center flex text-primary_text font-montserrat">
           {subText}
         </motion.h1>
         <div>
@@ -145,7 +145,7 @@ export const Card: React.FC<CardProps> = ({
               x: "-100px",
             },
           }}
-          className="md:text-[3.7rem] xl:text-[6rem] mxl:text-[5.5rem] justify-end flex text-primary_text font-anton lg:text-[3.4rem] sm:text-[1.7rem]">
+          className="md:text-[3.7rem] phone:ml-[1.2rem] sm:ml-0 xl:text-[6rem] mxl:text-[5.5rem] justify-end flex text-primary_text font-anton lg:text-[3.4rem] sm:text-[1.7rem]">
             {Text}
           </motion.p>
         </div>
@@ -158,10 +158,10 @@ export const Card: React.FC<CardProps> = ({
           visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
           hidden: { opacity: 0, scale: 0.8 },
         }}
-      className="relative xl:w-[80rem] mxl:w-[75rem] mxl:h-[40rem] xl:h-[45rem] md:h-[22rem] mphone:h-[10rem] lg:w-[40rem] h-full sm:w-[20rem] sm:h-[15rem] lphone:w-[15rem] lphone:h-[15rem] phone:w-[10rem] phone:h-[7rem]">
+      className="relative xl:w-[80rem] mxl:w-[75rem] mxl:h-[40rem] xl:h-[45rem] md:h-[22rem] mphone:h-[10rem] lg:w-[40rem] h-full sm:w-[20rem] sm:h-[15rem] lphone:w-[25rem] lphone:h-[25rem] phone:w-[12.5rem] phone:h-[12.5rem] ">
         <Image src={`https://utfs.io/f/${img}`} alt="Event Image" fill className="object-contain" />
       </motion.div>
-      <div className="flex xl:h-[45rem] xl:mr-10 flex-col lphone:w-[15rem] phone:w-[10rem] md:w-fit md:h-[22rem] phone:items-end md:items-start md:text-start phone:text-end lg:h-[20rem]">
+      <div className="   lphone:ml-[9rem] sm:ml-0 flex xl:h-[45rem] xl:mr-10 flex-col lphone:w-[15rem] phone:w-[10rem] md:w-fit md:h-[22rem] phone:items-end md:items-start md:text-start phone:text-end lg:h-[20rem]">
         <motion.h1
         ref={ref}
         initial="hidden"
@@ -196,7 +196,7 @@ export const Card: React.FC<CardProps> = ({
             x: "-100px",
           },
         }}
-        className="lg:w-[15rem] xl:text-[6.8rem] mxl:text-[5rem] text-secondary_orange font-anton lg:text-[3rem] sm:text-[1.7rem]">
+        className="  lg:w-[15rem] xl:text-[6.8rem] mxl:text-[5rem] text-secondary_orange font-anton lg:text-[3rem] sm:text-[1.7rem]">
           {date} th
         </motion.h1>
       </div>

@@ -11,7 +11,7 @@ export interface HeaderTitleProps {
   margin?:string|number;
   padding?:string|number;
   subpadding?:string|number;
-  titleFontSize?: string; // Add the 'titleFontSize' property
+  titleFontSize?: string; 
 };
 
 const HeaderTitle: React.FC<HeaderTitleProps> = ({
