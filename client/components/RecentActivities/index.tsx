@@ -69,13 +69,13 @@ const Recent: React.FC = () => {
               <Button title="VIEW ALL" />
             </Link>
           </div> */}
-          <div className=" lg:w-[50.5rem] md:w-[42rem] phone:w-[17.5rem] mt-24 phone:ml-[8rem] sm:mr-14   ">
-              <div className="flex flex-  justify-end w-full  ">
+          
+              <div className="flex pt-16 pr-0 md:pr-60 justify-end w-full  ">
                 <Link href="/events" passHref>
                   <Button title="VIEW ALL" />
                 </Link>
               </div> 
-          </div>
+          
         </div>
       </div>
     </div>
