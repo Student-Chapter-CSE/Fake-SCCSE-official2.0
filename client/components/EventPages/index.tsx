@@ -130,7 +130,7 @@ const IndexPage: React.FC = () => {
           >
             <div
               style={{ objectFit: "cover" }}
-              className="phone:mt-4 sm:mt-0  scale-[1.2]  lg:w-[30rem] phone:w-[20rem]  flex items-end relative"
+              className="phone:mt-4 sm:mt-0  scale-[1.2]  lg:w-[30rem] phone:w-[15rem]  flex items-end relative"
             >
               <Events />
             </div>
