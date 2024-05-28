@@ -5,13 +5,13 @@ export interface HeaderTitleProps {
   title: string;
   subtitle: string;
   content: string;
-  subtitleFontSize: string|number;
+  subtitleFontSize: string;
   size?:string|number;
   color?:string;
   margin?:string|number;
   padding?:string|number;
   subpadding?:string|number;
-  titleFontSize?: string; // Add the 'titleFontSize' property
+  titleFontSize?: string; 
 };
 
 const HeaderTitle: React.FC<HeaderTitleProps> = ({
@@ -34,15 +34,13 @@ const HeaderTitle: React.FC<HeaderTitleProps> = ({
           {title}
         </h1>
         <h1
-          style={{fontSize:subtitleFontSize,marginTop:margin,marginLeft:padding}}
-          className={` font-poppins font-bold w-fit h-fit text-primary_text  py-0 mmx-[-1.9rem] transform -rotate-90 `}
+          
+          className={` ${subtitleFontSize} font-poppins font-bold w-fit h-fit text-primary_text ${subpadding} py-0 transform -rotate-90 `}
         >
           {subtitle}
         </h1>
       </div>
-      <h4
-        style={{fontSize:subtitleFontSize,marginTop:margin,marginLeft:padding}}
-      className="hidden md:block text-small md:text-[1rem] text-primary_text pt-1 md:pt-10 pb-3 md:pb-0">
+      <h4 className="hidden md:block text-small md:text-[1rem] text-primary_text pt-1 md:pt-10 pb-3 md:pb-0">
   {content}
 </h4>
     </div>

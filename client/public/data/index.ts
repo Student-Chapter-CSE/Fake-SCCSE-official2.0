@@ -117,16 +117,6 @@ export const ManagementTeam: Team[] = [
 
 export const TechTeam: Team[] = [
     {
-        name: "Rohan Mitra",
-        img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
-        designation: "Techie",
-        github: "https://github.com/Rohan-450",
-        instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
-        facebook: "",
-        twitter: "https://x.com/rohanmitra450?t=jP_uU4pcrVRG5GKArbgTIw&s=09",
-        linkedin: "https://www.linkedin.com/in/rohan-mitra-63b7a1245"
-    },
-    {
         name: "Indrani Som",
         img: "27b29f15-ee71-49f4-ab92-bce6a762edc4-w57bt5.avif",
         designation: "Techie",
@@ -136,6 +126,17 @@ export const TechTeam: Team[] = [
         twitter: "",
         linkedin: "https://www.linkedin.com/in/indrani-som-258498248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
+    {
+        name: "Rohan Mitra",
+        img: "bde80a5b-c510-49bb-8130-7a31252a906a-1spmpk.avif",
+        designation: "Techie",
+        github: "https://github.com/Rohan-450",
+        instagram: "https://www.instagram.com/_rohan._.mitra_?igsh=eDA5ZmpvMndwZTM2",
+        facebook: "",
+        twitter: "https://x.com/rohanmitra450?t=jP_uU4pcrVRG5GKArbgTIw&s=09",
+        linkedin: "https://www.linkedin.com/in/rohan-mitra-63b7a1245"
+    },
+    
     {
         name: "Koushik Chowdhury",
         img: "a5a8e6e5-ee8f-4ad1-b146-e2d6ec2a91cd-ffbyp6.avif",
@@ -333,7 +334,7 @@ export const DesignTeam: Team[] = [
         linkedin: "https://www.linkedin.com/in/soham-ghosh-826809275/"
     },
     {
-        name: "Surendranath Chakraborty",
+        name: "Surendranath Ch.",
         img: "b2acb65b-246d-4c7c-8b2d-dd207d47874a-9hpfvj.avif",
         designation: "Designer",
         github: "https://github.com/surendranath-chakraborty",

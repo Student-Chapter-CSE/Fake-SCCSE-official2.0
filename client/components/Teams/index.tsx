@@ -183,15 +183,15 @@ const Index = () => {
       </div>
 
       <HeaderTitle
-  title="PR &   MARKETING"
-  subtitle="TEAM"
-  content="Pros at the art of mind manipulation"
-  titleFontSize="text-[2.1rem] md:text-[4rem]" // Use a smaller font size on small screens
-  subtitleFontSize="text-[1.3rem] md:text-[1.2rem]"
-  margin="my-36"
-  padding="pl-10 md:pl-36"
-  subpadding={"pt-2 md:pt-0 pr-16 md:pr-1 pb-10 pl-14 md:pl-0"}
-/>
+        title="PR &   MARKETING"
+        subtitle="TEAM"
+        content="Pros at the art of mind manipulation"
+        titleFontSize="text-[2.1rem] md:text-[4rem]" // Use a smaller font size on small screens
+        subtitleFontSize="text-[1rem] md:text-[1.2rem]"
+        margin="my-36"
+        padding="pl-10 md:pl-36"
+        subpadding={"pt-2 md:pt-0 pr-16 md:pr-1 pb-10 pl-16 md:pl-0"}
+      />
       <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
         {PrTeam.map((member, index) => (
           <Card

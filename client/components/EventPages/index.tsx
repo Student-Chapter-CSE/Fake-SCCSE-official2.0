@@ -46,10 +46,12 @@ const Sections: React.FC<SectionsProps> = ({
   align,
   margin,
   padding,
+  subpadding,
   date,
   month,
   year,
   img,
+  titleFontSize,
 }) => {
   const [filteredData, setFilteredData] = useState<any[]>([]);
 
@@ -71,6 +73,8 @@ const Sections: React.FC<SectionsProps> = ({
             content={content}
             margin={margin}
             padding={padding}
+            subpadding={subpadding}
+            titleFontSize={titleFontSize}
           />
         </div>
       </div>
@@ -116,7 +120,7 @@ const IndexPage: React.FC = () => {
   return (
     <div className="relative w-full h-fit bg-background">
       {/* Image Section and Text Section */}
-      <div  className="w-full pt-24 flex justify-center">
+      <div className="w-full pt-24 flex justify-center">
         <div>
           <motion.div
             initial={{ x: "-100px", opacity: 0 }}
@@ -124,25 +128,32 @@ const IndexPage: React.FC = () => {
             transition={{ type: "spring", duration: 1.5, delay: 0.8 }}
             className="w-full h-fit flex items-end md:justify-end phone:justify-center"
           >
-            <div style={{objectFit:"cover"}}  className="phone:mt-4 sm:mt-0  scale-[1.2]  lg:w-[30rem] phone:w-[20rem]  flex items-end relative">
+            <div
+              style={{ objectFit: "cover" }}
+              className="phone:mt-4 sm:mt-0  scale-[1.2]  lg:w-[30rem] phone:w-[20rem]  flex items-end relative"
+            >
               <Events />
             </div>
-            
           </motion.div>
           <br />
-            <br />
+          <br />
           <motion.div
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: { opacity: 1, scale: 1, transition: {delay:2.1, duration: 0.5 } },
-            hidden: { opacity: 0, scale: 0.8 },
-          }}
-          className="mxl:w-[60rem] phone:mt-8 sm:mt-0 mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[30rem] xl:w-[60rem] xl:h-[30rem] phone:w-full phone:h-[12rem] relative">
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={{
+              visible: {
+                opacity: 1,
+                scale: 1,
+                transition: { delay: 2.1, duration: 0.5 },
+              },
+              hidden: { opacity: 0, scale: 0.8 },
+            }}
+            className="mxl:w-[60rem] phone:mt-8 sm:mt-0 mxl:h-[35rem] sm:w-[25rem] sm:h-[12.5rem] md:w-[35rem] md:h-[20rem] lg:w-[50rem] lg:h-[30rem] xl:w-[60rem] xl:h-[30rem] phone:w-full phone:h-[12rem] relative"
+          >
             <Image src="/icons/collage1.avif" alt="" fill />
           </motion.div>
-          <div className="text-end phone:text-small lphone:opacity-100 phone:opacity-0">
+          <div className="text-end phone:text-small lphone:opacity-100 phone:opacity-0 ">
             <div>Alluring and Charming. Student Chapter CSE is a</div>
             <div>Brand</div>
           </div>
@@ -154,7 +165,8 @@ const IndexPage: React.FC = () => {
       <Sections
         title="UPCOMING"
         subtitle="EVENTS"
-        subtitleFontSize="1rem"
+        titleFontSize="text-[3.5rem] md:text-[5rem]"
+        subtitleFontSize="text-[0.7rem] md:text-[1.2rem]"
         color="transparent"
         date=""
         content=""
@@ -163,14 +175,16 @@ const IndexPage: React.FC = () => {
         align="start"
         margin="1remadd ."
         padding="-1.5rem"
+        subpadding="pr-10"
       />
       <br />
 
       {/* Recent Activities Section */}
       <Sections
         title="RECENT"
-        subtitle="ACTIVITIES"
-        subtitleFontSize=".7rem"
+        subtitle="EVENTS"
+        titleFontSize="text-[5rem]"
+        subtitleFontSize="text-[1rem]"
         color="transparent"
         content=""
         width={300}
@@ -178,13 +192,15 @@ const IndexPage: React.FC = () => {
         align="start"
         margin="1rem"
         padding="-1.5rem"
+        subpadding="pl-1 pb-10"
       />
       <br />
 
       <Sections
         title="PAST"
         subtitle="EVENTS"
-        subtitleFontSize="text-[1.5rem]"
+        titleFontSize="text-[6rem]"
+        subtitleFontSize="text-[1.2rem]"
         color="transparent"
         content=""
         width={300}
@@ -192,6 +208,7 @@ const IndexPage: React.FC = () => {
         align="start"
         margin="1rem"
         padding="-1.5rem"
+        subpadding="pr-12"
       />
       <br />
       <br />

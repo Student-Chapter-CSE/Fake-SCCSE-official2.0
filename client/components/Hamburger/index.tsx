@@ -7,25 +7,9 @@ import Cross from "@/public/icons/Cross.svg";
 import { useEffect } from "react";
 const Hamburger: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    let lastScrollStop = window.scrollY;
-    const navbar =
-      document.getElementById("navbar") || document.createElement("div");
-    window.addEventListener("scroll", function () {
-      //on every scroll this funtion will be called
-      var scrollTop = window.scrollY || document.documentElement.scrollTop;
-      //This line will get the location on scroll
-      if (scrollTop > lastScrollStop && scrollTop > 80) {
-        //if it will be greater than the previous
-        navbar.style.top = "-100%";
-      } else {
-        navbar.style.top = "0";
-      }
-      lastScrollStop = scrollTop;
-    });
-  });
+  
   return (
-    <div id="navbar" className="w-fit md:hidden h-fit">
+    <div id="navbar" className="fixed top-0 left-0 w-full z-50 md:hidden">
       
 
       <button
@@ -73,7 +57,7 @@ const Hamburger: React.FC = () => {
           Events
         </Link>
         <Link
-          href="#contact"
+          href="/#contact"
           className="py-3 delay-800 transition-colors duration-200 "
           onClick={() => setIsOpen(false)}
         >
