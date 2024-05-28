@@ -175,7 +175,7 @@ const IndexPage: React.FC = () => {
         align="start"
         margin="1remadd ."
         padding="-1.5rem"
-        subpadding="pr-10"
+        subpadding="pr-2 pb-10"
       />
       <br />
 
@@ -192,7 +192,7 @@ const IndexPage: React.FC = () => {
         align="start"
         margin="1rem"
         padding="-1.5rem"
-        subpadding="pl-1 pb-10"
+        subpadding="pr-3 pb-10"
       />
       <br />
 
@@ -208,7 +208,7 @@ const IndexPage: React.FC = () => {
         align="start"
         margin="1rem"
         padding="-1.5rem"
-        subpadding="pr-12"
+        subpadding="pr-3 pb-14"
       />
       <br />
       <br />
