@@ -444,7 +444,7 @@ export const Conveners= [
         instagram: "",
         facebook: "",
         twitter: "",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/abhishek-singh-449526168/",
         events: [
             {
                 event1: "TechQuisitive Season 2 & 3"
@@ -466,7 +466,7 @@ export const Conveners= [
         instagram: "",
         facebook: "",
         twitter: "",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/prasun-kr-mondal-b25320214/",
         events: [
             {
                 event1: "TechQuisitive Season 4"
