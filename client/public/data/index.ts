@@ -1,4 +1,4 @@
-import exp from "constants";
+
 
 interface Team {
     name: string;
@@ -58,7 +58,7 @@ export const ManagementTeam: Team[] = [
         img: "8891ee67-8ed2-40d3-aac0-3cddfd8ab2fc-e9r10n.avif",
         designation: "Tech Associate",
         github: "http://github.com/sencrypt",
-        instagram: "",
+        instagram: "https://www.instagram.com/senceyr/",
         facebook: "",
         twitter: "",
         linkedin: ""
