@@ -9,7 +9,7 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import Team_header from "@/public/Teamheader.svg";
+// import Team_header from "@/public/Teamheader.svg";
 import Link from "next/link";
 
 import {
@@ -21,17 +21,17 @@ import {
   PhotographyTeam,
 } from "@/public/data/index";
 import TeamsPhotoAnimation from "../TeamsPhotoAnimation";
-import Teams from "/public/Teams.svg";
+// import Teams from "/public/Teams.svg";
 const coreteam = "cd7e03bb-84b6-4f4b-80f7-bbfb4fafe891-1tktb.avif";
 
 const Index = () => {
   return (
     <div className="bg-background text-sm flex flex-col items-center  ">
-      <div className="flex md:justify-end  justify-center w-full ">
+      {/*<div className="flex md:justify-end  justify-center w-full ">
         <div className="w-[31rem] relative scale-[.8] h-[20rem] pt-28 md:mr-28 ">
           <Teams />
         </div>
-      </div>
+      </div>*/}
 
       <HeaderTitle
         title="CORE"
@@ -43,7 +43,7 @@ const Index = () => {
         subpadding={"pr-2 pb-8"}
       />
 
-      <div className="w-fit flex flex-col-reverse sm:flex-row items-center md:items-end md:w-[80%] lg:w-[70%] px-6 md:px-0">
+      {/* <div className="w-fit flex flex-col-reverse sm:flex-row items-center md:items-end md:w-[80%] lg:w-[70%] px-6 md:px-0">
         <div className="flex flex-col space-y-4 sm:space-y-40 mt-4 sm:mt-0 sm:mr-4">
           <p className="flex justify-end sm:pr-4 text-right font-montserrat">
             The management team
@@ -62,7 +62,7 @@ const Index = () => {
           height={200}
           width={400}
         />
-      </div>
+      </div> */}
 
       <div className="flex justify-end pr-20 md:pr-24 mt-20 w-full">
         <div className="bg-white pl-8 pr-12  py-6 mt-12 flex flex-col justify-center items-end gap-2">
@@ -70,7 +70,7 @@ const Index = () => {
             <div className="relative ">
               <Image
                 priority
-                src="https://utfs.io/f/921b9059-a9b0-4c4c-bce1-38f57fb5432d-cea5qo.avif"
+                src="https://utfs.io/f/e91f3186-9912-4ff6-8339-4b3c002be8fa-sb3cf7.avif"
                 alt="convenor"
                 height={200}
                 width={150}
@@ -79,28 +79,28 @@ const Index = () => {
               <div className="absolute flex flex-col h-full top-0 right-0 translate-x-[100%]">
                 <div className="flex flex-col gap-2 px-2 ">
                   <Link
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=100085957776075"
                     className="w-fit text-gray-400 hover:text-secondary_orange duration-300"
                   >
                     <FaFacebook size={16} />
                   </Link>
 
                   <Link
-                    href="https://www.instagram.com/in_dealing_dead_03/"
+                    href="https://www.instagram.com/dh__eu/"
                     className="w-fit text-gray-400 hover:text-secondary_orange duration-300"
                   >
                     <IoLogoInstagram size={16} />
                   </Link>
 
                   <Link
-                    href="#"
+                    href="https://twitter.com/BhaduryNabajit"
                     className="w-fit text-gray-400 hover:text-secondary_orange duration-300"
                   >
                     <FaTwitter size={16} />
                   </Link>
 
                   <Link
-                    href="https://www.linkedin.com/in/aratrik-bandyopadhyay-14755a222/"
+                    href="https://www.linkedin.com/in/nabajit-bhadury-5a123b24a/"
                     className="w-fit text-gray-400 hover:text-secondary_orange duration-300"
                   >
                     <FaLinkedin size={16} />
@@ -109,9 +109,9 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="text-left w-full justify-start ml-auto">
             <h1 className="text-orange-400 font-bold">Convenor</h1>
-            <h1 className="">Aratrik Bandyopadhyay</h1>
+            <h1 className="">Nabajit Bhadury</h1>
           </div>
         </div>
       </div>
@@ -134,29 +134,7 @@ const Index = () => {
         </div>
       </div>
 
-      <HeaderTitle
-        title="DESIGN"
-        subtitle="TEAM"
-        content="Aestheticism,beauty and gracefulness"
-        subtitleFontSize="text-[1.2rem]"
-        margin="my-36"
-        padding="pl-24 md:pl-36"
-        subpadding={"pr-2 pb-8"}
-      />
-      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
-        {DesignTeam.map((member, index) => (
-          <Card
-            key={index}
-            name={member.name}
-            photo={member.img}
-            designation={member.designation}
-            instagram={member.instagram}
-            facebook={member.facebook}
-            twitter={member.twitter}
-            linkedin={member.linkedin}
-          />
-        ))}
-      </div>
+     
 
       <HeaderTitle
         title="TECH"
@@ -181,7 +159,29 @@ const Index = () => {
           />
         ))}
       </div>
-
+      <HeaderTitle
+        title="DESIGN"
+        subtitle="TEAM"
+        content="Aestheticism,beauty and gracefulness"
+        subtitleFontSize="text-[1.2rem]"
+        margin="my-36"
+        padding="pl-24 md:pl-36"
+        subpadding={"pr-2 pb-8"}
+      />
+      <div className="justify-end flex flex-wrap gap-20 w-fit pr-20 md:pr-24">
+        {DesignTeam.map((member, index) => (
+          <Card
+            key={index}
+            name={member.name}
+            photo={member.img}
+            designation={member.designation}
+            instagram={member.instagram}
+            facebook={member.facebook}
+            twitter={member.twitter}
+            linkedin={member.linkedin}
+          />
+        ))}
+      </div>
       <HeaderTitle
         title="PR &   MARKETING"
         subtitle="TEAM"
@@ -207,7 +207,7 @@ const Index = () => {
         ))}
       </div>
 
-      <HeaderTitle
+      {/* <HeaderTitle
         title="PHOTOGRAPHY"
         subtitle="TEAM"
         content="Click,Set and Flash"
@@ -231,7 +231,7 @@ const Index = () => {
             linkedin={member.linkedin}
           />
         ))}
-      </div>
+      </div> */}
 
       <HeaderTitle
         title="PREVIOUS CONVENORS"
